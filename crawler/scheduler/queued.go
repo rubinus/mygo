@@ -1,6 +1,10 @@
 package scheduler
 
-import "mygo/crawler/engine"
+import (
+	"fmt"
+	"mygo/crawler/engine"
+	"time"
+)
 
 type QueueScheduler struct {
 	RequestChan chan engine.Request
@@ -46,6 +50,8 @@ func (qs *QueueScheduler) Run() {
 			case activeWork <- activeRequest: //从队列中去掉
 				queueRequest = queueRequest[1:]
 				queueWork = queueWork[1:]
+			case <-time.After(time.Millisecond * 100):
+				fmt.Println("============================time out============================time out==")
 			}
 		}
 	}()
