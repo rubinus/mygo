@@ -2,7 +2,6 @@ package engine
 
 import (
 	"fmt"
-	"mygo/crawler/fetcher"
 )
 
 type SimpleEngine struct{}
@@ -34,12 +33,4 @@ func (s SimpleEngine) Run(rs ...Request) {
 
 	}
 
-}
-
-func worker(r Request) (ParseResult, error) {
-	body, err := fetch.Fetcher(r.Url)
-	if err != nil {
-		return ParseResult{}, err
-	}
-	return r.ParserFunc(body), nil
 }
