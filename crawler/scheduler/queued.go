@@ -24,8 +24,8 @@ func (qs *QueueScheduler) WorkReady(w chan engine.Request) {
 }
 
 //A调用 B接口，对B进行go并发时，只需要把 Bi（输入），Bo（输出）
-//把Bi放到到一个channel的队列中，在B中for它，一直接收这个channel的值
-//处理结果放到 Bo这个channel中，由A一直接着
+//把Bi放到一个channel的队列中，一直在for中接收这个channel的值，然后调用B
+//B的处理结果放到 Bo这个channel中，由A一直接着
 
 func (qs *QueueScheduler) Run() {
 	qs.WorkerChan = make(chan chan engine.Request)
