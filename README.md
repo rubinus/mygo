@@ -1,2 +1,0 @@
-# mygo
-study go
