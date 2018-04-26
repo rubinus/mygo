@@ -15,7 +15,7 @@ func GetCity() {
 	//})
 
 	e := engine.ConcurrentEngine{
-		WorkCount: 1000,
+		WorkCount: 100,
 		//Scheduler: &scheduler.SimpleScheduler{},
 		Scheduler: &scheduler.QueueScheduler{},
 	}
