@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
+	"mygo/crawler"
 	"mygo/inter"
 	"mygo/json"
 	"mygo/mystd"
 	"net/url"
 	"strconv"
 	"time"
-
-	"mygo/crawler"
 )
 
 func main() {

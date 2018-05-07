@@ -27,10 +27,12 @@ func (qs *QueueScheduler) WorkReady(w chan engine.Request) {
 //把Bi放到一个channel的队列中，一直在for中接收这个channel的值，然后调用B
 //B的处理结果放到 Bo这个channel中，由A一直接着
 
-func (qs *QueueScheduler) Run() {
-	qs.WorkerChan = make(chan chan engine.Request)
+func (qs *QueueScheduler) Start() {
+	//初始化2个chan chan集装箱
 	qs.RequestChan = make(chan engine.Request)
-	//在调度中开goruntine
+	qs.WorkerChan = make(chan chan engine.Request) //存放--执行收到的请求
+
+	//在调度中开goruntine，只有一个并开始循环
 	go func() {
 		//创建队列
 		var queueRequest []engine.Request
@@ -38,16 +40,16 @@ func (qs *QueueScheduler) Run() {
 		for {
 			var activeRequest engine.Request
 			var activeWork chan engine.Request
-			if len(queueRequest) > 0 && len(queueWork) > 0 {
+			if len(queueRequest) > 0 && len(queueWork) > 0 { //存放的，和执行的都有，各取出一个
 				activeRequest = queueRequest[0]
 				activeWork = queueWork[0]
 			}
 			select {
-			case r := <-qs.RequestChan: //接收到有了请求
+			case r := <-qs.RequestChan: //接收到有了请求，先放到队列中
 				queueRequest = append(queueRequest, r)
-			case w := <-qs.WorkerChan: //work接收到了
+			case w := <-qs.WorkerChan: //work接收到了，也放到队列中
 				queueWork = append(queueWork, w)
-			case activeWork <- activeRequest: //从队列中去掉
+			case activeWork <- activeRequest: //把当前的请求给处理的work chan 从队列中去掉
 				queueRequest = queueRequest[1:]
 				queueWork = queueWork[1:]
 			case <-time.After(time.Millisecond * 100):

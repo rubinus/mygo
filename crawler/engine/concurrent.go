@@ -10,7 +10,7 @@ type ConcurrentEngine struct {
 type Schduler interface {
 	Submit(Request)
 	WokeChan() chan Request
-	Run()
+	Start()
 	ReadyNotify //接口套接口
 }
 
@@ -20,9 +20,9 @@ type ReadyNotify interface {
 
 func (c *ConcurrentEngine) Run(seeds ...Request) {
 	out := make(chan ParseResult) //create接收的chan
-	c.Scheduler.Run()
+	c.Scheduler.Start()           //队列先运行
 
-	for i := 0; i < c.WorkCount; i++ {
+	for i := 0; i < c.WorkCount; i++ { //输入的chan有多个，输出的chan只有一个
 		CreateWorker(c.Scheduler.WokeChan(), out, c.Scheduler)
 	}
 
@@ -47,9 +47,9 @@ func (c *ConcurrentEngine) Run(seeds ...Request) {
 func CreateWorker(in chan Request, out chan ParseResult, notify ReadyNotify) {
 	go func() {
 		//并发创建worker
-		for {
-			notify.WorkReady(in)
-			r := <-in //从in中接收，谁向里面放，由请求时，放入到这个in中
+		for { //创建了100个输入chan，和 100个chan的集装箱，一直创建下去
+			notify.WorkReady(in) //创建一个输入chan 然后送给chan 集装箱
+			r := <-in            //从in中接收，谁向里面放，由请求时，放入到这个in中
 			result, err := worker(r)
 			if err != nil {
 				continue

@@ -14,7 +14,7 @@ func (s *SimpleScheduler) WorkReady(chan engine.Request) {
 
 }
 
-func (s *SimpleScheduler) Run() {
+func (s *SimpleScheduler) Start() {
 	s.WorkerChan = make(chan engine.Request)
 }
 
