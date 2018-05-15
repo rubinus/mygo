@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"mygo/crawler"
 	"mygo/inter"
 	"mygo/json"
+	"mygo/mysql"
 	"mygo/mystd"
 	"net/url"
 	"strconv"
@@ -109,14 +109,14 @@ func main() {
 
 	//mongo.TestMongo()
 
-	//mysql.TestMysql()
-
 	//ip.TestIP()
 
 	//pdf.TestPDF() 有问题
 
 	json.TestJson()
 
-	crawler.GetCity()
+	//crawler.GetCity()
+
+	mysql.TestMysql()
 
 }
