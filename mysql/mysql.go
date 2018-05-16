@@ -5,7 +5,10 @@ import (
 
 	"fmt"
 
+	"encoding/json"
+
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/json-iterator/go"
 )
 
 func TestMysql() {
@@ -13,11 +16,11 @@ func TestMysql() {
 	checkErr(err)
 	defer db.Close()
 
-	rows, _ := fetchRows(db, "SELECT * FROM t")
-	fmt.Println(*rows, "-------------")
-	for _, v := range *rows {
-		fmt.Println(v["id"], v["c1"])
-	}
+	//rows, _ := fetchRows(db, "SELECT * FROM t")
+	//fmt.Println(*rows, "-------------")
+	//for _, v := range *rows {
+	//	fmt.Println(v["id"], v["c1"])
+	//}
 
 	/*aid, _ := insert(db, "INSERT INTO t( id,c1 ) VALUES( ?,? )", 3, "dd")
 	fmt.Println(aid, "------aid----")
@@ -30,6 +33,18 @@ func TestMysql() {
 	row1, _ := fetchRows(db, "SELECT * FROM t where id = ?", 3)
 	fmt.Println(*row1)
 
+	userJson, err := json.Marshal(*row1) //encoding/json
+	fmt.Println(string(userJson))
+
+	var jsonIterator = jsoniter.ConfigCompatibleWithStandardLibrary
+	data, err := jsonIterator.Marshal(*row1) //json_iterator
+	fmt.Println(string(data))
+
+}
+
+type user struct {
+	id int
+	c1 string
 }
 
 func checkErr(err error) {

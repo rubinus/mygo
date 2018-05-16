@@ -4,8 +4,11 @@ import (
 	"fmt"
 	"mygo/inter"
 	"mygo/json"
+	"mygo/kafka"
+	"mygo/mongo"
 	"mygo/mysql"
 	"mygo/mystd"
+	"mygo/redis"
 	"net/url"
 	"strconv"
 	"time"
@@ -105,10 +108,6 @@ func main() {
 
 	//pkg.TestPkg()
 
-	//redis.TestRedis()
-
-	//mongo.TestMongo()
-
 	//ip.TestIP()
 
 	//pdf.TestPDF() 有问题
@@ -118,5 +117,10 @@ func main() {
 	//crawler.GetCity()
 
 	mysql.TestMysql()
+	mongo.TestMongo()
+	redis.TestRedis()
+
+	fmt.Println("\n\n======\n\n")
+	kafka.TestKafka()
 
 }
