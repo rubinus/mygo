@@ -15,9 +15,9 @@ func GetCity() {
 	//})
 
 	e := engine.ConcurrentEngine{
-		WorkCount: 100,
 		//Scheduler: &scheduler.SimpleScheduler{},
 		Scheduler: &scheduler.QueueScheduler{},
+		WorkCount: 100,
 	}
 	e.Run(engine.Request{
 		Url:        "http://www.zhenai.com/zhenghun",

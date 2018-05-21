@@ -4,11 +4,7 @@ import (
 	"fmt"
 	"mygo/inter"
 	"mygo/json"
-	"mygo/kafka"
-	"mygo/mongo"
-	"mygo/mysql"
 	"mygo/mystd"
-	"mygo/redis"
 	"net/url"
 	"strconv"
 	"time"
@@ -20,7 +16,8 @@ func main() {
 	fmt.Println(url.QueryUnescape(urlString))
 
 	fmt.Println(mystd.MaxLenStringNoRepSubstr("abcabcbb"))
-	fmt.Println(mystd.MaxLenStringNoRepSubstr("我们中国我人"))
+	fmt.Println(mystd.MaxLenStringNoRepSubstr("我人人人人我"))
+	fmt.Println(mystd.MaxLenStringNoRepSubstr("abbbba"))
 	//fmt.Println("IntToString=",mystd.IntToString(65))
 	fmt.Println("isPrime=", mystd.IsPrime(13))
 	arr := []int{1, 2, 3, 4, 5, 6, 20, 30, 45, 201, 1000, 822}
@@ -116,11 +113,11 @@ func main() {
 
 	//crawler.GetCity()
 
-	mysql.TestMysql()
-	mongo.TestMongo()
-	redis.TestRedis()
+	//mysql.TestMysql()
+	//mongo.TestMongo()
+	//redis.TestRedis()
 
-	fmt.Println("\n\n======\n\n")
-	kafka.TestKafka()
+	//fmt.Println("\n\n======\n\n")
+	//kafka.TestKafka()
 
 }

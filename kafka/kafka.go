@@ -77,7 +77,7 @@ func Consumer(brokers, topics []string, groupId string) {
 		case msg, ok := <-consumer.Messages():
 			//fmt.Printf("%t", msg)
 			if ok {
-				fmt.Fprintf(os.Stdout, "%s/%d/%d\t%s\t%s\n", msg.Topic, msg.Partition, msg.Offset, msg.Key, msg.Value)
+				fmt.Fprintf(os.Stdout, "=====%s/%d/%d\t%s\t%s\n", msg.Topic, msg.Partition, msg.Offset, msg.Key, msg.Value)
 				consumer.MarkOffset(msg, "") // mark message as processed
 			}
 		case <-signals:
@@ -130,7 +130,7 @@ func TestKafka() {
 	GetKafkaInfo(Address)
 	go Consumer(Address, topic, "group-1100101109")
 
-	asrcValue := "开始发送async-goroutine: this is a message. index=22221"
+	asrcValue := "开始发送async-goroutine: this is a message. index=90000"
 	AsyncProducer(Address, topic[0], asrcValue)
 
 	time.Sleep(1 * time.Second)
