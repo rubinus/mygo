@@ -4,8 +4,12 @@ import (
 	"fmt"
 	"mygo/inter"
 	"mygo/json"
+	"mygo/kafka"
+	"mygo/mongo"
 	"mygo/mystd"
+	"mygo/redis"
 	"net/url"
+	"sort"
 	"strconv"
 	"time"
 )
@@ -114,10 +118,19 @@ func main() {
 	//crawler.GetCity()
 
 	//mysql.TestMysql()
-	//mongo.TestMongo()
-	//redis.TestRedis()
+	mongo.TestMongo()
+	redis.TestRedis()
 
 	//fmt.Println("\n\n======\n\n")
-	//kafka.TestKafka()
+	kafka.TestKafka()
+
+	arrq := []int{2, 3, 5, 0, 2, 10, 8}
+	sort.Ints(arrq)
+	fmt.Println(arrq)
+
+	for {
+		time.Sleep(10 * time.Second)
+		fmt.Println(10, "让它在docker中跑....=====")
+	}
 
 }
