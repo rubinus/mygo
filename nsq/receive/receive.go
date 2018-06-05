@@ -28,7 +28,8 @@ func (*ConsumerT) HandleMessage(msg *nsq.Message) error {
 //初始化消费者
 func InitConsumer(topic string, channel string, address string) {
 	cfg := nsq.NewConfig()
-	cfg.LookupdPollInterval = time.Second          //设置重连时间
+	cfg.LookupdPollInterval = time.Second //设置重连时间
+	cfg.MaxInFlight = 2
 	c, err := nsq.NewConsumer(topic, channel, cfg) // 新建一个消费者
 	if err != nil {
 		panic(err)

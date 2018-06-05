@@ -2,9 +2,9 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
+
+	"time"
 
 	"github.com/nsqio/go-nsq"
 )
@@ -17,22 +17,14 @@ func main() {
 		panic(err)
 	}
 
-	running := true
-
-	//读取控制台输入
-	reader := bufio.NewReader(os.Stdin)
-	for running {
-		data, _, _ := reader.ReadLine()
-		command := string(data)
-		if command == "stop" {
-			running = false
-		}
-
-		err := Publish(producer, "test1", command)
+	for {
+		time.Sleep(time.Second * 5)
+		str := time.Now().String()
+		err := Publish(producer, "test1", str)
 		if err != nil {
 			fmt.Println(err)
 		} else {
-			fmt.Println("发送成功", command)
+			fmt.Println("发送成功", str)
 		}
 
 	}
