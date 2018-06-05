@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"mygo/inter"
 	"mygo/json"
-	"mygo/kafka"
 	"mygo/mongo"
 	"mygo/mystd"
 	"mygo/redis"
@@ -122,15 +121,18 @@ func main() {
 	redis.TestRedis()
 
 	//fmt.Println("\n\n======\n\n")
-	kafka.TestKafka()
+	//kafka.TestKafka()
 
 	arrq := []int{2, 3, 5, 0, 2, 10, 8}
 	sort.Ints(arrq)
 	fmt.Println(arrq)
 
-	for {
-		time.Sleep(10 * time.Second)
-		fmt.Println(10, "让它在docker中跑....=====")
-	}
+	//for {
+	//	time.Sleep(10 * time.Second)
+	//	fmt.Println(10, "让它在docker中跑....=====")
+	//}
+
+	zero := []int{0, 3, 4, 1, 0, 2, 0, 1, 0}
+	fmt.Println(mystd.MoveZero(zero))
 
 }
