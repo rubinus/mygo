@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	out := 50 * time.Millisecond
+	out := 999 * time.Millisecond
 	d := time.Now().Add(out)
 	fmt.Println(d)
 	//ctx, cancel := context.WithDeadline(context.Background(), d)

@@ -6,6 +6,7 @@ import (
 	"mygo/json"
 	"mygo/mongo"
 	"mygo/mystd"
+	"mygo/nsq"
 	"mygo/redis"
 	"net/url"
 	"sort"
@@ -135,4 +136,6 @@ func main() {
 	zero := []int{0, 3, 4, 1, 0, 2, 0, 1, 0}
 	fmt.Println(mystd.MoveZero(zero))
 
+	nsq.Consumer("test1", "test-channel", "localhost:4150", 2)
+	nsq.Producer("test1", "localhost:4150")
 }
