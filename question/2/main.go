@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 type People interface {
@@ -23,4 +24,13 @@ func main() {
 	var peo = Stduent{}
 	think := "bitch"
 	fmt.Println(peo.Speak(think))
+
+	sl := []string{"one", "two", "three"}
+	for _, v := range sl {
+		go func() {
+			fmt.Println(v)
+		}()
+	}
+	time.Sleep(time.Second)
+
 }

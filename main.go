@@ -4,12 +4,8 @@ import (
 	"fmt"
 	"mygo/inter"
 	"mygo/json"
-	"mygo/mongo"
 	"mygo/mystd"
-	"mygo/nsq"
-	"mygo/redis"
 	"net/url"
-	"sort"
 	"strconv"
 	"time"
 )
@@ -118,15 +114,11 @@ func main() {
 	//crawler.GetCity()
 
 	//mysql.TestMysql()
-	mongo.TestMongo()
-	redis.TestRedis()
+	//mongo.TestMongo()
+	//redis.TestRedis()
 
 	//fmt.Println("\n\n======\n\n")
 	//kafka.TestKafka()
-
-	arrq := []int{2, 3, 5, 0, 2, 10, 8}
-	sort.Ints(arrq)
-	fmt.Println(arrq)
 
 	//for {
 	//	time.Sleep(10 * time.Second)
@@ -136,6 +128,7 @@ func main() {
 	zero := []int{0, 3, 4, 1, 0, 2, 0, 1, 0}
 	fmt.Println(mystd.MoveZero(zero))
 
-	nsq.Consumer("test1", "test-channel", "localhost:4150", 2)
-	nsq.Producer("test1", "localhost:4150")
+	//nsq.Consumer("test1", "test-channel", "localhost:4150", 2)
+	//nsq.Producer("test1", "localhost:4150")
+
 }

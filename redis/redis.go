@@ -10,6 +10,8 @@ import (
 )
 
 func TestRedis() {
+	redisHostPort := os.Getenv("REDIS_HOST_PORT")
+	fmt.Println(redisHostPort, "------REDIS_HOST_PORT------")
 	c, err := redis.Dial("tcp", "127.0.0.1:6379")
 	if err != nil {
 		fmt.Println("Connect to redis error", err)

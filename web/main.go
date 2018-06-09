@@ -32,7 +32,7 @@ func main() {
 	// Method:   GET
 	// Resource: http://localhost:8080/hello
 	app.Get("/hello", func(ctx iris.Context) {
-		ctx.JSON(iris.Map{"message": "Hello Iris!"})
+		ctx.JSONP(iris.Map{"message": "Hello Iris!"})
 	})
 
 	// http://localhost:8080
