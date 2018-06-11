@@ -9,13 +9,13 @@ import (
 	"github.com/json-iterator/go"
 )
 
-func TestRedis() {
+func TestRedis() string {
 	redisHostPort := os.Getenv("REDIS_HOST_PORT")
 	fmt.Println(redisHostPort, "------REDIS_HOST_PORT------")
-	c, err := redis.Dial("tcp", "127.0.0.1:6379")
+	c, err := redis.Dial("tcp", redisHostPort+":6379")
 	if err != nil {
 		fmt.Println("Connect to redis error", err)
-		return
+		return ""
 	}
 	defer c.Close()
 
@@ -41,9 +41,6 @@ func TestRedis() {
 	if err1 != nil {
 		fmt.Println("error:", err)
 	}
-	fmt.Printf("%+v\n", b)
-	os.Stdout.Write(b)
-	fmt.Println("=======redis=====")
-	//fmt.Println(imapGet["phonenumber"])
+	return string(b)
 
 }

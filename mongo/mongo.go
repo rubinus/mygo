@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"log"
 
-	"os"
-
 	"github.com/json-iterator/go"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
@@ -35,8 +33,8 @@ func TestMongo() {
 	if err1 != nil {
 		fmt.Println("error:", err)
 	}
-	fmt.Printf("%+v\n", b)
-	os.Stdout.Write(b)
+	fmt.Printf("%s\n", b)
+	//os.Stdout.Write(b)
 	fmt.Println("\n--result-------------------\n")
 
 	fmt.Printf("mongodb======Name: %s,=== country== %s\n", result.Country, result.Nickname)

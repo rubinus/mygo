@@ -6,12 +6,13 @@ import (
 
 	"os"
 
+	"github.com/bitly/go-simplejson"
 	"github.com/json-iterator/go"
 )
 
 func TestJson() {
 	//简单应用NewDecoder
-	fmt.Println("\n\n")
+	fmt.Println("=========testjson============\n\n")
 	val := []byte(`{"ID":1,"Name":"Reds","Colors":["Crimson","Red","Ruby","Maroon"]}`)
 	str := jsoniter.Get(val, "Colors").ToString()
 	fmt.Println(str)
@@ -64,6 +65,33 @@ func TestJson() {
 		fmt.Println("error:", err)
 	}
 	fmt.Printf("====%s====\n", b)
+
+	fmt.Println("------------simplejson----------")
+
+	js, err := simplejson.NewJson([]byte(`{
+		"test": {
+			"string_array": ["asdf", "ghjk", "zxcv"],
+			"array": [1, "2", 3],
+			"arraywithsubs": [{"subkeyone": 1},
+			{"subkeytwo": 2, "subkeythree": 3}],
+			"int": 10,
+			"float": 5.150,
+			"bignum": 9223372036854775807,
+			"string": "simplejson",
+			"bool": true
+		}
+	}`))
+	if err != nil {
+		panic("json format error")
+	}
+	s, err := js.Get("test").Get("arraywithsubs").Array()
+	if err != nil {
+		fmt.Println("decode error: get int failed!")
+		return
+	}
+	fmt.Println(json.MarshalToString(s))
+	fmt.Println("------------simplejson----------")
+
 	os.Stdout.Write(b)
 	fmt.Println("\n")
 	var json_iterator = jsoniter.ConfigCompatibleWithStandardLibrary
@@ -76,7 +104,7 @@ func TestJson() {
 		fmt.Println(f, fns[f])
 		fns[f]()
 	}
-	fmt.Println("========")
+	fmt.Println("=========testjson====================")
 
 	//个人理解：
 	//闭包就是能够读取其他函数内部变量的函数。

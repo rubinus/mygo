@@ -2,16 +2,15 @@ package main
 
 import (
 	"fmt"
-	"mygo/inter"
-	"mygo/json"
+	"io"
+	"log"
 	"mygo/mystd"
-	"net/url"
-	"strconv"
-	"time"
+	"mygo/redis"
+	"net/http"
 )
 
 func main() {
-	fmt.Println("1234")
+	/*fmt.Println("1234")
 	urlString := "%E6%82%A8%E7%9A%84%E6%89%8B%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81%EF%BC%9A595386%EF%BC%8C3%E5%88%86%E9%92%9F%E4%B9%8B%E5%86%85%E8%BE%93%E5%85%A5%E6%9C%89%E6%95%88%EF%BC%8C%E8%B0%A2%E8%B0%A2%E3%80%82"
 	fmt.Println(url.QueryUnescape(urlString))
 
@@ -95,7 +94,7 @@ func main() {
 	def.Sing()
 	def.Say()
 
-	fmt.Printf("肥波拿起：%d\n", mystd.Fib(6))
+	fmt.Printf("肥波拿起：%d\n", mystd.Fib(6))*/
 
 	//var j = 1
 	//for ; j > 0; j-- {
@@ -109,10 +108,15 @@ func main() {
 
 	//pdf.TestPDF() 有问题
 
-	json.TestJson()
+	//json.TestJson()
 
 	//crawler.GetCity()
 
+	http.HandleFunc("/", One)
+	err := http.ListenAndServe(":8080", nil)
+	if err != nil {
+		log.Fatal("ListenAndServe: ", err)
+	}
 	//mysql.TestMysql()
 	//mongo.TestMongo()
 	//redis.TestRedis()
@@ -131,4 +135,9 @@ func main() {
 	//nsq.Consumer("test1", "test-channel", "localhost:4150", 2)
 	//nsq.Producer("test1", "localhost:4150")
 
+}
+
+func One(w http.ResponseWriter, r *http.Request) {
+	str := redis.TestRedis()
+	io.WriteString(w, "<h1>hello go </h1>\n<h2>"+str+" </h2>")
 }
