@@ -22,7 +22,9 @@ WORKDIR $GOPATH/src/mygo
 #go get gopkg.in/mgo.v2/bson && go get github.com/nsqio/go-nsq
 #go构建可执行文件
 #RUN proxychains4 go get golang.org/x/text/
-RUN go build .
+#RUN go build .
 #最终运行docker的命令
+
 EXPOSE 8080
-ENTRYPOINT  ["./mygo"]
+#ENTRYPOINT ["./mygo"]
+CMD ["go","run","main.go"]
