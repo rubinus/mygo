@@ -142,7 +142,7 @@ func main() {
 
 func One(w http.ResponseWriter, r *http.Request) {
 	str := redis.TestRedis()
-	io.WriteString(w, "<h1>hello redis </h1>\n<h2>"+str+" </h2>")
+	io.WriteString(w, "<h1>hello redis by docker </h1>\n<h2>"+str+" </h2>")
 }
 func mongodb(w http.ResponseWriter, r *http.Request) {
 	str := mongo.TestMongo()

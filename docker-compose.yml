@@ -5,16 +5,18 @@ services:
   web:
     image: rubinus/mygo
     environment:
-      REDIS_HOST_PORT: redis
+      REDIS_HOST: redis
+      MONGO_HOST: mongo
     ports:
       - 8080:8080
     depends_on:
       - redis
+      - mongo
   redis:
     image: redis
     ports:
       - 16379:6379
-  mongodb:
-    image: mongodb
+  mongo:
+    image: mongo
     ports:
       - 27017:27017
