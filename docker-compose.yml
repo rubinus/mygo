@@ -4,6 +4,8 @@ services:
 
   web:
     image: rubinus/mygo
+    volumes:
+      - "/Users/rubinus/go/src/mygo:/go/src/mygo"
     environment:
       REDIS_HOST: redis
       MONGO_HOST: mongo

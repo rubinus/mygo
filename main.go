@@ -146,7 +146,7 @@ func One(w http.ResponseWriter, r *http.Request) {
 }
 func mongodb(w http.ResponseWriter, r *http.Request) {
 	str := mongo.TestMongo()
-	io.WriteString(w, "<h1>终于可以本地开发并且在docker中运行了!!!! </h1>\n<h2>"+str+" </h2>")
+	io.WriteString(w, "<h1>docker-compose终于可以本地开发并且在docker中运行了!!!! </h1>\n<h2>"+str+" </h2>")
 }
 
 //func mysqldb(w http.ResponseWriter, r *http.Request) {
