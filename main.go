@@ -8,6 +8,7 @@ import (
 	"mygo/mystd"
 	"mygo/redis"
 	"net/http"
+	"os"
 )
 
 func main() {
@@ -146,7 +147,9 @@ func One(w http.ResponseWriter, r *http.Request) {
 }
 func mongodb(w http.ResponseWriter, r *http.Request) {
 	str := mongo.TestMongo()
-	io.WriteString(w, "<h1>docker-compose终于可以本地开发并且在docker中运行了!!!! </h1>\n<h2>"+str+" </h2>")
+	hostname, _ := os.Hostname()
+	io.WriteString(w, fmt.Sprintf("<h1>docker-compose scale: %s ,"+
+		"终于可以本地开发并且在docker中运行了!!!! </h1>\n<h2> %s </h2>", hostname, str))
 }
 
 //func mysqldb(w http.ResponseWriter, r *http.Request) {

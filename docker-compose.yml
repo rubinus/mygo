@@ -9,8 +9,6 @@ services:
     environment:
       REDIS_HOST: redis
       MONGO_HOST: mongo
-    ports:
-      - 8080:8080
     depends_on:
       - redis
       - mongo
@@ -22,3 +20,11 @@ services:
     image: mongo
     ports:
       - 27017:27017
+  lb:
+    image: dockercloud/haproxy
+    links:
+      - web
+    ports:
+      - 8080:80
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
