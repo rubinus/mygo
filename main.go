@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"mygo/mongo"
 	"mygo/mystd"
 	"mygo/redis"
 	"net/http"
@@ -112,7 +113,9 @@ func main() {
 
 	//crawler.GetCity()
 
-	http.HandleFunc("/", One)
+	//http.HandleFunc("/mysqldb", mysqldb)
+	http.HandleFunc("/mongodb", mongodb)
+	http.HandleFunc("/redis", One)
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
@@ -139,5 +142,14 @@ func main() {
 
 func One(w http.ResponseWriter, r *http.Request) {
 	str := redis.TestRedis()
-	io.WriteString(w, "<h1>hello go </h1>\n<h2>"+str+" </h2>")
+	io.WriteString(w, "<h1>hello redis </h1>\n<h2>"+str+" </h2>")
 }
+func mongodb(w http.ResponseWriter, r *http.Request) {
+	str := mongo.TestMongo()
+	io.WriteString(w, "<h1>hello mongodb </h1>\n<h2>"+str+" </h2>")
+}
+
+//func mysqldb(w http.ResponseWriter, r *http.Request) {
+//	str := mysql.TestMysql()
+//	io.WriteString(w, "<h1>hello mysqldb </h1>\n<h2>"+str+" </h2>")
+//}

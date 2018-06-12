@@ -11,8 +11,8 @@ import (
 	"github.com/json-iterator/go"
 )
 
-func TestMysql() {
-	db, err := sql.Open("mysql", "root:root@/crn?charset=utf8")
+func TestMysql() string {
+	db, err := sql.Open("mysql", "root:root@/mysql?charset=utf8")
 	checkErr(err)
 	defer db.Close()
 
@@ -30,7 +30,7 @@ func TestMysql() {
 	//update
 	//aid1, _ := exec(db, "UPDATE t SET c1 = ? WHERE id = ?", "hhhhh", 3)
 	//fmt.Println(aid1, "------aid----")
-	row1, _ := fetchRows(db, "SELECT * FROM t where id = ?", 3)
+	row1, _ := fetchRow(db, "SELECT * FROM user where User = ?", "root")
 	fmt.Println(*row1)
 
 	userJson, err := json.Marshal(*row1) //encoding/json
@@ -38,7 +38,8 @@ func TestMysql() {
 
 	var jsonIterator = jsoniter.ConfigCompatibleWithStandardLibrary
 	data, err := jsonIterator.Marshal(*row1) //json_iterator
-	fmt.Println(string(data))
+
+	return string(data)
 
 }
 
