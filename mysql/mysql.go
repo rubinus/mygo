@@ -12,7 +12,7 @@ import (
 )
 
 func TestMysql() string {
-	db, err := sql.Open("mysql", "root:root@/mysql?charset=utf8")
+	db, err := sql.Open("mysql", "root:abc123@tcp(localhost:4002)/crn?charset=utf8")
 	checkErr(err)
 	defer db.Close()
 
@@ -30,7 +30,7 @@ func TestMysql() string {
 	//update
 	//aid1, _ := exec(db, "UPDATE t SET c1 = ? WHERE id = ?", "hhhhh", 3)
 	//fmt.Println(aid1, "------aid----")
-	row1, _ := fetchRow(db, "SELECT * FROM user where User = ?", "root")
+	row1, _ := fetchRow(db, "SELECT * FROM student where id = ?", "1")
 	fmt.Println(*row1)
 
 	userJson, err := json.Marshal(*row1) //encoding/json
