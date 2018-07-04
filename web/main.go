@@ -3,6 +3,8 @@ package main
 import (
 	"github.com/kataras/iris"
 
+	"mygo/morerequest/do"
+
 	"github.com/kataras/iris/middleware/logger"
 	"github.com/kataras/iris/middleware/recover"
 )
@@ -34,8 +36,18 @@ func main() {
 	app.Get("/hello", func(ctx iris.Context) {
 		ctx.JSONP(iris.Map{"message": "Hello Iris!"})
 	})
+
+	app.Get("/more", morequest)
+
 	// http://localhost:8080
 	// http://localhost:8080/ping
 	// http://localhost:8080/hello
 	app.Run(iris.Addr(":8080"), iris.WithoutServerError(iris.ErrServerClosed))
+}
+
+func morequest(ctx iris.Context) {
+	result := do.DoWork(1)
+	//var jsonIterator = jsoniter.ConfigCompatibleWithStandardLibrary
+	//be, _ := jsonIterator.Marshal(result)
+	ctx.JSONP(result)
 }

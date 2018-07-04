@@ -2,37 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812fed44-87f0-453c-b46f-ed9eb1142175" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/morerequest/main/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/auth.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/dbops/api.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/dbops/api_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/dbops/conn.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/dbops/internal.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/defs/apidef.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/defs/errs.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/handlers.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/response.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/session/ops.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/api/utils/uuid.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/scheduler/dbops/api.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/scheduler/dbops/conn.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/scheduler/dbops/internal.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/scheduler/handlers.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/scheduler/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/scheduler/response.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/scheduler/taskrunner/defs.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/scheduler/taskrunner/runner.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/scheduler/taskrunner/runner_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/scheduler/taskrunner/tasks.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/scheduler/taskrunner/trmain.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/streamserver/defs.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/streamserver/handlers.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/streamserver/limiter.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/streamserver/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/video_server/streamserver/response.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/morerequest/do/deal.go" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/morerequest/main/main.go" afterPath="$PROJECT_DIR$/morerequest/main/main.go" />
       <change beforePath="$PROJECT_DIR$/web/main.go" afterPath="$PROJECT_DIR$/web/main.go" />
+      <change beforePath="$PROJECT_DIR$/webserver/webs.go" afterPath="$PROJECT_DIR$/webserver/webs.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,11 +30,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/morerequest/main/main.go">
+      <file leaf-file-name="deal.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/morerequest/do/deal.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+              <folding>
+                <element signature="e#12#104#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="51" column="11" lean-forward="false" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -117,7 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/crawler_dis/rpcconn/rpc.go" />
         <option value="$PROJECT_DIR$/crawler/engine/worker.go" />
         <option value="$PROJECT_DIR$/crawler/engine/simple.go" />
         <option value="$PROJECT_DIR$/webserver/webserver.go" />
@@ -149,7 +134,6 @@
         <option value="$PROJECT_DIR$/question/context3/main.go" />
         <option value="$PROJECT_DIR$/nsq/nsq.go" />
         <option value="$PROJECT_DIR$/question/context2/main.go" />
-        <option value="$PROJECT_DIR$/webserver/webs.go" />
         <option value="$PROJECT_DIR$/crawler/fetcher/fetcher.go" />
         <option value="$PROJECT_DIR$/question/2/main.go" />
         <option value="$PROJECT_DIR$/defer_error/defer.go" />
@@ -165,9 +149,11 @@
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/mysql/mysql.go" />
-        <option value="$PROJECT_DIR$/web/main.go" />
         <option value="$PROJECT_DIR$/morerequest/main.go" />
         <option value="$PROJECT_DIR$/morerequest/main/main.go" />
+        <option value="$PROJECT_DIR$/webserver/webs.go" />
+        <option value="$PROJECT_DIR$/web/main.go" />
+        <option value="$PROJECT_DIR$/morerequest/do/deal.go" />
       </list>
     </option>
   </component>
@@ -282,6 +268,11 @@
               <item name="mygo" type="462c0819:PsiDirectoryNode" />
               <item name="morerequest" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
@@ -469,7 +460,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Build.go build main.go (2)">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -494,14 +485,6 @@
       <filePath value="$PROJECT_DIR$/morerequest/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration name="go build main.go (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="gopath" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <directory value="$PROJECT_DIR$/" />
-    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -510,20 +493,28 @@
       <filePath value="$PROJECT_DIR$/morerequest/main/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
+    <configuration name="go build webs.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="gopath" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/webserver/webs.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
-      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
-      <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
-      <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+      <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
+      <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Build.go build webs.go" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
-        <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
-        <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
+        <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Go Build.go build webs.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
+        <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -628,7 +619,8 @@
     <MESSAGE value="run docker by local dev" />
     <MESSAGE value="run in docker by docker-compose" />
     <MESSAGE value="run docker-compose scale" />
-    <option name="LAST_COMMIT_MESSAGE" value="run docker-compose scale" />
+    <MESSAGE value="add more request by channel" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more request by channel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -640,30 +632,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="156" column="21" lean-forward="false" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
-          <folding>
-            <element signature="e#14#118#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queue/q/que.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trace/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="60" column="29" lean-forward="false" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pkg/pkg.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -926,30 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/kataras/iris/context/context.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="122" column="23" lean-forward="false" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webserver/webs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawler/fetcher/fetcher.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -970,14 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="200" column="5" lean-forward="false" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/json-iterator/go/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1022,14 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json/json.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawler/engine/simple.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1">
@@ -1056,8 +984,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/morerequest/main/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="344">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/json-iterator/go/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/json.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1752">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/kataras/iris/go19.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserver/webs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#14#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/morerequest/do/deal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/kataras/iris/hero/func_result.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="116" column="25" lean-forward="false" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/kataras/iris/context/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="815" column="6" lean-forward="true" selection-start-line="815" selection-start-column="6" selection-end-line="815" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="51" column="11" lean-forward="false" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
           <folding />
         </state>
       </provider>
