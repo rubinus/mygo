@@ -34,7 +34,6 @@ func main() {
 	app.Get("/hello", func(ctx iris.Context) {
 		ctx.JSONP(iris.Map{"message": "Hello Iris!"})
 	})
-
 	// http://localhost:8080
 	// http://localhost:8080/ping
 	// http://localhost:8080/hello
