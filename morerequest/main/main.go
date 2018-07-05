@@ -10,7 +10,7 @@ import (
 func main() {
 
 	c := make(chan int)
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 1; i++ {
 		go do.DoWork(i)
 	}
 	<-c

@@ -1,12 +1,16 @@
 package do
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"io/ioutil"
 	"net/http"
 	"sync"
 
+	"time"
+
+	"github.com/gpmgo/gopm/modules/log"
 	"github.com/json-iterator/go"
 )
 
@@ -32,25 +36,45 @@ var reqQ = []req{
 }
 
 type workers struct {
-	in   chan interface{}
-	done func()
+	in     chan []byte
+	parser Parser
+	done   func()
 }
 
-//channel做为返回值
-func createWorker(i int, group *sync.WaitGroup) workers {
-	work := workers{
-		in: make(chan interface{}),
-		done: func() {
-			group.Done()
-		},
-	}
+func dealWork(url string, work workers) {
+	fmt.Println(url)
+
 	go func() {
-		_, err := getHttp(reqQ[i].url, reqQ[i].parser, work)
+		timeout := 3 * time.Second
+		ctx, _ := context.WithTimeout(context.Background(), timeout)
+		_, err := getHttp(ctx, url, work)
 		if err != nil {
 			fmt.Printf("%v", err)
 			return
 		}
 	}()
+}
+
+//channel做为返回值
+func createWorker(i int, group *sync.WaitGroup) workers {
+	work := workers{
+		in:     make(chan []byte, 1),
+		parser: reqQ[i].parser,
+		done: func() {
+			group.Done()
+		},
+	}
+	//go dealWork(reqQ[i].url, work)
+	timeout := 3 * time.Second
+	ctx, _ := context.WithTimeout(context.Background(), timeout)
+	go func() {
+		_, err := getHttp(ctx, reqQ[i].url, work)
+		if err != nil {
+			fmt.Printf("%v", err)
+			return
+		}
+	}()
+
 	return work
 }
 
@@ -65,23 +89,65 @@ func DoWork(j int) AllResult {
 	group.Add(3)
 
 	all := AllResult{}
+	var jsonIterator = jsoniter.ConfigCompatibleWithStandardLibrary
+
 	for _, w := range works {
-		result := <-w.in
-		switch result.(type) {
-		case *Cash:
-			cash := result.(*Cash).Data
-			all.Cash = cash
-		case *HoldNumber:
-			holdNumber := result.(*HoldNumber).Data.Hold_number
-			all.HoldNumber = holdNumber
-		case *Goldseed:
-			seed := result.(*Goldseed).Data.Seed
-			all.Seed = seed
+		select {
+		case out := <-w.in:
+			parser := w.parser
+			result := parser.parseJson()
+			//fmt.Println(out, "------")
+			if err := jsonIterator.Unmarshal(out, &result); err != nil {
+				log.Error("%v", err)
+			}
+			switch result.(type) {
+			case *Cash:
+				cash := result.(*Cash).Data
+				all.Cash = cash
+			case *HoldNumber:
+				holdNumber := result.(*HoldNumber).Data.Hold_number
+				all.HoldNumber = holdNumber
+			case *Goldseed:
+				seed := result.(*Goldseed).Data.Seed
+				all.Seed = seed
+			}
 		}
+
 	}
 
 	fmt.Printf("%+v == %v \n", all, j)
 	return all
+}
+
+func getHttp(ctx context.Context, url string, work workers) ([]byte, error) {
+
+	go func() {
+		select {
+		case <-ctx.Done():
+			fmt.Println(ctx.Deadline())
+		}
+	}()
+	defer close(work.in)
+
+	resp, err := http.Get(url)
+	if err != nil {
+		return nil, err
+	}
+
+	defer resp.Body.Close()
+
+	out, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return nil, errors.New("ReadAll is error")
+	}
+	//fmt.Println(string(out))
+
+	//fmt.Println("====", result)
+
+	work.in <- out
+	work.done()
+
+	return out, nil
 }
 
 type req struct {
@@ -96,9 +162,10 @@ type AllResult struct {
 }
 
 type Cash struct {
-	Status string
-	Code   int
-	Data   int64
+	Status string `json:"status"`
+	Code   int    `json:"code"`
+	Data   int64  `json:"data"`
+	ErrMsg string `json:"errMsg"`
 }
 
 type Goldseed struct {
@@ -134,31 +201,4 @@ func (c *Cash) parseJson() interface{} {
 
 type Parser interface {
 	parseJson() interface{}
-}
-
-func getHttp(url string, parser Parser, work workers) (interface{}, error) {
-	resp, err := http.Get(url)
-	if err != nil {
-		return nil, errors.New("错误的地址:" + url)
-	}
-	defer resp.Body.Close()
-
-	out, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return nil, errors.New("ReadAll is error")
-	}
-	//fmt.Println(string(out))
-
-	result := parser.parseJson()
-	var jsonIterator = jsoniter.ConfigCompatibleWithStandardLibrary
-	if err := jsonIterator.Unmarshal(out, &result); err != nil {
-		return nil, errors.New(fmt.Sprintf("jsoniterator %s", err))
-	}
-
-	//fmt.Println("====", result)
-
-	work.in <- result
-	work.done()
-
-	return result, nil
 }
