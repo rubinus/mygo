@@ -4,6 +4,9 @@ services:
 
   web:
     image: rubinus/mygo
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
     volumes:
       - "/Users/rubinus/go/src/mygo:/go/src/mygo"
     environment:

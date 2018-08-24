@@ -19,7 +19,7 @@ var wx_token = "46497107fa23"
 
 var reqQ = []req{
 	{
-		url: "http://pmall.yaotv.tvm.cn/open/account/balance?openid=" + tvmid,
+		url: "http://pmall.yaotv.tvm.cn/open/cashaccount?tvmid=" + tvmid,
 		//url: "http://qa.pmall.yaotv.tvm.cn/open/account/balance?openid=" + tvmid,
 		parser: &Cash{},
 	},

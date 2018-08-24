@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 	"log"
-	"mygo/mongo"
+	"mygo/mongopool"
 	"mygo/mysql"
 	"mygo/mystd"
 	"mygo/redis"
@@ -114,6 +114,7 @@ func main() {
 	//json.TestJson()
 
 	//crawler.GetCity()
+	//mongo.TestMongo()
 
 	http.HandleFunc("/mysqldb", mysqldb)
 	http.HandleFunc("/mongodb", mongodb)
@@ -147,10 +148,18 @@ func One(w http.ResponseWriter, r *http.Request) {
 	io.WriteString(w, "<h1>hello redis by docker </h1>\n<h2>"+str+" </h2>")
 }
 func mongodb(w http.ResponseWriter, r *http.Request) {
-	str := mongo.TestMongo()
+	//str := mongo.TestMongo()
+
+	c, err := mongopool.NewUserColl()
+	if err != nil {
+		io.WriteString(w, fmt.Sprintf("<h1>docker-compose scale: %s ,"+
+			"<<<<<<<终于可以本地开发并且在docker中运行了!!!! </h1>\n<h2> %s </h2>", err, c))
+	}
+	defer c.Close()
+
 	hostname, _ := os.Hostname()
 	io.WriteString(w, fmt.Sprintf("<h1>docker-compose scale: %s ,"+
-		"终于可以本地开发并且在docker中运行了!!!! </h1>\n<h2> %s </h2>", hostname, str))
+		"<<<<<<<终于可以本地开发并且在docker中运行了!!!! </h1>\n<h2> %s </h2>", hostname, hostname))
 }
 
 func mysqldb(w http.ResponseWriter, r *http.Request) {
