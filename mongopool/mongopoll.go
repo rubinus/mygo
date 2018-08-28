@@ -86,9 +86,10 @@ func CloserColl(collName string, s func(*Coll) error) error {
 }
 
 func GetColl(collName string) (*Coll, error) {
-	dbhost := "106.15.228.49:27027"
+	//dbhost := "106.15.228.49:27027"
+	dbhost := "127.0.0.1:27017"
 
-	coll, err := NewColl(dbhost, "*******", collName)
+	coll, err := NewColl(dbhost, "yaoqu1", collName)
 	if err != nil {
 		return nil, err
 	}

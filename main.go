@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 	"log"
-	"mygo/mongopool"
+	"mygo/mongo"
 	"mygo/mysql"
 	"mygo/mystd"
 	"mygo/redis"
@@ -119,7 +119,7 @@ func main() {
 	http.HandleFunc("/mysqldb", mysqldb)
 	http.HandleFunc("/mongodb", mongodb)
 	http.HandleFunc("/redis", One)
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":8088", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
@@ -148,18 +148,10 @@ func One(w http.ResponseWriter, r *http.Request) {
 	io.WriteString(w, "<h1>hello redis by docker </h1>\n<h2>"+str+" </h2>")
 }
 func mongodb(w http.ResponseWriter, r *http.Request) {
-	//str := mongo.TestMongo()
-
-	c, err := mongopool.NewUserColl()
-	if err != nil {
-		io.WriteString(w, fmt.Sprintf("<h1>docker-compose scale: %s ,"+
-			"<<<<<<<终于可以本地开发并且在docker中运行了!!!! </h1>\n<h2> %s </h2>", err, c))
-	}
-	defer c.Close()
-
+	str := mongo.TestMongo()
 	hostname, _ := os.Hostname()
 	io.WriteString(w, fmt.Sprintf("<h1>docker-compose scale: %s ,"+
-		"<<<<<<<终于可以本地开发并且在docker中运行了!!!! </h1>\n<h2> %s </h2>", hostname, hostname))
+		"<<<<<<<终于可以本地开发并且在docker中运行了!!!! </h1>\n<h2> %s </h2>", hostname, str))
 }
 
 func mysqldb(w http.ResponseWriter, r *http.Request) {
