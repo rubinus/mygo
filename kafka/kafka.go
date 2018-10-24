@@ -9,7 +9,13 @@ import (
 
 	"os/signal"
 
+	"context"
+	"strconv"
+	"yaosocket/backend"
+	"yaosocket/config"
+
 	"github.com/Shopify/sarama" //support automatic consumer-group rebalancing and offset tracking
+	"github.com/bitly/go-simplejson"
 	"github.com/bsm/sarama-cluster"
 )
 
@@ -124,18 +130,60 @@ func AsyncProducer(address []string, topics, asrcValue string) {
 
 func TestKafka() {
 
-	Address := []string{"106.15.228.49:9092"}
-	topic := []string{"topics__abc_go_test"}
+	//Address := []string{"10.20.80.22:9092"}
+	//topic := []string{"activity"}
 
-	GetKafkaInfo(Address)
-	go Consumer(Address, topic, "group-1100101109")
+	//GetKafkaInfo(Address)
+	//Consumer(Address, topic, "group1-11001011092222444")
 
-	asrcValue := "开始发送async-goroutine: this is a message. index=90000"
-	AsyncProducer(Address, topic[0], asrcValue)
+	//asrcValue := `{"nickname":"涛涛GRT","headimgurl":"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIOYJOrUGCdDufvEA3te2YrwW0XVRtBpwa8Aic3Kcf6X9Sq6dukJFwxxNeKGo7gdsibhoEMU9DzvpYQ/132","userid":"5b973536a33c300001007749"}`
+	//
+	//AsyncProducer(Address, topic[0], asrcValue)
+	//
+	//go func() {
+	//	for range time.Tick(60 * time.Second) {
+	//		AsyncProducer(Address, topic[0], asrcValue)
+	//	}
+	//}()
 
-	time.Sleep(1 * time.Second)
-	go AsyncProducer(Address, topic[0], asrcValue)
-	time.Sleep(5 * time.Second)
+	//time.Sleep(500 * time.Second)
 
 	fmt.Println("5秒了系统退出")
+
+	msg := `{"status":200,"content":{"hd_id":"5bac5c2f004f9703","title":"东阿阿胶","video":"https://q-cdn.mtq.tvm.cn/liuxf/tvmini/config/activity/video/deej.mp4","countdown":"60","icon":"https://q-cdn.mtq.tvm.cn/liuxf/tvmini/config/activity/imgs/deej1.png","pictures":"https://q-cdn.mtq.tvm.cn/liuxf/tvmini/config/activity/imgs/deej.png","type":"0","start_time":1538029727,"question":null}}`
+
+	var errStr string
+	ctx, cancel := context.WithTimeout(context.Background(), config.GoroutineTimeout)
+	defer cancel()
+
+	value := fmt.Sprintf("%s", msg)
+
+	key := fmt.Sprintf("%s:%s", config.CurrentActivity, config.Minappid)
+	json, err := simplejson.NewJson([]byte(msg))
+	if err != nil {
+		return
+	}
+	countdown, err := json.Get("content").Get("countdown").String()
+	if err != nil {
+		return
+	}
+	ttl, err := strconv.Atoi(countdown)
+	if err != nil {
+		return
+	}
+	ch := backend.SaveActvityToRedis(ctx, key, value, ttl)
+	select {
+	case <-ctx.Done():
+		errStr = "超时SaveActvityToRedis"
+	case ok := <-ch:
+		if !ok {
+			errStr = "保存互动失败"
+		}
+	}
+	if errStr != "" {
+		fmt.Println(errStr)
+	} else {
+		fmt.Println("save activity successful")
+	}
+
 }

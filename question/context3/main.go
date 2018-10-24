@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-	out := 999 * time.Millisecond
-	d := time.Now().Add(out)
-	fmt.Println(d)
+	out := 2000 * time.Millisecond
+	//d := time.Now().Add(out)
+	//fmt.Println(d)
 	//ctx, cancel := context.WithDeadline(context.Background(), d)
 	ctx, cancel := context.WithTimeout(context.Background(), out)
 
@@ -17,14 +17,21 @@ func main() {
 	// cancelation function in any case. Failure to do so may keep the
 	// context and its parent alive longer than necessary.
 	defer cancel()
+	go func() {
+		for {
+			select {
+			case <-time.After(1 * time.Second):
+				//fmt.Println("overslept")
+				//fmt.Println(ctx.Deadline())
 
-	select {
-	case <-time.After(1 * time.Second):
-		fmt.Println("overslept")
-		fmt.Println(ctx.Deadline())
+			case <-ctx.Done():
+				fmt.Println(ctx.Err())
+				fmt.Println(ctx.Deadline())
+				return
+			}
+		}
+	}()
+	fmt.Println("------")
 
-	case <-ctx.Done():
-		fmt.Println(ctx.Err())
-		fmt.Println(ctx.Deadline())
-	}
+	time.Sleep(5 * time.Second)
 }

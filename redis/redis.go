@@ -35,6 +35,7 @@ func TestRedis() string {
 	if err := redis.ScanStruct(valueGet, &p2); err != nil {
 		panic(err)
 	}
+
 	fmt.Printf("redis==========%+v\n", p2)
 	jsonIterator := jsoniter.ConfigCompatibleWithStandardLibrary
 	b, err1 := jsonIterator.Marshal(p2) //encoding/json

@@ -3,96 +3,98 @@ package mongopool
 import (
 	"fmt"
 
+	"time"
+
+	"os"
+	"yaosocket/config"
+
 	"gopkg.in/mgo.v2"
 )
 
-var Sessions = map[string]*mgo.Session{}
+var Addr = []string{
+	"192.168.2.1:22001",
+	"192.168.2.1:22002",
+	"192.168.2.1:22003",
+	//"127.0.0.1:27017",
+}
+var (
+	database     = "yaoqu"
+	username     = ""
+	password     = ""
+	mondbhostStr = ""
+)
 
-func NewSession(dbhost string) (*mgo.Session, error) {
-	//if _, ok := Sessions[dbhost]; !ok {
-	//	info := mgo.DialInfo{
-	//		Addrs:     []string{dbhost},
-	//		Source:    "admin",    // 设置权限的数据库 authdb: admin
-	//		Timeout:   5 * time.Second,
-	//		PoolLimit: 4096,
-	//	}
-	//
-	//	fmt.Println(dbhost)
-	//
-	//	session, err = mgo.DialWithInfo(&info)
-	//	if err != nil {
-	//		return nil, err
-	//	}
-	//
-	//	session.SetMode(mgo.Monotonic, true)
-	//	session.SetSafe(&mgo.Safe{
-	//		WMode: "majority",
-	//	})
-	//	Sessions[dbhost] = session
-	//}
+const limitConn = 10
 
-	if _, ok := Sessions[dbhost]; !ok {
-		fmt.Println("new session create ...")
-		session, err := mgo.Dial(dbhost)
-		if err != nil {
-			return nil, err
+var (
+	mgoSessionChan = make(chan *mgo.Session)
+	mgoSessions    []*mgo.Session
+	mgoSessMap     = make(map[string]*mgo.Session)
+)
+
+func init() {
+	go func() {
+		for {
+			for _, s := range mgoSessions {
+				if s != nil {
+					mgoSessionChan <- s
+				}
+			}
 		}
-		session.SetMode(mgo.Monotonic, true)
-		session.SetSafe(&mgo.Safe{
-			WMode: "majority",
-		})
-		Sessions[dbhost] = session
+	}()
+
+	envHost := os.Getenv("MONGO_HOST")
+	if envHost != "" {
+		mondbhostStr = fmt.Sprintf("%s:%d", envHost, config.MongoDBPort)
 	} else {
-		fmt.Println("old session ...")
+		mondbhostStr = fmt.Sprintf("%s:%d", config.DefaultMongoHost, config.MongoDBPort)
 	}
-	return Sessions[dbhost].Copy(), nil
+	addr := []string{
+		mondbhostStr,
+	}
+	if false {
+		addr = Addr
+	}
+	for _, host := range addr {
+		if _, ok := mgoSessMap[host]; !ok {
+			fmt.Println("new session create ...", host)
+			for i := 0; i < limitConn; i++ {
+				createConnection(host)
+			}
+		}
+	}
+	//fmt.Println(len(mgoSessions))
 }
 
-type MongoDatabase struct {
-	*mgo.Database
-}
-
-func NewDatabase(dbhost, dbName string) (*MongoDatabase, error) {
-	session, err := NewSession(dbhost)
+func createConnection(host string) {
+	dialInfo := mgo.DialInfo{
+		Addrs:    []string{host},
+		Database: database,
+		Username: username,
+		Password: password,
+		Timeout:  time.Duration(15 * time.Second),
+	}
+	session, err := mgo.DialWithInfo(&dialInfo)
 	if err != nil {
-		return nil, err
+		fmt.Println(session, err)
+		return
 	}
-	return &MongoDatabase{session.DB(dbName)}, nil
+	session.SetMode(mgo.Monotonic, true)
+	session.SetSafe(&mgo.Safe{
+		WMode: "majority",
+	})
+	mgoSessMap[host] = session
+	mgoSessions = append(mgoSessions, session)
 }
 
-type Coll struct {
-	*mgo.Collection
-}
-
-func NewColl(dbhost, dbName, collName string) (*Coll, error) {
-	db, err := NewDatabase(dbhost, dbName)
-	if err != nil {
-		return nil, err
-	}
-	return &Coll{db.C(collName)}, nil
-}
-
-func (m *Coll) Close() {
-	m.Database.Session.Close()
-}
-
-func CloserColl(collName string, s func(*Coll) error) error {
-	c, err := GetColl(collName)
-	if err != nil {
-		return err
-	}
-	defer c.Close()
+func WithCollection(dbname, collName string, s func(*mgo.Collection) error) error {
+	session := <-mgoSessionChan
+	c := session.DB(dbname).C(collName)
 	return s(c)
 }
 
-func GetColl(collName string) (*Coll, error) {
-	//dbhost := "106.15.228.49:27027"
-	dbhost := "127.0.0.1:27017"
-
-	coll, err := NewColl(dbhost, "yaoqu1", collName)
-	if err != nil {
-		return nil, err
-	}
-
-	return coll, nil
+func WithCollection2(dbname, collName string, s func(*mgo.Collection) (int, error)) (int, error) {
+	session := <-mgoSessionChan
+	c := session.DB(dbname).C(collName)
+	return s(c)
 }

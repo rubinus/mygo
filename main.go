@@ -3,10 +3,8 @@ package main
 import (
 	"fmt"
 	"io"
-	"log"
 	"mygo/mongo"
 	"mygo/mysql"
-	"mygo/mystd"
 	"mygo/redis"
 	"net/http"
 	"os"
@@ -116,13 +114,13 @@ func main() {
 	//crawler.GetCity()
 	//mongo.TestMongo()
 
-	http.HandleFunc("/mysqldb", mysqldb)
-	http.HandleFunc("/mongodb", mongodb)
-	http.HandleFunc("/redis", One)
-	err := http.ListenAndServe(":8088", nil)
-	if err != nil {
-		log.Fatal("ListenAndServe: ", err)
-	}
+	//http.HandleFunc("/mysqldb", mysqldb)
+	//http.HandleFunc("/mongodb", mongodb)
+	//http.HandleFunc("/redis", One)
+	//err := http.ListenAndServe(":8088", nil)
+	//if err != nil {
+	//	log.Fatal("ListenAndServe: ", err)
+	//}
 	//mysql.TestMysql()
 	//mongo.TestMongo()
 	//redis.TestRedis()
@@ -135,8 +133,8 @@ func main() {
 	//	fmt.Println(10, "让它在docker中跑....=====")
 	//}
 
-	zero := []int{0, 3, 4, 1, 0, 2, 0, 1, 0}
-	fmt.Println(mystd.MoveZero(zero))
+	//zero := []int{0, 3, 4, 1, 0, 2, 0, 1, 0}
+	//fmt.Println(mystd.MoveZero(zero))
 
 	//nsq.Consumer("test1", "test-channel", "localhost:4150", 2)
 	//nsq.Producer("test1", "localhost:4150")

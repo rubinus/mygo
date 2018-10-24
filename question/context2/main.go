@@ -26,10 +26,9 @@ func Bdd(ctx context.Context) int {
 	ctx = context.WithValue(ctx, "NLJB", "NULIJIABEI")
 	//ctx, cancel := context.WithCancel(context.Background())
 	//defer cancel()
-
-	go fmt.Println(Cdd(ctx))
-
 	time.Sleep(2 * time.Second)
+
+	//go fmt.Println(Cdd(ctx))
 
 	select {
 	// 结束时候做点什么 ...
@@ -44,14 +43,15 @@ func Bdd(ctx context.Context) int {
 func Add(ctx context.Context) int {
 	ctx = context.WithValue(ctx, "HELLO", "WROLD")
 	ctx = context.WithValue(ctx, "WROLD", "HELLO")
-	go fmt.Println(Bdd(ctx))
-
+	fmt.Println(Bdd(ctx))
 	select {
 	// 结束时候做点什么 ...
 	case <-ctx.Done():
 		return -1
 	default:
 		// 没有结束 ... 执行 ...
+		time.Sleep(2 * time.Second)
+
 		return 100
 
 	}

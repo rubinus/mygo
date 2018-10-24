@@ -7,9 +7,11 @@ import (
 	"fmt"
 
 	"github.com/json-iterator/go"
+	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
 
+var dbname = "yaoqu"
 var userCollName = "users"
 
 type User struct {
@@ -25,27 +27,27 @@ type User struct {
 
 func SaveUser(p User) (string, error) {
 	p.Id = bson.NewObjectId()
-	query := func(c *mongopool.Coll) error {
+	query := func(c *mgo.Collection) error {
 		return c.Insert(p)
 	}
-	err := mongopool.CloserColl(userCollName, query)
+	err := mongopool.WithCollection(dbname, userCollName, query)
 	return p.Id.Hex(), err
 }
 
 func RemoveById(id string) error { //dao层
 	dbid := bson.ObjectIdHex(id)
-	query := func(c *mongopool.Coll) error {
+	query := func(c *mgo.Collection) error {
 		return c.RemoveId(dbid)
 	}
-	mongopool.CloserColl(userCollName, query)
+	mongopool.WithCollection(dbname, userCollName, query)
 	return nil
 }
 
 func Update(query bson.M, change bson.M) string {
-	exop := func(c *mongopool.Coll) error {
+	exop := func(c *mgo.Collection) error {
 		return c.Update(query, change)
 	}
-	err := mongopool.CloserColl(userCollName, exop)
+	err := mongopool.WithCollection(dbname, userCollName, exop)
 	if err != nil {
 		return "true"
 	}
@@ -54,10 +56,10 @@ func Update(query bson.M, change bson.M) string {
 
 func UpdateById(id string, change bson.M) string {
 	dbid := bson.ObjectIdHex(id)
-	exop := func(c *mongopool.Coll) error {
+	exop := func(c *mgo.Collection) error {
 		return c.UpdateId(dbid, change)
 	}
-	err := mongopool.CloserColl(userCollName, exop)
+	err := mongopool.WithCollection(dbname, userCollName, exop)
 	if err != nil {
 		return "true"
 	}
@@ -75,42 +77,49 @@ func UpdateById(id string, change bson.M) string {
  * @param {[type]} limit          int)   (results      []interface{}, err error [description]
  */
 func Find(query bson.M, fields bson.M, sort string, skip, limit int) (results []interface{}, err error) {
-	exop := func(c *mongopool.Coll) error {
+	exop := func(c *mgo.Collection) error {
 		return c.Find(query).Select(fields).Sort(sort).Skip(skip).Limit(limit).All(&results)
 	}
-	mongopool.CloserColl(userCollName, exop)
+	mongopool.WithCollection(dbname, userCollName, exop)
 	return
 }
 func FindById(id string, fields bson.M) (User, error) {
 	dbid := bson.ObjectIdHex(id)
 	user := User{}
-	exop := func(c *mongopool.Coll) error {
+	exop := func(c *mgo.Collection) error {
 		return c.FindId(dbid).Select(fields).One(&user)
 	}
-	err := mongopool.CloserColl(userCollName, exop)
+	err := mongopool.WithCollection(dbname, userCollName, exop)
 	return user, err
 }
 
 func GetUserById(id string) (User, error) { //dao层
 	dbid := bson.ObjectIdHex(id)
 	user := User{}
-	query := func(c *mongopool.Coll) error {
+	query := func(c *mgo.Collection) error {
 		return c.FindId(dbid).One(&user)
 	}
-	err := mongopool.CloserColl(userCollName, query)
+	err := mongopool.WithCollection(dbname, userCollName, query)
 	return user, err
 }
 
 func GetAllUsers() ([]User, error) {
 	var users []User
-	query := func(c *mongopool.Coll) error {
+	query := func(c *mgo.Collection) error {
 		return c.Find(nil).All(&users)
 	}
-	err := mongopool.CloserColl(userCollName, query)
+	err := mongopool.WithCollection(dbname, userCollName, query)
 	if err != nil {
 		return users, err
 	}
 	return users, nil
+}
+
+func GetAllUsersCount() (int, error) {
+	query := func(c *mgo.Collection) (int, error) {
+		return c.Count()
+	}
+	return mongopool.WithCollection2(dbname, userCollName, query)
 }
 
 func getUserinfo(i int) {
@@ -164,14 +173,14 @@ func main() {
 	//
 	//time.Sleep(5 * time.Second)
 
-	user := User{
-		Nickname: "test11111",
-	}
-	u, err := SaveUser(user)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(u, err)
+	//user := User{
+	//	Nickname: "test11111",
+	//}
+	//u, err := SaveUser(user)
+	//if err != nil {
+	//	fmt.Println(err)
+	//}
+	//fmt.Println(u, err)
 	//RemoveById("5b835d2328ddf5761c87fa04")
 
 	//query := bson.M{"_id": bson.ObjectIdHex("5b835d8e28ddf57654b5ee16")}
@@ -205,4 +214,34 @@ func main() {
 	//}
 	//fmt.Println(len(users), string(b))
 
+	time.Sleep(1 * time.Second)
+
+	for i := 0; i < 50; i++ {
+		go func(i int) {
+			c, err := GetAllUsersCount()
+			if err != nil {
+				fmt.Println("error:", err)
+			}
+			fmt.Println(i, "---", c)
+		}(i)
+	}
+
+	time.Sleep(1 * time.Second)
+
+	cc := 1
+	for i := 0; i < 200; i++ {
+		go func(i int) {
+			c, err := GetAllUsersCount()
+			if err != nil {
+				fmt.Println("error:", err)
+			}
+			cc++
+			fmt.Println(i, "--again--", c)
+			if cc == 200 {
+				fmt.Println("done")
+			}
+		}(i)
+
+	}
+	time.Sleep(500 * time.Second)
 }
