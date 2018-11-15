@@ -8,6 +8,8 @@ import (
 	"os"
 	"time"
 
+	"github.com/betacraft/yaag/irisyaag"
+	"github.com/betacraft/yaag/yaag"
 	"github.com/kataras/iris/context"
 	"github.com/kataras/iris/middleware/logger"
 	"github.com/kataras/iris/middleware/recover"
@@ -31,6 +33,15 @@ func newLogFile() *os.File {
 
 func main() {
 	app := iris.New()
+
+	yaag.Init(&yaag.Config{ // <- IMPORTANT, init the middleware.
+		On:       true,
+		DocTitle: "Iris",
+		DocPath:  "./apidoc.html",
+		BaseUrls: map[string]string{"Production": "", "Staging": ""},
+	})
+	app.Use(irisyaag.New()) // <- IMPORTANT, register the middleware.
+
 	app.Logger().SetLevel("debug")
 	f := newLogFile()
 	defer f.Close()

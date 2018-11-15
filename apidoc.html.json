@@ -1,0 +1,1 @@
+{"ApiSpecs":[{"HttpVerb":"GET","Path":"/","Calls":[{"Id":0,"CurrentPath":"/","MethodType":"GET","PostForm":null,"RequestHeader":{"Upgrade-Insecure-Requests":" 1\r"},"CommonRequestHeaders":null,"ResponseHeader":{"Content-Type":"text/html; charset=UTF-8"},"RequestUrlParams":{},"RequestBody":"","ResponseBody":"\u003ch1\u003eWelcome\u003c/h1\u003e","ResponseCode":200}]}]}

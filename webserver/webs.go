@@ -11,7 +11,10 @@ import (
 func main() {
 	http.HandleFunc("/", One)
 	//http.HandleFunc("/more", morequrest)
-	http.ListenAndServe("8080", nil)
+	err := http.ListenAndServe(":8080", nil)
+	if err != nil {
+		panic(err)
+	}
 }
 
 func One(w http.ResponseWriter, r *http.Request) {

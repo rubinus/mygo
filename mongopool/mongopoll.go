@@ -12,9 +12,9 @@ import (
 )
 
 var Addr = []string{
-	"192.168.2.1:22001",
-	"192.168.2.1:22002",
-	"192.168.2.1:22003",
+	"10.20.80.105:22000",
+	"10.20.80.106:22000",
+	"10.20.80.132:22000",
 	//"127.0.0.1:27017",
 }
 var (
@@ -52,7 +52,7 @@ func init() {
 	addr := []string{
 		mondbhostStr,
 	}
-	if false {
+	if true {
 		addr = Addr
 	}
 	for _, host := range addr {

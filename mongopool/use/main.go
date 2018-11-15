@@ -216,7 +216,7 @@ func main() {
 
 	time.Sleep(1 * time.Second)
 
-	for i := 0; i < 50; i++ {
+	for i := 0; i < 10; i++ {
 		go func(i int) {
 			c, err := GetAllUsersCount()
 			if err != nil {
@@ -228,20 +228,20 @@ func main() {
 
 	time.Sleep(1 * time.Second)
 
-	cc := 1
-	for i := 0; i < 200; i++ {
-		go func(i int) {
-			c, err := GetAllUsersCount()
-			if err != nil {
-				fmt.Println("error:", err)
-			}
-			cc++
-			fmt.Println(i, "--again--", c)
-			if cc == 200 {
-				fmt.Println("done")
-			}
-		}(i)
-
-	}
+	//cc := 1
+	//for i := 0; i < 200; i++ {
+	//	go func(i int) {
+	//		c, err := GetAllUsersCount()
+	//		if err != nil {
+	//			fmt.Println("error:", err)
+	//		}
+	//		cc++
+	//		fmt.Println(i, "--again--", c)
+	//		if cc == 200 {
+	//			fmt.Println("done")
+	//		}
+	//	}(i)
+	//
+	//}
 	time.Sleep(500 * time.Second)
 }
