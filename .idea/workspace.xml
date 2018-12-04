@@ -2,433 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812fed44-87f0-453c-b46f-ed9eb1142175" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/1024/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cronexpr/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/README_ZH.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/apidoc/yaag/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/authentication/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/authentication/basicauth/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/authentication/basicauth/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/authentication/oauth2/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/authentication/oauth2/templates/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/authentication/oauth2/templates/user.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/cache/client-side/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/cache/simple/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/configuration/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/configuration/from-configuration-structure/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/configuration/from-toml-file/configs/iris.tml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/configuration/from-toml-file/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/configuration/from-yaml-file/configs/iris.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/configuration/from-yaml-file/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/configuration/from-yaml-file/shared-configuration/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/configuration/functional/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/convert-handlers/negroni-like/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/convert-handlers/nethttp/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/convert-handlers/real-usecase-raven/wrapping-the-router/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/convert-handlers/real-usecase-raven/writing-middleware/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/cookies/basic/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/cookies/basic/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/cookies/securecookie/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/cookies/securecookie/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/casbin/middleware/casbinmodel.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/casbin/middleware/casbinpolicy.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/casbin/middleware/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/casbin/middleware/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/casbin/wrapper/casbinmodel.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/casbin/wrapper/casbinpolicy.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/casbin/wrapper/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/casbin/wrapper/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/cloudwatch/simple/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/cors/simple/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/csrf/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/csrf/views/user/signup.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/jwt/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/newrelic/simple/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/prometheus/simple/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/secure/simple/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/experimental-handlers/tollboothic/limit-handler/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/basic/assets/css/main.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/basic/assets/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/basic/assets/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/basic/assets/js/jquery-2.1.1.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/basic/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-files-into-app/assets/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-files-into-app/assets/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-files-into-app/assets/js/jquery-2.1.1.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-files-into-app/bindata.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-files-into-app/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-files-into-app/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-gziped-files-into-app/assets/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-gziped-files-into-app/assets/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-gziped-files-into-app/assets/js/jquery-2.1.1.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-gziped-files-into-app/bindata_gzip.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-gziped-files-into-app/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/embedding-gziped-files-into-app/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/favicon/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/favicon/static/favicons/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/send-files/files/first.zip" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/send-files/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/basic/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/basic/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/basic/public/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/basic/public/css/main.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/basic/public/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/embedded-single-page-application-with-other-routes/bindata.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/embedded-single-page-application-with-other-routes/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/embedded-single-page-application-with-other-routes/public/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/embedded-single-page-application-with-other-routes/public/css/main.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/embedded-single-page-application-with-other-routes/public/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/embedded-single-page-application/bindata.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/embedded-single-page-application/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/embedded-single-page-application/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/embedded-single-page-application/public/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/embedded-single-page-application/public/css/main.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/file-server/single-page-application/embedded-single-page-application/public/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hello-world/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/basic/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/basic/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/overview/datamodels/movie.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/overview/datasource/movies.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/overview/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/overview/repositories/movie_repository.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/overview/services/movie_service.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/overview/web/middleware/basicauth.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/overview/web/routes/hello.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/overview/web/routes/movies.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/overview/web/views/hello/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/overview/web/views/hello/name.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/sessions/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/sessions/routes/index.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/hero/smart-contract/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/custom-httpserver/easy-way/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/custom-httpserver/multi/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/custom-httpserver/std-way/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/custom-listener/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/custom-listener/unix-reuseport/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/custom-listener/unix-reuseport/main_windows.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/graceful-shutdown/custom-notifier/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/graceful-shutdown/default-notifier/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/iris-configurator-and-host-configurator/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/listen-addr/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/listen-addr/omit-server-errors/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/listen-addr/omit-server-errors/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/listen-letsencrypt/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/listen-tls/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/listen-tls/mycert.cert" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/listen-tls/mykey.key" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/listen-unix/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http-listening/notify-on-shutdown/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/extract-referer/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/read-custom-per-type/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/read-custom-per-type/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/read-custom-via-unmarshaler/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/read-custom-via-unmarshaler/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/read-form/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/read-form/templates/form.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/read-json-struct-validation/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/read-json/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/read-xml/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/read-xml/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/request-logger/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/request-logger/request-logger-file/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/upload-file/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/upload-file/templates/upload_form.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/upload-file/uploads/.gitkeep" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/upload-files/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/upload-files/templates/upload_form.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_request/upload-files/uploads/.gitkeep" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/herotemplate/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/herotemplate/app.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/herotemplate/template/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/herotemplate/template/index.html.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/herotemplate/template/user.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/herotemplate/template/user.html.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/herotemplate/template/userlist.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/herotemplate/template/userlist.html.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/herotemplate/template/userlistwriter.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/herotemplate/template/userlistwriter.html.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/controllers/execute_template.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/controllers/hello.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/controllers/index.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/models/.gitkeep" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/templates/base.qtpl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/templates/base.qtpl.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/templates/hello.qtpl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/templates/hello.qtpl.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/templates/index.qtpl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/quicktemplate/templates/index.qtpl.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/sse-third-party/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/sse/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/sse/optional.sse.mini.js.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/stream-writer/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/transactions/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/write-gzip/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/http_responsewriter/write-rest/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/file-logger/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/i18n/locales/locale_el-GR.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/i18n/locales/locale_en-US.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/i18n/locales/locale_multi_first_el-GR.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/i18n/locales/locale_multi_first_en-US.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/i18n/locales/locale_multi_second_el-GR.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/i18n/locales/locale_multi_second_en-US.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/i18n/locales/locale_zh-CN.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/i18n/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/i18n/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/pprof/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/recaptcha/custom_form/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/recaptcha/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/miscellaneous/recover/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/basic/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/hello-world/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/hello-world/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/datamodels/user.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/datasource/users.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/folder_structure.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/repositories/user_repository.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/services/user_service.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/web/controllers/user_controller.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/web/controllers/users_controller.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/web/middleware/basicauth.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/web/public/css/site.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/web/viewmodels/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/web/views/shared/error.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/web/views/shared/layout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/web/views/user/login.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/web/views/user/me.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/login/web/views/user/register.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/middleware/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/middleware/per-method/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/middleware/without-ctx-next/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/datamodels/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/datamodels/movie.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/datasource/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/datasource/movies.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/folder_structure.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/models/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/repositories/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/repositories/movie_repository.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/services/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/services/movie_service.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/web/controllers/hello_controller.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/web/controllers/movie_controller.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/web/middleware/basicauth.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/web/viewmodels/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/web/views/hello/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/overview/web/views/hello/name.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/session-controller/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/session-controller/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/singleton/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/web_mvc_diagram.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/websocket/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/mvc/websocket/views/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/orm/xorm/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/overview/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/overview/views/user/create_verification.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/overview/views/user/profile.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/basic/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/custom-context/method-overriding/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/custom-context/method-overriding/view/hi.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/custom-context/new-implementation/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/custom-context/new-implementation/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/custom-high-level-router/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/custom-wrapper/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/custom-wrapper/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/custom-wrapper/public/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/custom-wrapper/public/css/main.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/custom-wrapper/public/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/dynamic-path/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/dynamic-path/root-wildcard/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/http-errors/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/macros/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/overview/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/overview/public/images/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/reverse/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/route-state/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/writing-a-middleware/globally/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/routing/writing-a-middleware/per-route/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/sessions/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/sessions/database/badger/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/sessions/database/boltdb/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/sessions/database/redis/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/sessions/flash-messages/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/sessions/overview/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/sessions/securecookie/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/sessions/securecookie/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/sessions/standalone/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/bootstrap/bootstrapper.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/folder_structure.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/middleware/identity/identity.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/public/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/routes/follower.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/routes/following.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/routes/index.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/routes/like.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/routes/routes.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/views/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/views/shared/error.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/bootstrap/views/shared/layout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/folder_structure.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/public/css/site.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/user/auth.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/user/controller.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/user/datasource.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/user/model.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/views/shared/error.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/views/shared/layout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/views/user/login.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/views/user/me.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/views/user/notfound.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc-single-responsibility-package/views/user/register.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/login-mvc/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/structuring/mvc-plus-repository-and-service-layers/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/multi/hosts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/multi/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/multi/public/assets/images/test.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/multi/public/upload_resources/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/redirect/hosts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/redirect/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/redirect/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/single/hosts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/single/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/wildcard/hosts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/wildcard/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/www/hosts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/www/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/subdomains/www/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/testing/httptest/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/testing/httptest/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/api-for-apache-kafka/0_docs.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/api-for-apache-kafka/1_create_topic.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/api-for-apache-kafka/2_list_topics.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/api-for-apache-kafka/3_store_to_topic.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/api-for-apache-kafka/4_retrieve_from_topic_real_time.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/api-for-apache-kafka/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/api-for-apache-kafka/src/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/caddy/Caddyfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/caddy/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/caddy/server1/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/caddy/server1/views/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/caddy/server1/views/shared/layout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/caddy/server2/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/dropzonejs/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/dropzonejs/README_PART2.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/dropzonejs/folder_structure.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/dropzonejs/meta.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/dropzonejs/no_files.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/dropzonejs/src/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/dropzonejs/src/public/css/dropzone.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/dropzonejs/src/public/js/dropzone.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/dropzonejs/src/views/upload.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/dropzonejs/with_files.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/online-visitors/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/online-visitors/static/assets/js/visitors.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/online-visitors/templates/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/online-visitors/templates/other.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/factory.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/main_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/resources/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/store.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/templates/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/vuejs-todo-mvc/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/vuejs-todo-mvc/screen.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/vuejs-todo-mvc/src/todo/item.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/vuejs-todo-mvc/src/todo/service.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/vuejs-todo-mvc/src/web/controllers/todo_controller.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/vuejs-todo-mvc/src/web/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/vuejs-todo-mvc/src/web/public/css/index" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/vuejs-todo-mvc/src/web/public/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/vuejs-todo-mvc/src/web/public/js/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/tutorial/vuejs-todo-mvc/src/web/public/js/lib/vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/context-view-data/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/context-view-data/templates/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/context-view-data/templates/layouts/layout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/embedding-templates-into-app/bindata.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/embedding-templates-into-app/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/embedding-templates-into-app/templates/layouts/layout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/embedding-templates-into-app/templates/layouts/mylayout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/embedding-templates-into-app/templates/page1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/embedding-templates-into-app/templates/partials/page1_partial1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/overview/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/overview/templates/hi.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_0/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_0/templates/hi.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_1/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_1/templates/layout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_1/templates/mypage.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_2/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_2/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_2/templates/layouts/layout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_2/templates/layouts/mylayout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_2/templates/page1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_2/templates/partials/page1_partial1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_3/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_3/templates/page.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_4/hosts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_4/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_html_4/templates/page.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_pug_0/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_pug_0/templates/index.pug" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_pug_1/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_pug_1/templates/index.pug" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_pug_2/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_pug_2/templates/footer.pug" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_pug_2/templates/header.pug" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_pug_2/templates/index.pug" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_pug_3/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_pug_3/templates/index.pug" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/template_pug_3/templates/layout.pug" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/write-to/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/write-to/views/email/simple.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/view/write-to/views/shared/email.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/webassembly/basic/client/go-wasm-runtime.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/webassembly/basic/client/hello.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/webassembly/basic/client/hello_go111.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/webassembly/basic/client/main.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/webassembly/basic/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/chat/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/chat/websockets.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/connectionlist/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/connectionlist/static/js/chat.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/connectionlist/static/js/vendor/jquery-2.2.3.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/connectionlist/templates/client.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/custom-go-client/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/native-messages/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/native-messages/static/js/chat.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/native-messages/static/js/vendor/jquery-2.2.3.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/native-messages/templates/client.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/secure/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/secure/static/js/chat.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/secure/static/js/vendor/jquery-2.2.3.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/secure/templates/client.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/third-party-socketio/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/third-party-socketio/public/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/third-party-socketio/public/jquery-1.11.1.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/iris_examples/websocket/third-party-socketio/public/socket.io-1.3.7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sort/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aes-128-cbc/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/channel3/1/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/etcd/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/jwt/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mapstruct/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sjson/main.go" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/mongopool/mongopoll.go" afterPath="$PROJECT_DIR$/mongopool/mongopoll.go" />
-      <change beforePath="$PROJECT_DIR$/mongopool/use/main.go" afterPath="$PROJECT_DIR$/mongopool/use/main.go" />
-      <change beforePath="$PROJECT_DIR$/web/main.go" afterPath="$PROJECT_DIR$/web/main.go" />
-      <change beforePath="$PROJECT_DIR$/webserver/webs.go" afterPath="$PROJECT_DIR$/webserver/webs.go" />
+      <change beforePath="$PROJECT_DIR$/gobyexample" afterPath="$PROJECT_DIR$/gobyexample" />
+      <change beforePath="$PROJECT_DIR$/redispool/cluster/main.go" afterPath="$PROJECT_DIR$/redispool/cluster/main.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -452,104 +34,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webs.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webserver/webs.go">
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/etcd/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+            <state relative-caret-position="459">
+              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
-                <element signature="e#14#289#0" expanded="true" />
+                <element signature="e#14#69#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iris_examples/websocket/connectionlist/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1901">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iris_examples/websocket/chat/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-913">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iris_examples/websocket/secure/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3188">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_service.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/services/user_service.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1357">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1563">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_controller.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/web/controllers/user_controller.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3019">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/web/controllers/users_controller.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1702">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_repository.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/repositories/user_repository.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-334">
-              <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="25" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -566,9 +58,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>quicksort3</find>
-      <find>InsertSort(arr)</find>
-      <find>GetPulicIP</find>
       <find>Selection</find>
       <find>result</find>
       <find>glog</find>
@@ -596,6 +85,9 @@
       <find>*mongopool.Coll</find>
       <find>CloserColl</find>
       <find>(userCollName</find>
+      <find>'</find>
+      <find>hgetall</find>
+      <find>DecryptData</find>
     </findStrings>
     <replaceStrings>
       <replace>mystd</replace>
@@ -604,10 +96,11 @@
       <replace>*mgo.Collection</replace>
       <replace>WithCollection</replace>
       <replace>(dbname,userCollName</replace>
+      <replace>&quot;</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/crawler</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -624,12 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/question/2/main.go" />
-        <option value="$PROJECT_DIR$/defer_error/defer.go" />
-        <option value="$PROJECT_DIR$/defer_error/def/def.go" />
-        <option value="$PROJECT_DIR$/queue/Que.go" />
-        <option value="$PROJECT_DIR$/queue/q.go" />
-        <option value="$PROJECT_DIR$/queue/q/que.go" />
         <option value="$PROJECT_DIR$/json/json.go" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/morerequest/main.go" />
@@ -666,15 +153,21 @@
         <option value="$PROJECT_DIR$/question/context3/main.go" />
         <option value="$PROJECT_DIR$/question/context2/main.go" />
         <option value="$PROJECT_DIR$/kafka/kafka.go" />
-        <option value="$PROJECT_DIR$/redispool/cluster/main.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/1024/main.go" />
         <option value="$PROJECT_DIR$/sort/main.go" />
         <option value="$PROJECT_DIR$/web/main.go" />
         <option value="$PROJECT_DIR$/webserver/webs.go" />
         <option value="$PROJECT_DIR$/mongopool/mongopoll.go" />
-        <option value="$PROJECT_DIR$/mongopool/use/main.go" />
         <option value="$PROJECT_DIR$/cronexpr/main.go" />
+        <option value="$PROJECT_DIR$/etcd/main.go" />
+        <option value="$PROJECT_DIR$/mapstruct/main.go" />
+        <option value="$PROJECT_DIR$/redispool/cluster/main.go" />
+        <option value="$PROJECT_DIR$/jwt/main.go" />
+        <option value="$PROJECT_DIR$/aes-128-cbc/main.go" />
+        <option value="$PROJECT_DIR$/mongopool/use/main.go" />
+        <option value="$PROJECT_DIR$/channel3/1/main.go" />
+        <option value="$PROJECT_DIR$/sjson/main.go" />
       </list>
     </option>
   </component>
@@ -693,7 +186,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="725" />
+    <option name="height" value="727" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -729,6 +222,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -738,20 +233,12 @@
             </path>
             <path>
               <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mygo" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mygo" type="462c0819:PsiDirectoryNode" />
-              <item name="webserver" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -924,13 +411,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (4)">
+  <component name="RunManager" selected="Go Build.go build main.go (3)">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/mongopool/use/main.go" />
+      <filePath value="$PROJECT_DIR$/jwt/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
@@ -938,7 +425,15 @@
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/sort/main.go" />
+      <filePath value="$PROJECT_DIR$/aes-128-cbc/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="gopath" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/sjson/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <configuration name="go build main.go (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
@@ -946,39 +441,31 @@
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/cronexpr/main.go" />
+      <filePath value="$PROJECT_DIR$/channel3/1/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+    <configuration name="go build main.go (5)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/web/main.go" />
-      <directory value="$PROJECT_DIR$/" />
-    </configuration>
-    <configuration name="go build webs.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="gopath" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/webserver/webs.go" />
+      <filePath value="$PROJECT_DIR$/redispool/cluster/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
-      <item index="2" class="java.lang.String" itemvalue="Go Build.go build webs.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go" />
-      <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
+      <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
+      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (5)" />
+      <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
+      <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
-        <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Go Build.go build webs.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go" />
-        <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
+        <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
+        <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
+        <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
+        <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -1045,19 +532,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="726" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="726" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.226979" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23344104" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49425286" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32094595" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38651314" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31907895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31756756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3963816" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39737275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39527026" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39737275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1121,7 +608,8 @@
     <MESSAGE value="add mongodb pool" />
     <MESSAGE value="add redis pool" />
     <MESSAGE value="add redis pool and mongodb pool all cluster" />
-    <option name="LAST_COMMIT_MESSAGE" value="add redis pool and mongodb pool all cluster" />
+    <MESSAGE value="add iris example" />
+    <option name="LAST_COMMIT_MESSAGE" value="add iris example" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1133,196 +621,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crawler/engine/simple.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/engine/worker.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/fetcher/fetcher.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/model/model.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/zhenai/parser/parser.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/scheduler/queued.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/engine/concurrent.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/getcity.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redispool/use/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpcdemo/client/client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpcdemo/rpcdemo.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpcdemo/server/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/mongo.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/redis.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewalk/pig/pig.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/video_server/streamserver/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/video_server/streamserver/defs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/video_server/api/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-548">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewalk/urlpoll/urlpoll.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/channel3/2/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-444">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gopkg.in/mgo.v2/bson/bson.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="229" column="5" lean-forward="false" selection-start-line="229" selection-start-column="5" selection-end-line="229" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gopkg.in/mgo.v2/cluster.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gopkg.in/mgo.v2/session.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="2114" column="0" lean-forward="false" selection-start-line="2114" selection-start-column="0" selection-end-line="2114" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redispool/cluster/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mystd/mystd.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3671">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/sort/sort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6845">
-          <caret line="95" column="5" lean-forward="false" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/README_ZH.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/iris_examples/apidoc/yaag/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-730">
@@ -1393,27 +691,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongopool/mongopoll.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="961">
-          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongopool/use/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="218" column="21" lean-forward="false" selection-start-line="218" selection-start-column="21" selection-end-line="218" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1421,9 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#14#71#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1431,17 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#289#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1449,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1901">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1457,7 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-913">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1465,39 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3188">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/services/user_service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1357">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1563">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/web/controllers/users_controller.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1702">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/repositories/user_repository.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1505,7 +737,250 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3019">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/repositories/user_repository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-334">
+          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/web/controllers/users_controller.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1702">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1563">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/services/user_service.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1357">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/io/io.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="325" column="5" lean-forward="false" selection-start-line="325" selection-start-column="5" selection-end-line="325" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/crypto/aes/cipher.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/crypto/cipher/cbc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="99" column="5" lean-forward="false" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/crypto/cipher/cipher.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iris_examples/hero/sessions/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-294">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iris_examples/routing/basic/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="156" column="53" lean-forward="true" selection-start-line="156" selection-start-column="53" selection-end-line="156" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iris_examples/http_request/read-json/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1251">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redispool/redispoll.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redispool/use/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/mediocregopher/radix.v3/pool.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="204" column="5" lean-forward="false" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/mediocregopher/radix.v3/radix.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1791">
+          <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/mediocregopher/radix.v3/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1979">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/mediocregopher/radix.v3/scanner.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2639">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redispool/cluster/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapstruct/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/dgrijalva/jwt-go/token.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/dgrijalva/jwt-go/claims.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/encoding/hex/hex.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="95" column="5" lean-forward="false" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="910">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongopool/mongopoll.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo/mongo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-596">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongopool/use/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="205" column="7" lean-forward="true" selection-start-line="205" selection-start-column="7" selection-end-line="205" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aes-128-cbc/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/channel/channel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1978">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/channel3/2/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/channel3/1/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sjson/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="e#14#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etcd/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#14#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
