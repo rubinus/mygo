@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  socket:
+    image: dkhub-tvplay.yaotv.tvm.cn/tvmq:1.0.0
+    volumes:
+      - /etc/localtime:/etc/localtime
+    ports:
+      - "8081:8081"
+      - "3700:3700"
+    networks:
+      - service-nw
+    deploy:
+      update_config:
+        parallelism: 2
+        delay: 5s
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+      replicas: 3
+networks:
+  service-nw:
+    external: true

@@ -1,0 +1,45 @@
+{
+  "env": "demo",
+  "RecentMsgCount": 100,
+  "SelfServePort": 8081,
+  "WebServerPort": 80,
+  "EnvHost": false,
+  "NsqHostProt": "10.105.26.117:4150",
+  "RedisClusterIP": [
+    "10.105.26.117:6379"
+  ],
+  "MongodbClusterIP": [
+    "10.105.26.117:27017"
+  ],
+  "KafkaHostPort": [
+    "10.105.26.117:9092"
+  ],
+  "StartKafkaTestData": 0,
+  "StartKafkaConsumer": 1,
+  "StartNsqConsumer": 1,
+  "StartRpcServe": 1,
+  "UseRedisCluster": 0,
+  "UseMongodbCluster": 1,
+  "UseFilterWord": 0,
+  "UseSendMsgLimit": 0,
+  "SendMsgLimitSecond": 3,
+  "UsePreAbsPath": 0,
+  "TraceLog": 0,
+  "SocketHost": "demo.yaotv.tvm.cn",
+  "PointHost": "https://demo.yaotv.tvm.cn",
+  "FilterHost": "http://demo.yaotv.tvm.cn/nlps/v1/text/sensitive-filter",
+  "Minappid": "wxe9e94f14994a3f70",
+  "Minsecret": "fbb7b2bb367543ed8fc879d5e7fee565",
+  "TokenSecretKey": "92a57168e985cbbc2c5713671c4cc147dd42a020",
+  "redis": {
+    "DefaultRedisHost": "10.105.26.117",
+    "DefaultRedisPort": 6379
+  },
+  "mongodb": {
+    "DefaultMongoHost": "10.105.26.117",
+    "MongoDBPort": 27017,
+    "MongoDatabase":"yaoqu",
+    "MongoUsername":"",
+    "MongoPassword":""
+  }
+}

@@ -1,0 +1,10 @@
+.idea/*
+*.xml
+*.out
+*.test
+workspace.xml
+node_modules/**/*
+lua/lib/*.so
+tvmq
+main
+build

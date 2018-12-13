@@ -1,0 +1,54 @@
+version: '3.3'
+services:
+  nsqlookupd:
+    image: nsqio/nsq
+    command: /nsqlookupd
+    ports:
+      - "4161:4161"
+      - "4160:4160"
+    networks:
+      - nsq-nw
+    hostname: nsqlookupd
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      placement:
+        # 指定在服务器 wx-kvm-80-106.novalocal 上启动
+        constraints:
+          - node.hostname==wx-kvm-80-105.novalocal
+  nsqadmin:
+    image: nsqio/nsq
+    command: /nsqadmin --lookupd-http-address=nsqlookupd:4161
+    ports:
+      - "4173:4171"
+    networks:
+      - nsq-nw
+    deploy:
+      restart_policy:
+        condition: on-failure
+      mode: global
+  nsqd:
+      image: nsqio/nsq
+      command: /nsqd --broadcast-address=nsqd --lookupd-tcp-address=nsqlookupd:4160 --data-path=/data
+      depends_on:
+        - nsqlookupd
+      ports:
+        - "4151:4151"
+        - "4150:4150"
+      networks:
+        - nsq-nw
+      hostname: nsqd
+      volumes:
+        - /opt/nsq-cluster-swarm:/data
+      deploy:
+        restart_policy:
+          condition: on-failure
+        replicas: 1
+        placement:
+          # 指定在服务器 wx-kvm-80-106.novalocal 上启动
+          constraints:
+            - node.hostname==wx-kvm-80-106.novalocal
+networks:
+  nsq-nw:
+    external: true

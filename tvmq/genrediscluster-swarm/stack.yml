@@ -1,0 +1,177 @@
+version: '3.3'
+services:
+  redis_1:
+    image: dkhub.tvmining.com:5000/redis-cluster
+    networks:
+      - redis-nw
+    volumes:
+      - /opt/redis-cluster-swarm/7101/data:/data
+    environment:
+      - REDIS_PORT=7101
+      - ANNOUNCEIP=10.20.80.105
+    ports:
+      - 7101:7101
+      - 17101:17101
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      placement:
+        # 指定在服务器 wx-kvm-80-106.novalocal 上启动
+        constraints:
+          - node.hostname==wx-kvm-80-105.novalocal
+  redis_2:
+    image: dkhub.tvmining.com:5000/redis-cluster
+    networks:
+      - redis-nw
+    volumes:
+      - /opt/redis-cluster-swarm/7102/data:/data
+    environment:
+      - REDIS_PORT=7102
+      - ANNOUNCEIP=10.20.80.105
+    ports:
+      - 7102:7102
+      - 17102:17102
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      placement:
+        constraints:
+          - node.hostname==wx-kvm-80-105.novalocal
+  redis_3:
+    image: dkhub.tvmining.com:5000/redis-cluster
+    networks:
+      - redis-nw
+    volumes:
+      - /opt/redis-cluster-swarm/7103/data:/data
+    environment:
+      - REDIS_PORT=7103
+      - ANNOUNCEIP=10.20.80.105
+    ports:
+      - 7103:7103
+      - 17103:17103
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      placement:
+        constraints:
+          - node.hostname==wx-kvm-80-105.novalocal
+  redis_4:
+    image: dkhub.tvmining.com:5000/redis-cluster
+    networks:
+      - redis-nw
+    volumes:
+      - /opt/redis-cluster-swarm/7104/data:/data
+    environment:
+      - REDIS_PORT=7104
+      - ANNOUNCEIP=10.20.80.106
+    ports:
+      - 7104:7104
+      - 17104:17104
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      placement:
+        constraints:
+          - node.hostname==wx-kvm-80-106.novalocal
+  redis_5:
+    image: dkhub.tvmining.com:5000/redis-cluster
+    networks:
+      - redis-nw
+    volumes:
+      - /opt/redis-cluster-swarm/7105/data:/data
+    environment:
+      - REDIS_PORT=7105
+      - ANNOUNCEIP=10.20.80.106
+    ports:
+      - 7105:7105
+      - 17105:17105
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      placement:
+        constraints:
+          - node.hostname==wx-kvm-80-106.novalocal
+  redis_6:
+    image: dkhub.tvmining.com:5000/redis-cluster
+    networks:
+      - redis-nw
+    volumes:
+      - /opt/redis-cluster-swarm/7106/data:/data
+    environment:
+      - REDIS_PORT=7106
+      - ANNOUNCEIP=10.20.80.106
+    ports:
+      - 7106:7106
+      - 17106:17106
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      placement:
+        constraints:
+          - node.hostname==wx-kvm-80-106.novalocal
+  redis_7:
+    image: dkhub.tvmining.com:5000/redis-cluster
+    networks:
+      - redis-nw
+    volumes:
+      - /opt/redis-cluster-swarm/7107/data:/data
+    environment:
+      - REDIS_PORT=7107
+      - ANNOUNCEIP=10.20.80.132
+    ports:
+      - 7107:7107
+      - 17107:17107
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      placement:
+        constraints:
+          - node.hostname==wx-kvm-80-132.novalocal
+  redis_8:
+    image: dkhub.tvmining.com:5000/redis-cluster
+    networks:
+      - redis-nw
+    volumes:
+      - /opt/redis-cluster-swarm/7108/data:/data
+    environment:
+      - REDIS_PORT=7108
+      - ANNOUNCEIP=10.20.80.132
+    ports:
+      - 7108:7108
+      - 17108:17108
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      placement:
+        constraints:
+          - node.hostname==wx-kvm-80-132.novalocal
+  redis_9:
+    image: dkhub.tvmining.com:5000/redis-cluster
+    networks:
+      - redis-nw
+    volumes:
+      - /opt/redis-cluster-swarm/7109/data:/data
+    environment:
+      - REDIS_PORT=7109
+      - ANNOUNCEIP=10.20.80.132
+    ports:
+      - 7109:7109
+      - 17109:17109
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      placement:
+        constraints:
+          - node.hostname==wx-kvm-80-132.novalocal
+networks:
+  redis-nw:
+    external: true

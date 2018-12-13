@@ -1,0 +1,40 @@
+version: '3.3'
+services:
+  web:
+    image: dkhub.tvmining.com:5000/yaoqu
+    ports:
+      - "80:3000"
+    networks:
+      - service-nw
+    extra_hosts:
+      - "qa-wxkafka:10.20.80.22"
+    deploy:
+      update_config:
+        parallelism: 2
+        delay: 5s
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+      replicas: 3
+  socket:
+    image: dkhub.tvmining.com:5000/tvmq:1.0.0
+    volumes:
+      - /etc/localtime:/etc/localtime
+    ports:
+      - "81:8081"
+      - "3700:3700"
+    networks:
+      - service-nw
+    extra_hosts:
+      - "qa-wxkafka:10.20.80.22"
+    deploy:
+      update_config:
+        parallelism: 2
+        delay: 5s
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+      replicas: 3
+networks:
+  service-nw:
+    external: true

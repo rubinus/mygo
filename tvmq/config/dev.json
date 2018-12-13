@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "RecentMsgCount": 5,
+  "SelfServePort": 8081,
+  "WebServerPort": 8081,
+  "EnvHost": true,
+  "NsqHostProt": "192.168.2.1:4150",
+  "RedisClusterIP": [
+    "192.168.2.1:6379"
+  ],
+  "MongodbClusterIP": [
+    "192.168.2.1:27017"
+  ],
+  "KafkaHostPort": [
+    "192.168.2.1:9092"
+  ],
+  "StartKafkaTestData": 0,
+  "StartKafkaConsumer": 0,
+  "StartNsqConsumer": 1,
+  "StartRpcServe": 1,
+  "UseRedisCluster": 0,
+  "UseMongodbCluster": 1,
+  "UseFilterWord": 0,
+  "UseSendMsgLimit": 0,
+  "SendMsgLimitSecond": 3,
+  "UsePreAbsPath": 0,
+  "TraceLog": 0,
+  "SocketHost": "qa-sc.tvplay.tvm.cn",
+  "PointHost": "https://qa.tvplay.tvm.cn",
+  "FilterHost": "http://10.20.80.133:5080/nlps/v1/text/sensitive-filter",
+  "Minappid": "wx8c86289016e25814",
+  "Minsecret": "c1a208c9f23d44bf289d788ce64bf57e",
+  "TokenSecretKey": "92a57168e985cbbc2c5713671c4cc147dd42a020",
+  "redis": {
+    "DefaultRedisHost": "192.168.2.1",
+    "DefaultRedisPort": 6379
+  },
+  "mongodb": {
+    "DefaultMongoHost": "192.168.2.1",
+    "MongoDBPort": 27017,
+    "MongoDatabase":"tvmq",
+    "MongoUsername":"",
+    "MongoPassword":""
+  }
+}

@@ -2,15 +2,139 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812fed44-87f0-453c-b46f-ed9eb1142175" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/aes-128-cbc/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/channel3/1/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/etcd/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jwt/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mapstruct/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sjson/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/etcdDemo/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/allmap/allmap.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/fetcher.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/filter.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/filter_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/point.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/point_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/service.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/config/defs.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/config/demo.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/config/dev.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/config/pro.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/config/qa.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/dealconn/dealconn.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker-compose.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_pro_stack/mongo_stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_pro_stack/nsq_stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_pro_stack/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_pro_stack/redis_stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_pro_stack/serv_stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_qa_stack/mongo_stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_qa_stack/nsq_stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_qa_stack/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_qa_stack/redis_stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_qa_stack/serv_stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/chat/chat.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/comm/index.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/newAuthUser/authuser.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/nsgift/nsgift.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/nsqService/nsq.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/nsqService/nsq_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/nsqproduce/index.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/run.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/traceinfonsq/traceinfo.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genmongocluster-swarm/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genmongocluster-swarm/stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/gennsq-local/docker-compose.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/gennsq-swarm/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/gennsq-swarm/stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-compose/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-compose/docker-compose.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-compose/entrypoint.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-compose/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-compose/redis.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-swarm/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-swarm/entrypoint.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-swarm/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-swarm/redis.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-swarm/stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genservice-swarm/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genservice-swarm/stack.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/connHandler.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/defs.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/intervalHandler.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/kafkaHandler.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/onlineHandler.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/recentMsgHandler.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/rpcsendHandler.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/saveconnHandler.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/saveconnHandler_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/service.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/testHandler.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/activity/activity.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/epg/epg.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/face/face.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/forman/forman.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/imua/imua.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/kafkaCons/cons.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/kafkaCons/pros.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/lottery/lottery.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/run.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/lib/dealredis.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/lib/rdcluster/redis.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/lib/rdcluster/redis_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/lib/rdone/redis.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/lib/rdone/redis_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/logs/index.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/logs/trace/trace.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/middler/deal.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/middler/defs.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/middler/run.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/middler/websocket.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/midpackage/i.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/minauth/index.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/minauth/index_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/appid/appid.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/appid/appid_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/comment/comment.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/gift/gift.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/request.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/response.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/rpc.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/socuser/socuser.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/traceinfodb/traceinfo.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/user/user.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/user/user_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/mongopool/mongopoll.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/msgtype/index.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/redisclusterpool/clusterpool.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/redispool/redispool.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/routes/index.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/routes/message.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/routes/traceinfo.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/routes/wxauth.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/routes/wxauth_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/rpcserv/client/client.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/rpcserv/service.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/static/headimgurl/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/static/headimgurl/newUsers.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/static/headimgurl/test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/static/headimgurl/users.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/static/js/jquery-2.1.3.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/templates/client.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/templates/client1.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/templates/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/test/cluster/main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/tmuser/index.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/utils/utils.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/utils/utils_test.go" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/etcd/main.go" afterPath="" />
       <change beforePath="$PROJECT_DIR$/gobyexample" afterPath="$PROJECT_DIR$/gobyexample" />
-      <change beforePath="$PROJECT_DIR$/redispool/cluster/main.go" afterPath="$PROJECT_DIR$/redispool/cluster/main.go" />
+      <change beforePath="$PROJECT_DIR$/gopath" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/main.go" afterPath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/main.go" />
+      <change beforePath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/store.go" afterPath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/store.go" />
+      <change beforePath="$PROJECT_DIR$/main" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mystd/cpu.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mystd/mystd.test" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/main" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,13 +158,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/etcd/main.go">
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/etcdDemo/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="-1280">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redis.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tvmq/lib/rdone/redis.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#14#69#0" expanded="true" />
+                <element signature="e#15#71#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,7 +251,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/json/json.go" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/morerequest/main.go" />
         <option value="$PROJECT_DIR$/morerequest/main/main.go" />
@@ -160,7 +293,6 @@
         <option value="$PROJECT_DIR$/webserver/webs.go" />
         <option value="$PROJECT_DIR$/mongopool/mongopoll.go" />
         <option value="$PROJECT_DIR$/cronexpr/main.go" />
-        <option value="$PROJECT_DIR$/etcd/main.go" />
         <option value="$PROJECT_DIR$/mapstruct/main.go" />
         <option value="$PROJECT_DIR$/redispool/cluster/main.go" />
         <option value="$PROJECT_DIR$/jwt/main.go" />
@@ -168,6 +300,8 @@
         <option value="$PROJECT_DIR$/mongopool/use/main.go" />
         <option value="$PROJECT_DIR$/channel3/1/main.go" />
         <option value="$PROJECT_DIR$/sjson/main.go" />
+        <option value="$PROJECT_DIR$/etcd/main.go" />
+        <option value="$PROJECT_DIR$/etcdDemo/main.go" />
       </list>
     </option>
   </component>
@@ -186,7 +320,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="727" />
+    <option name="height" value="725" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -222,8 +356,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,12 +365,19 @@
             </path>
             <path>
               <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="gobyexample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,17 +398,17 @@
     <property name="go.vendoring.notification.had.been.shown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/inter" />
+      <recent name="$PROJECT_DIR$/main" />
+      <recent name="$PROJECT_DIR$/scrypt" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/redispool" />
       <recent name="$PROJECT_DIR$/morerequest/main" />
       <recent name="$PROJECT_DIR$/queue/q" />
       <recent name="$PROJECT_DIR$/kafka/consumer" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/inter" />
-      <recent name="$PROJECT_DIR$/main" />
-      <recent name="$PROJECT_DIR$/scrypt" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -411,15 +550,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (3)">
-    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="gopath" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/jwt/main.go" />
-      <directory value="$PROJECT_DIR$/" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build main.go (5)">
     <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -449,23 +580,31 @@
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/redispool/cluster/main.go" />
+      <filePath value="$PROJECT_DIR$/etcdDemo/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="gopath" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/etcd/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
-      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (5)" />
-      <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
-      <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
+      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
+      <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
+      <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (5)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
-        <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
-        <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
-        <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (5)" />
+        <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (5)" />
+        <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
+        <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
+        <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -532,17 +671,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="726" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="727" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23344104" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49425286" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23667206" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4940978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32094595" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31756756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31703204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3322091" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39527026" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3946037" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39737275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -553,7 +693,6 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6475548" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -609,7 +748,8 @@
     <MESSAGE value="add redis pool" />
     <MESSAGE value="add redis pool and mongodb pool all cluster" />
     <MESSAGE value="add iris example" />
-    <option name="LAST_COMMIT_MESSAGE" value="add iris example" />
+    <MESSAGE value="etcd" />
+    <option name="LAST_COMMIT_MESSAGE" value="etcd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -621,83 +761,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/iris_examples/apidoc/yaag/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-730">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/basic/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="88" column="1" lean-forward="true" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sort/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1024/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/morerequest/do/deal.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="80" column="5" lean-forward="false" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/betacraft/yaag/irisyaag/middleware.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2665">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3016">
-          <caret line="124" column="23" lean-forward="true" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/gpmgo/gopm/modules/log/log.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="95" column="5" lean-forward="false" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Oct 26 2018.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cronexpr/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -779,6 +842,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="325" column="5" lean-forward="false" selection-start-line="325" selection-start-column="5" selection-end-line="325" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -968,18 +1032,101 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding>
-            <element signature="e#14#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/etcd/main.go">
+    <entry file="file:///usr/local/go/src/sort/sort.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="183">
+          <caret line="215" column="5" lean-forward="false" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="102" column="5" lean-forward="false" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/maintenance.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/kv.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/watch.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/lease.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="135" column="4" lean-forward="false" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/compare.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/txn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etcdDemo/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1280">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gobyexample/examples/basic-authentication/basic-authentication.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1006">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/lib/rdone/redis.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#69#0" expanded="true" />
+            <element signature="e#15#71#0" expanded="true" />
           </folding>
         </state>
       </provider>

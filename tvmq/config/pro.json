@@ -1,0 +1,57 @@
+{
+  "env": "pro",
+  "RecentMsgCount": 50,
+  "SelfServePort": 8081,
+  "WebServerPort": 81,
+  "EnvHost": false,
+  "NsqHostProt": "10.105.219.143:4150",
+  "RedisClusterIP": [
+    "10.105.50.201:7101",
+    "10.105.50.201:7102",
+    "10.105.50.201:7103",
+    "10.105.219.143:7104",
+    "10.105.219.143:7105",
+    "10.105.219.143:7106",
+    "10.105.233.170:7107",
+    "10.105.233.170:7108",
+    "10.105.233.170:7109"
+  ],
+  "MongodbClusterIP": [
+    "10.105.50.201:22000",
+    "10.105.219.143:22000",
+    "10.105.233.170:22000"
+  ],
+  "KafkaHostPort": [
+    "10.105.50.201:9092",
+    "10.105.219.143:9092",
+    "10.105.233.170:9092"
+  ],
+  "StartKafkaTestData": 0,
+  "StartKafkaConsumer": 1,
+  "StartNsqConsumer": 1,
+  "StartRpcServe": 1,
+  "UseRedisCluster": 1,
+  "UseMongodbCluster": 1,
+  "UseFilterWord": 1,
+  "UseSendMsgLimit": 0,
+  "SendMsgLimitSecond": 3,
+  "UsePreAbsPath": 0,
+  "TraceLog": 0,
+  "SocketHost": "sc-tvplay.yaotv.tvm.cn",
+  "PointHost": "http://so-tvplay.yaotv.tvm.cn",
+  "FilterHost": "http://so-tvplay.yaotv.tvm.cn/nlps/v1/text/sensitive-filter",
+  "Minappid": "wx8c86289016e25814",
+  "Minsecret": "c1a208c9f23d44bf289d788ce64bf57e",
+  "TokenSecretKey": "92a57168e985cbbc2c5713671c4cc147dd42a020",
+  "redis": {
+    "DefaultRedisHost": "localhost",
+    "DefaultRedisPort": 6379
+  },
+  "mongodb": {
+    "DefaultMongoHost": "localhost",
+    "MongoDBPort": 27017,
+    "MongoDatabase":"tvmq",
+    "MongoUsername":"",
+    "MongoPassword":""
+  }
+}

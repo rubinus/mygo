@@ -1,0 +1,72 @@
+version: '3.4'
+
+x-image:
+ &default-image
+ rubinus/redis-cluster
+x-restart:
+ &default-restart
+ always
+x-netmode:
+ &default-netmode
+ host
+
+services:
+ redis1:
+  image: *default-image
+  network_mode: *default-netmode
+  restart: *default-restart
+  volumes:
+  - /opt/docker-redis-cluster/7001/data:/data
+  environment:
+  - REDIS_PORT=7001
+  - ANNOUNCEIP=192.168.2.1
+
+ redis2:
+  image: *default-image
+  network_mode: *default-netmode
+  restart: *default-restart
+  volumes:
+  - /opt/docker-redis-cluster/7002/data:/data
+  environment:
+  - REDIS_PORT=7002
+  - ANNOUNCEIP=192.168.2.1
+
+ redis3:
+  image: *default-image
+  network_mode: *default-netmode
+  restart: *default-restart
+  volumes:
+  - /opt/docker-redis-cluster/7003/data:/data
+  environment:
+  - REDIS_PORT=7003
+  - ANNOUNCEIP=192.168.2.1
+
+ redis4:
+  image: *default-image
+  network_mode: *default-netmode
+  restart: *default-restart
+  volumes:
+  - /opt/docker-redis-cluster/7004/data:/data
+  environment:
+  - REDIS_PORT=7004
+  - ANNOUNCEIP=192.168.2.1
+
+ redis5:
+  image: *default-image
+  network_mode: *default-netmode
+  restart: *default-restart
+  volumes:
+  - /opt/docker-redis-cluster/7005/data:/data
+  environment:
+  - REDIS_PORT=7005
+  - ANNOUNCEIP=192.168.2.1
+
+ redis6:
+  image: *default-image
+  network_mode: *default-netmode
+  restart: *default-restart
+  volumes:
+  - /opt/docker-redis-cluster/7006/data:/data
+  environment:
+  - REDIS_PORT=7006
+  - ANNOUNCEIP=192.168.2.1
