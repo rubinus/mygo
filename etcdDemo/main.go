@@ -10,13 +10,15 @@ import (
 	"go.etcd.io/etcd/clientv3"
 )
 
+type A struct {
+	ABC string `json:"abc"`
+	DEF string `json:"def"`
+}
+
 func main() {
-	cli, err := clientv3.New(clientv3.Config{
-		Endpoints:   []string{"localhost:2379"},
-		DialTimeout: 5 * time.Second,
-	})
+	cli, err := CreateClient()
 	if err != nil {
-		fmt.Println(err)
+		return
 	}
 	defer cli.Close()
 
@@ -28,7 +30,8 @@ func main() {
 
 	le, err := cli.Lease.Grant(context.TODO(), 3)
 	//fmt.Println(le.TTL)
-	_, err = cli.KV.Put(context.TODO(), "/abc/def", "傻逼12", clientv3.WithLease(le.ID))
+	s := "/abc/def"
+	_, err = cli.KV.Put(context.TODO(), s, "傻逼12", clientv3.WithLease(le.ID))
 	//fmt.Println(pr, "test etcdDemo ...")
 	//gr, err := cli.KV.Get(context.TODO(), "test")
 	//fmt.Println(gr.Kvs)
@@ -44,11 +47,40 @@ func main() {
 
 	kvc := clientv3.NewKV(cli)
 
-	gr, err := kvc.Get(context.TODO(), "/abc/def", clientv3.WithPrevKV())
+	gr, err := kvc.Get(context.TODO(), s, clientv3.WithPrevKV())
 	fmt.Println("第一次get:", gr.Kvs, err, gr.Count)
 
+	Watcher(cli, s, lech, le)
+	//for x := range wch {
+	//	for _, v := range x.Events {
+	//		fmt.Printf("%+v\n", v)
+	//	}
+	//}
+	test(kvc, le, err)
+
+	time.Sleep(3500 * time.Millisecond)
+
+	//fmt.Println("/n======")
+	//gr, err = kvc.Get(context.TODO(), "/abc/def", clientv3.WithPrevKV())
+	//fmt.Println(gr.Kvs, err, gr.Count)
+
+}
+
+func CreateClient() (*clientv3.Client, error) {
+	cli, err := clientv3.New(clientv3.Config{
+		Endpoints:   []string{"localhost:2379"},
+		DialTimeout: 5 * time.Second,
+	})
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	return cli, err
+}
+
+func Watcher(cli *clientv3.Client, s string, lech <-chan *clientv3.LeaseKeepAliveResponse, le *clientv3.LeaseGrantResponse) {
 	watcher := clientv3.NewWatcher(cli)
-	wch := watcher.Watch(context.TODO(), "/abc/def", clientv3.WithPrevKV())
+	wch := watcher.Watch(context.TODO(), s, clientv3.WithPrevKV())
 	go func() {
 		for {
 			select {
@@ -64,27 +96,17 @@ func main() {
 			}
 		}
 	}()
-	//for x := range wch {
-	//	for _, v := range x.Events {
-	//		fmt.Printf("%+v\n", v)
-	//	}
-	//}
+}
 
+func test(kvc clientv3.KV, le *clientv3.LeaseGrantResponse, err error) {
 	txn := kvc.Txn(context.TODO())
 	txn.If(clientv3.Compare(clientv3.CreateRevision("/abc/def2"), "=", 0)).
 		Then(clientv3.OpPut("/abc/def2", "10000", clientv3.WithLease(le.ID))).
 		Else(clientv3.OpGet("/abc/def2"))
-	txnres, err := txn.Commit()
-	if !txnres.Succeeded {
-		fmt.Printf("锁占用")
+	response, err := txn.Commit()
+	if response.Succeeded {
+		fmt.Println("response", response)
 	} else {
-		fmt.Println("txnres", txnres)
+		fmt.Printf("锁占用 ")
 	}
-
-	time.Sleep(3500 * time.Millisecond)
-
-	//fmt.Println("/n======")
-	//gr, err = kvc.Get(context.TODO(), "/abc/def", clientv3.WithPrevKV())
-	//fmt.Println(gr.Kvs, err, gr.Count)
-
 }

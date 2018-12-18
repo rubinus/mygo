@@ -1,180 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="812fed44-87f0-453c-b46f-ed9eb1142175" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/etcdDemo/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/Dockerfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/allmap/allmap.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/fetcher.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/filter.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/filter_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/point.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/point_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/backend/service.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/config/defs.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/config/demo.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/config/dev.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/config/pro.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/config/qa.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/dealconn/dealconn.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker-compose.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_pro_stack/mongo_stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_pro_stack/nsq_stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_pro_stack/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_pro_stack/redis_stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_pro_stack/serv_stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_qa_stack/mongo_stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_qa_stack/nsq_stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_qa_stack/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_qa_stack/redis_stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/docker_qa_stack/serv_stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/chat/chat.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/comm/index.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/newAuthUser/authuser.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/nsgift/nsgift.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/nsqService/nsq.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/nsqService/nsq_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/nsqproduce/index.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/run.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/fnsq/traceinfonsq/traceinfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genmongocluster-swarm/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genmongocluster-swarm/stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/gennsq-local/docker-compose.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/gennsq-swarm/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/gennsq-swarm/stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-compose/Dockerfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-compose/docker-compose.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-compose/entrypoint.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-compose/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-compose/redis.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-swarm/Dockerfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-swarm/entrypoint.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-swarm/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-swarm/redis.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genrediscluster-swarm/stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genservice-swarm/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/genservice-swarm/stack.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/connHandler.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/defs.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/intervalHandler.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/kafkaHandler.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/onlineHandler.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/recentMsgHandler.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/rpcsendHandler.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/saveconnHandler.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/saveconnHandler_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/service.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/handler/testHandler.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/activity/activity.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/epg/epg.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/face/face.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/forman/forman.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/imua/imua.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/kafkaCons/cons.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/kafkaCons/pros.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/lottery/lottery.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/kafka/run.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/lib/dealredis.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/lib/rdcluster/redis.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/lib/rdcluster/redis_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/lib/rdone/redis.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/lib/rdone/redis_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/logs/index.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/logs/trace/trace.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/middler/deal.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/middler/defs.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/middler/run.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/middler/websocket.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/midpackage/i.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/minauth/index.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/minauth/index_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/appid/appid.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/appid/appid_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/comment/comment.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/gift/gift.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/request.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/response.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/rpc.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/socuser/socuser.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/traceinfodb/traceinfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/user/user.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/models/user/user_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/mongopool/mongopoll.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/msgtype/index.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/redisclusterpool/clusterpool.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/redispool/redispool.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/routes/index.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/routes/message.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/routes/traceinfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/routes/wxauth.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/routes/wxauth_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/rpcserv/client/client.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/rpcserv/service.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/static/headimgurl/Dockerfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/static/headimgurl/newUsers.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/static/headimgurl/test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/static/headimgurl/users.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/static/js/jquery-2.1.3.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/templates/client.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/templates/client1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/templates/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/test/cluster/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/tmuser/index.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/utils/utils.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tvmq/utils/utils_test.go" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/etcd/main.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gobyexample" afterPath="$PROJECT_DIR$/gobyexample" />
-      <change beforePath="$PROJECT_DIR$/gopath" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/main.go" afterPath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/main.go" />
-      <change beforePath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/store.go" afterPath="$PROJECT_DIR$/iris_examples/tutorial/url-shortener/store.go" />
-      <change beforePath="$PROJECT_DIR$/main" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mystd/cpu.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mystd/mystd.test" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/main" afterPath="" />
+    <list default="true" id="812fed44-87f0-453c-b46f-ed9eb1142175" name="Default" comment="add tvmqadd tvmq">
+      <change afterPath="$PROJECT_DIR$/emoji/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/02-Create-Our-Own-Array/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/02-Create-Our-Own-Array/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/03-Add-Element-in-Array/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/03-Add-Element-in-Array/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/04-Query-and-Update-Element/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/04-Query-and-Update-Element/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/05-Contain-Find-and-Remove/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/05-Contain-Find-and-Remove/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/06-Generic-Data-Structure/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/06-Generic-Data-Structure/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/07-Dynamic-Array/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/07-Dynamic-Array/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/09-Amortized-Time-Complexity/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/09-Amortized-Time-Complexity/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/02-Array-Stack/src/ArrayStack/ArrayStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/02-Array-Stack/src/ArrayStack/ArrayStack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/02-Array-Stack/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/02-Array-Stack/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/04-More-about-Leetcode/src/ArrayStack/ArrayStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/04-More-about-Leetcode/src/ArrayStack/ArrayStack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/04-More-about-Leetcode/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/04-More-about-Leetcode/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/05-Array-Queue/src/ArrayQueue/ArrayQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/05-Array-Queue/src/ArrayQueue/ArrayQueue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/06-Loop-Queue/src/ArrayQueue/ArrayQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/06-Loop-Queue/src/ArrayQueue/ArrayQueue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/06-Loop-Queue/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/06-Loop-Queue/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/ArrayQueue/ArrayQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/ArrayQueue/ArrayQueue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/08-Queues-Comparison/src/ArrayQueue/ArrayQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/08-Queues-Comparison/src/ArrayQueue/ArrayQueue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/08-Queues-Comparison/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/08-Queues-Comparison/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/04-Query-and-Update-in-LinkedList/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/04-Query-and-Update-in-LinkedList/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/05-Remove-Element-in-LinkedList/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/05-Remove-Element-in-LinkedList/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/ArrayStack/ArrayStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/ArrayStack/ArrayStack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/LinkedListStack/LinkedListStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/LinkedListStack/LinkedListStack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/07-Implement-Queue-in-LinkedList/src/ArrayQueue/ArrayQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/07-Implement-Queue-in-LinkedList/src/ArrayQueue/ArrayQueue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/07-Implement-Queue-in-LinkedList/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/07-Implement-Queue-in-LinkedList/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution2/Solution2.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution2/Solution2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution3/Solution3.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution3/Solution3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution2/Solution2.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution2/Solution2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution3/Solution3.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution3/Solution3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution2/Solution2.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution2/Solution2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution3/Solution3.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution3/Solution3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution2/Solution2.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution2/Solution2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution3/Solution3.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution3/Solution3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution4/Solution4.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution4/Solution4.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/06-Debug-Recursive-Solution/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/06-Debug-Recursive-Solution/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/Optional-01-Recursive-LinkedList/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/Optional-01-Recursive-LinkedList/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/Optional-01-Recursive-LinkedList/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/Optional-01-Recursive-LinkedList/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/04-Improved-Add-Elements-in-BST/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/04-Improved-Add-Elements-in-BST/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/06-PreOrder-Traverse-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/06-PreOrder-Traverse-in-BST/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/07-InOrder-and-PostOrder-Traverse-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/07-InOrder-and-PostOrder-Traverse-in-BST/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/ArrayStack/ArrayStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/ArrayStack/ArrayStack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/BST/BST.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/BST/BST.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/10-Level-Traverse-in-BST/src/BST/BST.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/10-Level-Traverse-in-BST/src/BST/BST.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/10-Level-Traverse-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/10-Level-Traverse-in-BST/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/11-Remove-Min-and-Max-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/11-Remove-Min-and-Max-in-BST/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/12-Remove-Elements-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/12-Remove-Elements-in-BST/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/01-Set-Basics-and-BSTSet/src/BSTSet/BSTSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/01-Set-Basics-and-BSTSet/src/BSTSet/BSTSet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/01-Set-Basics-and-BSTSet/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/01-Set-Basics-and-BSTSet/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/02-LinkedListSet/src/LinkedListSet/LinkedListSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/02-LinkedListSet/src/LinkedListSet/LinkedListSet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/02-LinkedListSet/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/02-LinkedListSet/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/BSTSet/BSTSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/BSTSet/BSTSet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/LinkedListSet/LinkedListSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/LinkedListSet/LinkedListSet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/04-TreeSet-and-Set-Problems-in-Leetcode/src/BSTSetSolution/BSTSetSolution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/04-TreeSet-and-Set-Problems-in-Leetcode/src/BSTSetSolution/BSTSetSolution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/04-TreeSet-and-Set-Problems-in-Leetcode/src/LinkedListSetSolution/LinkedListSetSolution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/04-TreeSet-and-Set-Problems-in-Leetcode/src/LinkedListSetSolution/LinkedListSetSolution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/06-LinkedListMap/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/06-LinkedListMap/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/06-LinkedListMap/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/06-LinkedListMap/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/07-BSTMap/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/07-BSTMap/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/08-More-about-Map/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/08-More-about-Map/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/BSTMapSolution350/BSTMapSolution350.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/BSTMapSolution350/BSTMapSolution350.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/BSTSetSolution349/BSTSetSolution349.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/BSTSetSolution349/BSTSetSolution349.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/LinkedListMapSolution350/LinkedListMapSolution350.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/LinkedListMapSolution350/LinkedListMapSolution350.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/02-Heap-Basics/src/MaxHeap/MaxHeap.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/02-Heap-Basics/src/MaxHeap/MaxHeap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/03-Add-and-Sift-Up-in-Heap/src/MaxHeap/MaxHeap.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/03-Add-and-Sift-Up-in-Heap/src/MaxHeap/MaxHeap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/MaxHeap/MaxHeap.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/MaxHeap/MaxHeap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/MaxHeap/MaxHeap.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/MaxHeap/MaxHeap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/MaxHeap/MaxHeap.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/MaxHeap/MaxHeap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/PriorityQueue/PriorityQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/PriorityQueue/PriorityQueue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/07-Priority-Queue-Problems-in-Leetcode/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/07-Priority-Queue-Problems-in-Leetcode/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/03-Building-Segment-Tree/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/03-Building-Segment-Tree/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/04-Query-in-Segment-Tree/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/04-Query-in-Segment-Tree/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/05-Segment-Tree-Problems-in-Leetcode/src/NumArray/NumArray.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/05-Segment-Tree-Problems-in-Leetcode/src/NumArray/NumArray.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/05-Segment-Tree-Problems-in-Leetcode/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/05-Segment-Tree-Problems-in-Leetcode/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/06-Update-Single-Element-in-Segment-Tree/src/NumArray/NumArray.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/06-Update-Single-Element-in-Segment-Tree/src/NumArray/NumArray.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/06-Update-Single-Element-in-Segment-Tree/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/06-Update-Single-Element-in-Segment-Tree/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/03-Searching-in-Trie/src/BSTSet/BSTSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/03-Searching-in-Trie/src/BSTSet/BSTSet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/03-Searching-in-Trie/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/03-Searching-in-Trie/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/04-Prefix-in-Trie/src/BSTSet/BSTSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/04-Prefix-in-Trie/src/BSTSet/BSTSet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/04-Prefix-in-Trie/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/04-Prefix-in-Trie/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/BSTSet/BSTSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/BSTSet/BSTSet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/Trie/Trie.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/Trie/Trie.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/02-Quick-Find/src/LinkedListSet/LinkedListSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/02-Quick-Find/src/LinkedListSet/LinkedListSet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/02-Quick-Find/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/02-Quick-Find/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/03-Quick-Union/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/03-Quick-Union/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/04-Optimized-by-Size/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/04-Optimized-by-Size/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/05-Optimized-by-Rank/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/05-Optimized-by-Rank/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/06-Path-Compression/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/06-Path-Compression/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/07-More-about-Union-Find/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/07-More-about-Union-Find/src/Solution/Solution.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/07-More-about-Union-Find/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/07-More-about-Union-Find/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/02-Calculating-Balance-Factor/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/02-Calculating-Balance-Factor/src/AVLTree/AVLTree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/03-Checking-Balancing-and-Binary-Search-Property/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/03-Checking-Balancing-and-Binary-Search-Property/src/AVLTree/AVLTree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/04-Rotation-Operations/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/04-Rotation-Operations/src/AVLTree/AVLTree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/05-The-Implementation-of-Left-Rotation-and-Right-Rotation/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/05-The-Implementation-of-Left-Rotation-and-Right-Rotation/src/AVLTree/AVLTree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/06-LR-and-RL/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/06-LR-and-RL/src/AVLTree/AVLTree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/06-LR-and-RL/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/06-LR-and-RL/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/07-Remove-Elements-in-AVL-Tree/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/07-Remove-Elements-in-AVL-Tree/src/AVLTree/AVLTree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/07-Remove-Elements-in-AVL-Tree/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/07-Remove-Elements-in-AVL-Tree/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etcdDemo/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/etcdDemo/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gobyexample" beforeDir="false" afterPath="$PROJECT_DIR$/gobyexample" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gobyexample/examples/atomic-counters/atomic-counters.go" beforeDir="false" afterPath="$PROJECT_DIR$/gobyexample/examples/atomic-counters/atomic-counters.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gobyexample/examples/channel-directions/channel-directions.go" beforeDir="false" afterPath="$PROJECT_DIR$/gobyexample/examples/channel-directions/channel-directions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gobyexample/examples/exit/exit.go" beforeDir="false" afterPath="$PROJECT_DIR$/gobyexample/examples/exit/exit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gobyexample/tools/build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gobyexample/tools/build-loop" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gobyexample/tools/deploy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gobyexample/tools/format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gobyexample/tools/generate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gobyexample/tools/measure" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gobyexample/tools/serve" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/mygo$TestTwoSum_in_mystd_test_go.coverage" NAME="TestTwoSum in mystd_test.go Coverage Results" MODIFIED="1523874249829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mygo$BenchmarkQuickSort3_in_mystd_test_go.coverage" NAME="BenchmarkQuickSort3 in mystd_test.go Coverage Results" MODIFIED="1523869077192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mygo$mystd_test_go.coverage" NAME="mystd_test.go Coverage Results" MODIFIED="1523874583000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mygo$BenchmarkQuickSort3_in_mystd_test_go.coverage" NAME="BenchmarkQuickSort3 in mystd_test.go Coverage Results" MODIFIED="1523869077192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mygo$go_test_mystd.coverage" NAME="go test mystd Coverage Results" MODIFIED="1523874561442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mygo$TestTwoSum_in_mystd_test_go.coverage" NAME="TestTwoSum in mystd_test.go Coverage Results" MODIFIED="1523874249829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
     <option name="myAutoScrollToSource" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="mygo" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/etcdDemo/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1280">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="408">
+              <caret line="111" column="1" selection-start-line="111" selection-start-column="1" selection-end-line="111" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redis.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tvmq/lib/rdone/redis.go">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/LoopQueue/LoopQueue.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-1814">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <element signature="e#15#71#0" expanded="true" />
+                <element signature="e#14#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/ArrayQueue/ArrayQueue.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/Queue/Queue.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/Array/Array.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="e#15#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -192,9 +214,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Selection</find>
-      <find>result</find>
-      <find>glog</find>
       <find>topics</find>
       <find>MaxLenStringNoRepSubstr</find>
       <find>pollInterval</find>
@@ -222,6 +241,9 @@
       <find>'</find>
       <find>hgetall</find>
       <find>DecryptData</find>
+      <find>todo</find>
+      <find>5</find>
+      <find>2379</find>
     </findStrings>
     <replaceStrings>
       <replace>mystd</replace>
@@ -239,7 +261,7 @@
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Play-with-Data-Structures" />
   </component>
   <component name="GoLibraries">
     <option name="urls">
@@ -251,8 +273,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/morerequest/main.go" />
         <option value="$PROJECT_DIR$/morerequest/main/main.go" />
         <option value="$PROJECT_DIR$/morerequest/do/deal_test.go" />
         <option value="$PROJECT_DIR$/crawler/fetcher/fetcher.go" />
@@ -301,26 +321,22 @@
         <option value="$PROJECT_DIR$/channel3/1/main.go" />
         <option value="$PROJECT_DIR$/sjson/main.go" />
         <option value="$PROJECT_DIR$/etcd/main.go" />
+        <option value="$PROJECT_DIR$/emoji/main.go" />
         <option value="$PROJECT_DIR$/etcdDemo/main.go" />
+        <option value="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/ArrayQueue/ArrayQueue.go" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="22" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="725" />
+    <option name="height" value="723" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -342,20 +358,11 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -363,39 +370,29 @@
               <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
               <item name="mygo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mygo" type="462c0819:PsiDirectoryNode" />
-              <item name="gobyexample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="preferences.sourceCode" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-    <property name="settings.editor.selected.configurable" value="go.sdk" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="GO_FMT" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="options.lastSelected" value="preferences.sourceCode" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -550,14 +547,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (5)">
-    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+  <component name="RunManager" selected="Go Build.go build LoopQueue.go">
+    <configuration name="go build LoopQueue.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gopath" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/LoopQueue/LoopQueue.go" />
+      <package value="mygo" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/aes-128-cbc/main.go" />
+      <filePath value="$PROJECT_DIR$/emoji/main.go" />
       <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
     </configuration>
     <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="gopath" />
@@ -566,14 +573,7 @@
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/sjson/main.go" />
       <directory value="$PROJECT_DIR$/" />
-    </configuration>
-    <configuration name="go build main.go (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="gopath" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/channel3/1/main.go" />
-      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
     </configuration>
     <configuration name="go build main.go (5)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="gopath" />
@@ -582,6 +582,7 @@
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/etcdDemo/main.go" />
       <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="gopath" />
@@ -590,26 +591,24 @@
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/etcd/main.go" />
       <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
-      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
-      <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
-      <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go" />
-      <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (5)" />
+    <list>
+      <item itemvalue="Go Build.go build main.go (3)" />
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build main.go (5)" />
+      <item itemvalue="Go Build.go build main.go (1)" />
+      <item itemvalue="Go Build.go build LoopQueue.go" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (5)" />
-        <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go (3)" />
-        <item index="3" class="java.lang.String" itemvalue="Go Build.go build main.go (4)" />
-        <item index="4" class="java.lang.String" itemvalue="Go Build.go build main.go (2)" />
+      <list>
+        <item itemvalue="Go Build.go build LoopQueue.go" />
+        <item itemvalue="Go Build.go build main.go (5)" />
+        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build main.go (3)" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -671,58 +670,56 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="727" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="726" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23667206" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4940978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32094595" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31703204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3322091" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3946037" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39737275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6475548" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" order="0" sideWeight="0.49140048" visible="true" weight="0.25201938" />
+      <window_info id="Structure" order="1" weight="0.24959612" />
+      <window_info id="Favorites" order="2" sideWeight="0.5085995" side_tool="true" weight="0.24394184" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3256579" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49353796" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3963816" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32730263" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.4940978" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.31423897" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49676898" weight="0.3946037" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.503231" side_tool="true" weight="0.32094595" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="REST Client" order="12" weight="0.6475548" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32956383" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32094595" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6475548" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40439934" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248731" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40270728" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23667206" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4957699" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39737275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.23667206" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32840723" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49353796" weight="0.40439934" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39737275" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503231" side_tool="true" weight="0.32094595" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3248731" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49676898" weight="0.40270728" />
+      <window_info anchor="bottom" id="Docker" order="10" weight="0.4957699" />
+      <window_info anchor="bottom" id="REST Client" order="11" weight="0.6475548" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32956383" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add ignore" />
@@ -749,129 +746,69 @@
     <MESSAGE value="add redis pool and mongodb pool all cluster" />
     <MESSAGE value="add iris example" />
     <MESSAGE value="etcd" />
-    <option name="LAST_COMMIT_MESSAGE" value="etcd" />
+    <MESSAGE value="add tvmq" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tvmq" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="2" />
-    </breakpoint-manager>
-    <watches-manager />
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>response</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response.Succeeded</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>kvc</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gr</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gr.Kvs[0].CreateRevision</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gr.Kvs[0].Value</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gr.Kvs[0].Key</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gr.Kvs[0]</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gr.Kvs</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cronexpr/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webserver/webs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/websocket/connectionlist/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1901">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/websocket/chat/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-913">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/websocket/secure/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3188">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/web/controllers/user_controller.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3019">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/repositories/user_repository.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/web/controllers/users_controller.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1702">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1563">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/mvc/login/services/user_service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1357">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/io/io.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="325" column="5" lean-forward="false" selection-start-line="325" selection-start-column="5" selection-end-line="325" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/crypto/aes/cipher.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/crypto/cipher/cbc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="99" column="5" lean-forward="false" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/go/src/crypto/cipher/cipher.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/iris_examples/hero/sessions/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-294" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/iris_examples/routing/basic/main.go">
@@ -883,85 +820,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iris_examples/http_request/read-json/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1251">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-1251" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/redispool/redispoll.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-5" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/redispool/use/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/mediocregopher/radix.v3/pool.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="204" column="5" lean-forward="false" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
+          <caret line="204" column="5" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/mediocregopher/radix.v3/radix.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1791">
-          <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="48" />
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/mediocregopher/radix.v3/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1979">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-1979" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/mediocregopher/radix.v3/scanner.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2639">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-2639" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/redispool/cluster/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mapstruct/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/dgrijalva/jwt-go/token.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/dgrijalva/jwt-go/claims.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/go/src/encoding/hex/hex.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="95" column="5" lean-forward="false" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -975,22 +900,20 @@
     <entry file="file://$PROJECT_DIR$/web/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-169">
-          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mongopool/mongopoll.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
-          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mongo/mongo.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-596">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-596" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mongopool/use/main.go">
@@ -1003,130 +926,186 @@
     <entry file="file://$PROJECT_DIR$/aes-128-cbc/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/channel/channel.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1978">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-1978" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/channel3/2/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/channel3/1/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sjson/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/go/src/sort/sort.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
-          <caret line="215" column="5" lean-forward="false" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+          <caret line="215" column="5" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sort/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/client.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
-          <caret line="102" column="5" lean-forward="false" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
-          <folding />
+          <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/maintenance.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
-          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-          <folding />
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/kv.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
-          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-          <folding />
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/watch.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
-          <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-          <folding />
+          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/lease.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
-          <caret line="135" column="4" lean-forward="false" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
-          <folding />
+          <caret line="135" column="4" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/compare.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding />
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gobyexample/examples/basic-authentication/basic-authentication.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1006" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/lib/rdone/redis.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apidoc.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emoji/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-327" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/config/dev.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/go/src/time/time.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="630" column="18" selection-start-line="630" selection-start-column="5" selection-end-line="630" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/txn.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
-          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-          <folding />
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-490" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/runtime/proc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="200" selection-start-line="200" selection-end-line="200" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/runtime/asm_amd64.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="1332" selection-start-line="1332" selection-end-line="1332" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/etcdDemo/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1280">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="408">
+          <caret line="111" column="1" selection-start-line="111" selection-start-column="1" selection-end-line="111" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gobyexample/examples/basic-authentication/basic-authentication.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1006">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/Queue/Queue.go">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tvmq/lib/rdone/redis.go">
+    <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/Array/Array.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="52">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#15#71#0" expanded="true" />
+            <element signature="e#15#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/ArrayQueue/ArrayQueue.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/LoopQueue/LoopQueue.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1814">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#14#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
