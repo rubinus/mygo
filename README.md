@@ -3,6 +3,8 @@ study go
 
 godoc -http :6060
 
+add 
+
 // 查看测试代码覆盖率
 // go test -coverprofile=c.out
 // go tool cover -html=c.out

@@ -1,135 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="812fed44-87f0-453c-b46f-ed9eb1142175" name="Default" comment="add tvmqadd tvmq">
-      <change afterPath="$PROJECT_DIR$/emoji/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="812fed44-87f0-453c-b46f-ed9eb1142175" name="Default" comment="add Play-with-Data-Structures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/02-Create-Our-Own-Array/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/02-Create-Our-Own-Array/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/03-Add-Element-in-Array/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/03-Add-Element-in-Array/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/04-Query-and-Update-Element/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/04-Query-and-Update-Element/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/05-Contain-Find-and-Remove/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/05-Contain-Find-and-Remove/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/06-Generic-Data-Structure/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/06-Generic-Data-Structure/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/07-Dynamic-Array/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/07-Dynamic-Array/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/09-Amortized-Time-Complexity/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/02-Arrays/09-Amortized-Time-Complexity/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/02-Array-Stack/src/ArrayStack/ArrayStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/02-Array-Stack/src/ArrayStack/ArrayStack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/02-Array-Stack/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/02-Array-Stack/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/04-More-about-Leetcode/src/ArrayStack/ArrayStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/04-More-about-Leetcode/src/ArrayStack/ArrayStack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/04-More-about-Leetcode/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/04-More-about-Leetcode/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/05-Array-Queue/src/ArrayQueue/ArrayQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/05-Array-Queue/src/ArrayQueue/ArrayQueue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/06-Loop-Queue/src/ArrayQueue/ArrayQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/06-Loop-Queue/src/ArrayQueue/ArrayQueue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/06-Loop-Queue/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/06-Loop-Queue/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/ArrayQueue/ArrayQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/ArrayQueue/ArrayQueue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/08-Queues-Comparison/src/ArrayQueue/ArrayQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/08-Queues-Comparison/src/ArrayQueue/ArrayQueue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/08-Queues-Comparison/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/08-Queues-Comparison/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/04-Query-and-Update-in-LinkedList/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/04-Query-and-Update-in-LinkedList/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/05-Remove-Element-in-LinkedList/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/05-Remove-Element-in-LinkedList/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/ArrayStack/ArrayStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/ArrayStack/ArrayStack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/LinkedListStack/LinkedListStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/LinkedListStack/LinkedListStack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/06-Implement-Stack-in-LinkedList/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/07-Implement-Queue-in-LinkedList/src/ArrayQueue/ArrayQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/07-Implement-Queue-in-LinkedList/src/ArrayQueue/ArrayQueue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/07-Implement-Queue-in-LinkedList/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/04-Linked-List/07-Implement-Queue-in-LinkedList/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution2/Solution2.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution2/Solution2.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution3/Solution3.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/01-Linked-List-Problems-in-Leetcode/src/Solution3/Solution3.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution2/Solution2.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution2/Solution2.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution3/Solution3.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/Solution3/Solution3.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/02-Test-Your-LinkedList-Solution/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution2/Solution2.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution2/Solution2.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution3/Solution3.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/Solution3/Solution3.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/03-Recursion-Basics/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution2/Solution2.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution2/Solution2.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution3/Solution3.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution3/Solution3.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution4/Solution4.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/Solution4/Solution4.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/04-LinkedList-and-Recursion/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/06-Debug-Recursive-Solution/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/06-Debug-Recursive-Solution/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/Optional-01-Recursive-LinkedList/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/Optional-01-Recursive-LinkedList/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/Optional-01-Recursive-LinkedList/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/05-Recursion/Optional-01-Recursive-LinkedList/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/04-Improved-Add-Elements-in-BST/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/04-Improved-Add-Elements-in-BST/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/06-PreOrder-Traverse-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/06-PreOrder-Traverse-in-BST/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/07-InOrder-and-PostOrder-Traverse-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/07-InOrder-and-PostOrder-Traverse-in-BST/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/ArrayStack/ArrayStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/ArrayStack/ArrayStack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/BST/BST.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/BST/BST.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/09-Non-Recursion-Preorder-Traverse-in-BST/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/10-Level-Traverse-in-BST/src/BST/BST.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/10-Level-Traverse-in-BST/src/BST/BST.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/10-Level-Traverse-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/10-Level-Traverse-in-BST/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/11-Remove-Min-and-Max-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/11-Remove-Min-and-Max-in-BST/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/12-Remove-Elements-in-BST/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/06-Binary-Search-Tree/12-Remove-Elements-in-BST/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/01-Set-Basics-and-BSTSet/src/BSTSet/BSTSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/01-Set-Basics-and-BSTSet/src/BSTSet/BSTSet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/01-Set-Basics-and-BSTSet/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/01-Set-Basics-and-BSTSet/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/02-LinkedListSet/src/LinkedListSet/LinkedListSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/02-LinkedListSet/src/LinkedListSet/LinkedListSet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/02-LinkedListSet/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/02-LinkedListSet/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/BSTSet/BSTSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/BSTSet/BSTSet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/LinkedListSet/LinkedListSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/LinkedListSet/LinkedListSet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/03-Time-Complexity-of-Set/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/04-TreeSet-and-Set-Problems-in-Leetcode/src/BSTSetSolution/BSTSetSolution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/04-TreeSet-and-Set-Problems-in-Leetcode/src/BSTSetSolution/BSTSetSolution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/04-TreeSet-and-Set-Problems-in-Leetcode/src/LinkedListSetSolution/LinkedListSetSolution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/04-TreeSet-and-Set-Problems-in-Leetcode/src/LinkedListSetSolution/LinkedListSetSolution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/06-LinkedListMap/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/06-LinkedListMap/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/06-LinkedListMap/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/06-LinkedListMap/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/07-BSTMap/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/07-BSTMap/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/08-More-about-Map/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/08-More-about-Map/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/BSTMapSolution350/BSTMapSolution350.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/BSTMapSolution350/BSTMapSolution350.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/BSTSetSolution349/BSTSetSolution349.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/BSTSetSolution349/BSTSetSolution349.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/LinkedListMapSolution350/LinkedListMapSolution350.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/07-Set-and-Map/09-Leetcode-Problems-about-Map-and-Set/src/LinkedListMapSolution350/LinkedListMapSolution350.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/02-Heap-Basics/src/MaxHeap/MaxHeap.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/02-Heap-Basics/src/MaxHeap/MaxHeap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/03-Add-and-Sift-Up-in-Heap/src/MaxHeap/MaxHeap.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/03-Add-and-Sift-Up-in-Heap/src/MaxHeap/MaxHeap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/MaxHeap/MaxHeap.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/MaxHeap/MaxHeap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/04-Extract-and-Sift-Down-in-Heap/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/MaxHeap/MaxHeap.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/MaxHeap/MaxHeap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/MaxHeap/MaxHeap.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/MaxHeap/MaxHeap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/PriorityQueue/PriorityQueue.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/PriorityQueue/PriorityQueue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/06-Priority-Queue/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/07-Priority-Queue-Problems-in-Leetcode/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/08-Heap-and-Priority-Queue/07-Priority-Queue-Problems-in-Leetcode/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/03-Building-Segment-Tree/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/03-Building-Segment-Tree/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/04-Query-in-Segment-Tree/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/04-Query-in-Segment-Tree/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/05-Segment-Tree-Problems-in-Leetcode/src/NumArray/NumArray.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/05-Segment-Tree-Problems-in-Leetcode/src/NumArray/NumArray.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/05-Segment-Tree-Problems-in-Leetcode/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/05-Segment-Tree-Problems-in-Leetcode/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/06-Update-Single-Element-in-Segment-Tree/src/NumArray/NumArray.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/06-Update-Single-Element-in-Segment-Tree/src/NumArray/NumArray.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/06-Update-Single-Element-in-Segment-Tree/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/09-Segment-Tree/06-Update-Single-Element-in-Segment-Tree/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/03-Searching-in-Trie/src/BSTSet/BSTSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/03-Searching-in-Trie/src/BSTSet/BSTSet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/03-Searching-in-Trie/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/03-Searching-in-Trie/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/04-Prefix-in-Trie/src/BSTSet/BSTSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/04-Prefix-in-Trie/src/BSTSet/BSTSet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/04-Prefix-in-Trie/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/04-Prefix-in-Trie/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/BSTSet/BSTSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/BSTSet/BSTSet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/Trie/Trie.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/Trie/Trie.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/10-Trie/08-Trie-Using-HashMap-and-Array/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/02-Quick-Find/src/LinkedListSet/LinkedListSet.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/02-Quick-Find/src/LinkedListSet/LinkedListSet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/02-Quick-Find/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/02-Quick-Find/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/03-Quick-Union/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/03-Quick-Union/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/04-Optimized-by-Size/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/04-Optimized-by-Size/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/05-Optimized-by-Rank/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/05-Optimized-by-Rank/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/06-Path-Compression/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/06-Path-Compression/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/07-More-about-Union-Find/src/Solution/Solution.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/07-More-about-Union-Find/src/Solution/Solution.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/07-More-about-Union-Find/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/11-Union-Find/07-More-about-Union-Find/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/02-Calculating-Balance-Factor/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/02-Calculating-Balance-Factor/src/AVLTree/AVLTree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/03-Checking-Balancing-and-Binary-Search-Property/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/03-Checking-Balancing-and-Binary-Search-Property/src/AVLTree/AVLTree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/04-Rotation-Operations/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/04-Rotation-Operations/src/AVLTree/AVLTree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/05-The-Implementation-of-Left-Rotation-and-Right-Rotation/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/05-The-Implementation-of-Left-Rotation-and-Right-Rotation/src/AVLTree/AVLTree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/06-LR-and-RL/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/06-LR-and-RL/src/AVLTree/AVLTree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/06-LR-and-RL/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/06-LR-and-RL/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/07-Remove-Elements-in-AVL-Tree/src/AVLTree/AVLTree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/07-Remove-Elements-in-AVL-Tree/src/AVLTree/AVLTree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/07-Remove-Elements-in-AVL-Tree/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/12-AVL-Tree/07-Remove-Elements-in-AVL-Tree/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Play-with-Data-Structures/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Play-with-Data-Structures/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etcdDemo/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/etcdDemo/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobyexample" beforeDir="false" afterPath="$PROJECT_DIR$/gobyexample" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobyexample/examples/atomic-counters/atomic-counters.go" beforeDir="false" afterPath="$PROJECT_DIR$/gobyexample/examples/atomic-counters/atomic-counters.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobyexample/examples/channel-directions/channel-directions.go" beforeDir="false" afterPath="$PROJECT_DIR$/gobyexample/examples/channel-directions/channel-directions.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobyexample/examples/exit/exit.go" beforeDir="false" afterPath="$PROJECT_DIR$/gobyexample/examples/exit/exit.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobyexample/tools/build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobyexample/tools/build-loop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobyexample/tools/deploy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobyexample/tools/format" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobyexample/tools/generate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobyexample/tools/measure" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobyexample/tools/serve" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -164,14 +38,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/LoopQueue/LoopQueue.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1814">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="336">
+              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
               <folding>
                 <element signature="e#14#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="104">
+                <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="130">
+                <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -214,7 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>topics</find>
       <find>MaxLenStringNoRepSubstr</find>
       <find>pollInterval</find>
       <find>MoveZero</find>
@@ -244,6 +141,7 @@
       <find>todo</find>
       <find>5</find>
       <find>2379</find>
+      <find>Play-with-Data-Structures</find>
     </findStrings>
     <replaceStrings>
       <replace>mystd</replace>
@@ -253,15 +151,17 @@
       <replace>WithCollection</replace>
       <replace>(dbname,userCollName</replace>
       <replace>&quot;</replace>
+      <replace>mygo/Play-with-Data-Structures</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/crawler</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/Play-with-Data-Structures</dir>
     </dirStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Play-with-Data-Structures" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="urls">
@@ -273,9 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/morerequest/main/main.go" />
-        <option value="$PROJECT_DIR$/morerequest/do/deal_test.go" />
-        <option value="$PROJECT_DIR$/crawler/fetcher/fetcher.go" />
         <option value="$PROJECT_DIR$/gobyexample/examples/signals/signals.go" />
         <option value="$PROJECT_DIR$/gobyexample/examples/exit/exit.go" />
         <option value="$PROJECT_DIR$/interface/notvalue/main.go" />
@@ -324,6 +221,9 @@
         <option value="$PROJECT_DIR$/emoji/main.go" />
         <option value="$PROJECT_DIR$/etcdDemo/main.go" />
         <option value="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/ArrayQueue/ArrayQueue.go" />
+        <option value="$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/LoopQueue/LoopQueue.go" />
+        <option value="$PROJECT_DIR$/Play-with-Data-Structures/README.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -671,8 +571,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="726" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" order="0" sideWeight="0.49140048" visible="true" weight="0.25201938" />
+      <window_info active="true" id="Project" order="0" sideWeight="0.49140048" visible="true" weight="0.25201938" />
       <window_info id="Structure" order="1" weight="0.24959612" />
       <window_info id="Favorites" order="2" sideWeight="0.5085995" side_tool="true" weight="0.24394184" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -683,9 +584,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32730263" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.4940978" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.31423897" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49676898" weight="0.3946037" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.503231" side_tool="true" weight="0.32094595" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49676898" weight="0.31423897" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4951535" visible="true" weight="0.39443535" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5048465" side_tool="true" weight="0.39443535" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="REST Client" order="12" weight="0.6475548" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -722,7 +623,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add ignore" />
     <MESSAGE value="add time.after" />
     <MESSAGE value="add rpcdemo" />
     <MESSAGE value="test kafka" />
@@ -747,7 +647,8 @@
     <MESSAGE value="add iris example" />
     <MESSAGE value="etcd" />
     <MESSAGE value="add tvmq" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tvmq" />
+    <MESSAGE value="add Play-with-Data-Structures" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Play-with-Data-Structures" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -799,18 +700,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/go/src/crypto/cipher/cipher.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_examples/hero/sessions/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/iris_examples/routing/basic/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -1102,11 +991,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/03-Stacks-and-Queues/07-Implementation-of-Loop-Queue/src/LoopQueue/LoopQueue.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1814">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="336">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
           <folding>
             <element signature="e#14#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Play-with-Data-Structures/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="104">
+            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="130">
+            <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
