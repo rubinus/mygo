@@ -14,7 +14,7 @@ func main() {
 	fmt.Println("Pride and Prejudice")
 
 	projectPath, _ := os.Getwd()
-	currentPath := filepath.Join(projectPath, "10-Trie", "03-Searching-in-Trie")
+	currentPath := filepath.Join(projectPath, "data-str/10-Trie", "03-Searching-in-Trie")
 
 	filename := filepath.Join(currentPath, "pride-and-prejudice.txt")
 	words := FileOperation.ReadFile(filename)
@@ -40,7 +40,7 @@ func main() {
 
 	trie := Trie.Constructor()
 	for _, word := range words {
-		trie.Add(word)
+		trie.Add(word, 0)
 	}
 	for _, word := range words {
 		trie.Contains(word)
@@ -50,4 +50,12 @@ func main() {
 
 	fmt.Println("Total different words:", trie.GetSize())
 	fmt.Println("BSTSet:", diffTime)
+
+	obj := Trie.Constructor()
+	obj.Add("apple", 3)
+	fmt.Println(obj.Sum("ap"))
+
+	obj.Add("app", 2)
+	fmt.Println(obj.Sum("ap"))
+
 }

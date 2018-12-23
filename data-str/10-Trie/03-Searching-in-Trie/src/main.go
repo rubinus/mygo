@@ -14,7 +14,7 @@ func main() {
 	fmt.Println("Pride and Prejudice")
 
 	projectPath, _ := os.Getwd()
-	currentPath := filepath.Join(projectPath, "10-Trie", "03-Searching-in-Trie")
+	currentPath := filepath.Join(projectPath, "data-str/10-Trie", "03-Searching-in-Trie")
 
 	filename := filepath.Join(currentPath, "pride-and-prejudice.txt")
 	words := FileOperation.ReadFile(filename)

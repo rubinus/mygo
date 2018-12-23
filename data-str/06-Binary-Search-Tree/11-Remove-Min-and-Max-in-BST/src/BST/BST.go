@@ -212,7 +212,7 @@ func (t *BST) removeMin(n *node) *node {
 	return n
 }
 
-// 从二分搜索树中删除最小值所在的节点，返回最小值
+// 从二分搜索树中删除最大值所在的节点，返回最大值
 func (t *BST) RemoveMax() int {
 	// 获得最小值
 	ret := t.Maximum()
@@ -220,7 +220,7 @@ func (t *BST) RemoveMax() int {
 	return ret
 }
 
-// 删除以 node 为根的二分搜索树中的最小节点
+// 删除以 node 为根的二分搜索树中的最大节点
 // 返回删除节点后新的二分搜索树的根
 func (t *BST) removeMax(n *node) *node {
 	if n.right == nil {
