@@ -1,4 +1,4 @@
-package main
+package AVLTree
 
 import (
 	"bytes"
@@ -182,8 +182,8 @@ func (this *AVLTree) leftRotate(y *node) *node {
 	y.right = T2
 
 	// 更新 height
-	x.height = int(math.Max(float64(this.getHeight(y.left)), float64(this.getHeight(y.right)))) + 1
-	y.height = int(math.Max(float64(this.getHeight(x.left)), float64(this.getHeight(x.right)))) + 1
+	y.height = int(math.Max(float64(this.getHeight(y.left)), float64(this.getHeight(y.right)))) + 1
+	x.height = int(math.Max(float64(this.getHeight(x.left)), float64(this.getHeight(x.right)))) + 1
 
 	return x
 }
@@ -213,9 +213,6 @@ func (this *AVLTree) add(n *node, key interface{}, val interface{}) *node {
 	n.height = 1 + int(math.Max(float64(this.getHeight(n.left)), float64(this.getHeight(n.right))))
 	// 计算平衡因子
 	balanceFactor := this.getBalanceFactor(n)
-	//if math.Abs(float64(balanceFactor)) > 1 {
-	//	fmt.Println("unbalanced: ", balanceFactor)
-	//}
 	// 平衡维护
 	// LL
 	if balanceFactor > 1 && this.getBalanceFactor(n.left) >= 0 {
@@ -268,9 +265,7 @@ func (this *AVLTree) remove(n *node, key interface{}) *node {
 			n.right = nil
 			this.size--
 			retNode = rightNode
-		} else
-		// 待删除节点右子树为空的情况
-		if n.right == nil {
+		} else if n.right == nil { // 待删除节点右子树为空的情况
 			leftNode := n.left
 			n.left = nil
 			this.size--
@@ -385,7 +380,7 @@ func generateDepthString(depth int) string {
 }
 
 func main() {
-	filename, _ := filepath.Abs("12-AVL-Tree/02-Calculating-Balance-Factor/pride-and-prejudice.txt")
+	filename, _ := filepath.Abs("data-str/12-AVL-Tree/02-Calculating-Balance-Factor/pride-and-prejudice.txt")
 
 	AVL := Constructor()
 
@@ -406,10 +401,15 @@ func main() {
 	fmt.Println("is BST:", AVL.IsBST())
 	fmt.Println("is Balanced", AVL.IsBalanced())
 
-	//for _, word := range words {
-	//	AVL.Remove(word)
-	//	if !AVL.IsBST() || !AVL.IsBalanced() {
-	//		panic("AVL remove wrong")
-	//	}
-	//}
+	fmt.Println("avl size", AVL.GetSize())
+	for _, word := range words {
+		AVL.Remove(word)
+		//if AVL.GetSize()%10 == 5 {
+		//	fmt.Println(AVL.GetSize())
+		//}
+		if !AVL.IsBST() || !AVL.IsBalanced() {
+			panic("AVL remove wrong")
+		}
+	}
+	fmt.Println("avl size", AVL.GetSize())
 }

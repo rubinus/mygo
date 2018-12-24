@@ -5,7 +5,7 @@ package UnionFind5
 // 这也是我们的rank不叫height或者depth的原因, 他只是作为比较的一个标准
 type UnionFind5 struct {
 	parent []int // parent[i]表示第一个元素所指向的父节点
-	rank   []int // rank[i]表示以i为根的集合中元素个数
+	rank   []int // rank[i]表示以i为根的树的高度
 }
 
 // 构造函数

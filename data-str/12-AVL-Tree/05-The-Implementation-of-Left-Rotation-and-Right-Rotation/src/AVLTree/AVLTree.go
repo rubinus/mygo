@@ -183,8 +183,8 @@ func (this *AVLTree) leftRotate(y *node) *node {
 	y.right = T2
 
 	// 更新 height
-	x.height = int(math.Max(float64(this.getHeight(y.left)), float64(this.getHeight(y.right)))) + 1
-	y.height = int(math.Max(float64(this.getHeight(x.left)), float64(this.getHeight(x.right)))) + 1
+	y.height = int(math.Max(float64(this.getHeight(y.left)), float64(this.getHeight(y.right)))) + 1
+	x.height = int(math.Max(float64(this.getHeight(x.left)), float64(this.getHeight(x.right)))) + 1
 
 	return x
 }
@@ -361,7 +361,7 @@ func generateDepthString(depth int) string {
 }
 
 func main() {
-	filename, _ := filepath.Abs("12-AVL-Tree/02-Calculating-Balance-Factor/pride-and-prejudice.txt")
+	filename, _ := filepath.Abs("data-str/12-AVL-Tree/02-Calculating-Balance-Factor/pride-and-prejudice.txt")
 
 	AVL := Constructor()
 

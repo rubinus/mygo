@@ -36,8 +36,8 @@ func main() {
 	//m := 10000
 
 	// UnionFind2 慢于 UnionFind1, 但UnionFind3最快
-	size := 10000000
-	m := 10000000
+	size := 10000
+	m := 10000
 
 	//uf1 := UnionFind1.Constructor(size)
 	//fmt.Println(testUF(uf1, m))

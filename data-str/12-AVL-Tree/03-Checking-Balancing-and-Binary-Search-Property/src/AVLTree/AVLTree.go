@@ -309,7 +309,7 @@ func generateDepthString(depth int) string {
 }
 
 func main() {
-	filename, _ := filepath.Abs("12-AVL-Tree/02-Calculating-Balance-Factor/pride-and-prejudice.txt")
+	filename, _ := filepath.Abs("data-str/12-AVL-Tree/02-Calculating-Balance-Factor/pride-and-prejudice.txt")
 
 	AVL := Constructor()
 
