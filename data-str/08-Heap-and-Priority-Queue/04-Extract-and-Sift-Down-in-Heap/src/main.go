@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	n := 1000000
+	n := 100000
 
 	maxHeap := MaxHeap.GetMaxHeap()
 	rand.Seed(time.Now().Unix())
@@ -19,10 +19,10 @@ func main() {
 	}
 
 	arr := make([]int, n)
-	fmt.Println(arr)
 	for i := 0; i < n; i++ {
 		arr[i] = maxHeap.ExtractMax().(int)
 	}
+	fmt.Println(arr)
 
 	for i := 1; i < n; i++ {
 		if arr[i-1] < arr[i] {
