@@ -1,6 +1,6 @@
 package AVLSet
 
-import "data-str/12-AVL-Tree/08-Map-and-Set-in-AVL-Tree/src/AVLTree"
+import "mygo/data-str/12-AVL-Tree/08-Map-and-Set-in-AVL-Tree/src/AVLTree"
 
 type AVLSet struct {
 	avl AVLTree.AVLTree
