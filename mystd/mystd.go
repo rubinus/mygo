@@ -1,6 +1,7 @@
 package mystd
 
 import (
+	"math"
 	"math/rand"
 	"strings"
 )
@@ -161,6 +162,30 @@ func MaxLenStringNoRepSubstr(str string) int {
 	return maxLen
 }
 
+func LengthOfLongestSubstring(s string) int {
+	if len(s) == 0 {
+		return 0
+	}
+	i, j, max := 0, 1, 0
+	for j < len(s) {
+		x := strings.IndexByte(s[i:j], s[j])
+		if x != -1 {
+			max = Max(max, j-i)
+			i = i + x + 1
+		}
+		j++
+	}
+	max = Max(max, j-i)
+	return max
+}
+
+func Max(i, j int) int {
+	if i > j {
+		return i
+	}
+	return j
+}
+
 /* 二分查找主要特点: O(logN)
 1: 必须在有序数组中取中间位置，循环不变量：[l...r]
 2: 分别比较中间，左，右区间是否有这个数
@@ -194,6 +219,47 @@ func BinarySearchDG(arr []int, l, r, target int) int {
 	} else {
 		return BinarySearchDG(arr, mid+1, r, target)
 	}
+}
+
+func SortColors(nums []int) []int {
+	zero, two := -1, len(nums)
+	for i := 0; i < two; {
+		if nums[i] == 1 {
+			i++
+		} else if nums[i] == 2 {
+			two--
+			nums[i], nums[two] = nums[two], nums[i]
+
+		} else {
+			zero++
+			nums[zero], nums[i] = nums[i], nums[zero]
+			i++
+		}
+	}
+	return nums
+}
+
+//长度最小的子数组
+func MinSubArrayLen(s int, nums []int) int {
+	l, r := 0, -1 //准备滑动窗口
+	sum := 0
+	res := len(nums) + 1
+	for l < len(nums) {
+		if r+1 < len(nums) && s > sum { //右边界右移扩大
+			r++
+			sum += nums[r]
+		} else { //左边界右移缩小
+			sum -= nums[l]
+			l++
+		}
+		if sum >= s {
+			res = int(math.Min((float64(res)), float64(r-l+1)))
+		}
+	}
+	if res == len(nums)+1 {
+		return 0
+	}
+	return res
 }
 
 /* 选择排序主要特点: O(n^2)，交换次数最少，稳定排序

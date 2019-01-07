@@ -122,6 +122,72 @@ func TestBinarySearchDG(t *testing.T) {
 	}
 }
 
+func TestSortColors(t *testing.T) {
+	tests := []struct {
+		input  []int
+		output []int
+	}{
+		{
+			[]int{0, 1, 2, 1, 2, 2, 2, 1, 1, 1, 1, 0, 1, 0, 0},
+			[]int{0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2},
+		},
+	}
+	for _, v := range tests {
+		SortColors(v.input)
+		if !reflect.DeepEqual(v.input, v.output) {
+			t.Error(v.input, v.output)
+		} else {
+			t.Log("yes", v.input, v.output)
+		}
+	}
+}
+
+func TestMinSubArrayLen(t *testing.T) {
+	tests := []struct {
+		input  []int
+		s      int
+		output int
+	}{
+		{
+			[]int{2, 3, 1, 2, 4, 3},
+			7,
+			2,
+		},
+	}
+	for _, v := range tests {
+		i := MinSubArrayLen(v.s, v.input)
+		if i == v.output {
+			fmt.Println("通过")
+		} else {
+			fmt.Println("没通过", v.output)
+		}
+	}
+}
+
+func TestLengthOfLongestSubstring(t *testing.T) {
+	tests := []struct {
+		input  string
+		output int
+	}{
+		{
+			"abcabcbb",
+			3,
+		},
+		{
+			"bbbbbb",
+			1,
+		},
+	}
+	for _, v := range tests {
+		i := LengthOfLongestSubstring(v.input)
+		if i == v.output {
+			fmt.Println("通过")
+		} else {
+			fmt.Println("没通过", v.output)
+		}
+	}
+}
+
 func TestStrReverse(t *testing.T) {
 	s := StrReverse("ABC")
 	fmt.Println(s)
