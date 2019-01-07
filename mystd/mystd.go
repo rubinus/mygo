@@ -192,7 +192,7 @@ func BinarySearchDG(arr []int, l, r, target int) int {
 	} else if target < arr[mid] {
 		return BinarySearchDG(arr, l, mid-1, target)
 	} else {
-		return BinarySearchDG(arr, r, mid+1, target)
+		return BinarySearchDG(arr, mid+1, r, target)
 	}
 }
 

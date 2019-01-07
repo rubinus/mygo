@@ -113,11 +113,11 @@ func TestBinarySearchDG(t *testing.T) {
 	}{
 		{
 			[]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
-			0,
+			10,
 		},
 	}
 	for _, v := range tests {
-		i := BinarySearchDG(v.input, 0, len(v.input), v.output)
+		i := BinarySearchDG(v.input, 0, len(v.input)-1, v.output)
 		fmt.Println(i)
 	}
 }
