@@ -1,7 +1,9 @@
 package mystd
 
 import (
+	"fmt"
 	"reflect"
+	"sort"
 	"testing"
 )
 
@@ -102,6 +104,31 @@ func TestFib(t *testing.T) {
 			t.Log("yes", result, v.output)
 		}
 	}
+}
+
+func TestBinarySearchDG(t *testing.T) {
+	tests := []struct {
+		input  []int
+		output int
+	}{
+		{
+			[]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+			0,
+		},
+	}
+	for _, v := range tests {
+		i := BinarySearchDG(v.input, 0, len(v.input), v.output)
+		fmt.Println(i)
+	}
+}
+
+func TestStrReverse(t *testing.T) {
+	s := StrReverse("ABC")
+	fmt.Println(s)
+
+	ss := []string{"a", "z", "w"}
+	sort.Strings(ss)
+	fmt.Println(ss)
 }
 
 func TestSelectSort(t *testing.T) {

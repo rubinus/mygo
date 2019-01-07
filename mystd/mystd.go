@@ -2,6 +2,7 @@ package mystd
 
 import (
 	"math/rand"
+	"strings"
 )
 
 /* 二叉树
@@ -72,11 +73,12 @@ func Fib2(n int) int { //速度太慢不可取
 }
 
 func StrReverse(str string) string {
-	lenStr := len(str)
+	s := strings.Split(str, "")
+	lenStr := len(s)
 	for i := 0; i < lenStr/2; i++ {
-
+		s[i], s[lenStr-1-i] = s[lenStr-1-i], s[i]
 	}
-	return ""
+	return strings.Join(s, "")
 }
 
 /* 零移动
@@ -178,6 +180,20 @@ func BinarySearch(arr []int, target int) int {
 		}
 	}
 	return -1
+}
+
+func BinarySearchDG(arr []int, l, r, target int) int {
+	if l > r {
+		return -1
+	}
+	mid := l + (r-l)/2
+	if target == arr[mid] {
+		return arr[mid]
+	} else if target < arr[mid] {
+		return BinarySearchDG(arr, l, mid-1, target)
+	} else {
+		return BinarySearchDG(arr, r, mid+1, target)
+	}
 }
 
 /* 选择排序主要特点: O(n^2)，交换次数最少，稳定排序
