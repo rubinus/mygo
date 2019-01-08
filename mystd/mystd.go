@@ -186,6 +186,20 @@ func Max(i, j int) int {
 	return j
 }
 
+func ContainsNearbyDuplicate(nums []int, k int) bool {
+	m := make(map[int]int)
+	for i, v := range nums {
+		if _, ok := m[v]; ok {
+			return true
+		}
+		m[v]++
+		if len(m) == k+1 {
+			delete(m, nums[i-k])
+		}
+	}
+	return false
+}
+
 /* 二分查找主要特点: O(logN)
 1: 必须在有序数组中取中间位置，循环不变量：[l...r]
 2: 分别比较中间，左，右区间是否有这个数
