@@ -276,6 +276,91 @@ func MinSubArrayLen(s int, nums []int) int {
 	return res
 }
 
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
+func reverseList(head *ListNode) *ListNode {
+	var pre *ListNode
+	for head != nil {
+		pre, head, head.Next = head, head.Next, pre
+	}
+	return pre
+}
+
+func removeElements(head *ListNode, val int) *ListNode {
+	var dummyHead = &ListNode{}
+	dummyHead.Next = head
+	cur := dummyHead
+	for cur.Next != nil {
+		if cur.Next.Val == val {
+			cur.Next = cur.Next.Next
+		} else {
+			cur = cur.Next
+		}
+	}
+	return dummyHead.Next
+}
+
+func deleteNode(node *ListNode) {
+	if node == nil {
+		return
+	}
+	if node.Next == nil {
+		node = nil
+		return
+	}
+	node.Val = node.Next.Val
+	node.Next = node.Next.Next
+}
+
+func swapPairs(head *ListNode) *ListNode {
+	var dummyHead = &ListNode{}
+	dummyHead.Next = head
+	p := dummyHead
+	for p.Next != nil && p.Next.Next != nil {
+		node1 := p.Next
+		node2 := node1.Next
+		next := node2.Next
+
+		p.Next = node2
+		node2.Next = node1
+		node1.Next = next
+
+		p = node1
+	}
+	return dummyHead.Next
+}
+
+type DoubleNode struct {
+	Value int
+	// 前一个节点，以下统称为前指针
+	PreNode *DoubleNode
+	// 后一个节点，以下统称为后指针
+	NextNode *DoubleNode
+}
+
+func ReverseDbNode(head *DoubleNode) *DoubleNode {
+	// 先声明两个节点，并将两个节点都置为空
+	var PreNode *DoubleNode
+	var NextNode *DoubleNode
+	// head为头节点，也就是当前节点
+	for head != nil {
+		// 保存第二个节点的值
+		NextNode = head.NextNode
+		// 将当前节点的前指针，指向后一个节点，也就是把头节点的后节点变成前节点，
+		head.PreNode = NextNode
+		// 将当前节点的后指针，指向前一个节点，也就是把头节点的前节点变成后节点。
+		head.NextNode = PreNode
+		// 更新前节点，也就是把头节点变成前节点
+		PreNode = head
+		// 更新当前节点，也就是把后节点变成头节点
+		head = NextNode
+	}
+	return PreNode
+}
+
 /* 选择排序主要特点: O(n^2)，交换次数最少，稳定排序
 1: 在每一轮中, 可以同时找到当前未处理元素的最大值和最小值
 2: 迭代中每一次都查找数组中的最小值，把最小值放到已排序的后面，把最大值放到最右边的前面
