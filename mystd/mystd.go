@@ -3,6 +3,7 @@ package mystd
 import (
 	"math"
 	"math/rand"
+	"strconv"
 	"strings"
 )
 
@@ -42,6 +43,23 @@ func HasPathSum(root *TreeNode, sum int) bool {
 	currentVal := sum - root.Val
 	return HasPathSum(root.Left, currentVal) ||
 		HasPathSum(root.Right, currentVal)
+}
+
+func sumOfLeftLeaves(root *TreeNode) int {
+	sum := 0
+	if root == nil {
+		return sum
+	}
+	if root.Left != nil {
+		if root.Left.Left == nil && root.Left.Right == nil {
+			sum += root.Left.Val + sumOfLeftLeaves(root.Right)
+		} else {
+			return sumOfLeftLeaves(root.Left) + sumOfLeftLeaves(root.Right)
+		}
+	} else {
+		return sumOfLeftLeaves(root.Right)
+	}
+	return sum
 }
 
 /* 斐波那契数列
@@ -313,6 +331,26 @@ func deleteNode(node *ListNode) {
 	}
 	node.Val = node.Next.Val
 	node.Next = node.Next.Next
+}
+
+func binaryTreePaths(root *TreeNode) []string {
+	ss := []string{}
+	if root == nil {
+		return ss
+	}
+	if root.Left == nil && root.Right == nil {
+		ss = append(ss, strconv.Itoa(root.Val))
+		return ss
+	}
+	ls := binaryTreePaths(root.Left)
+	for _, v := range ls {
+		ss = append(ss, strconv.Itoa(root.Val)+"->"+v)
+	}
+	rs := binaryTreePaths(root.Right)
+	for _, v := range rs {
+		ss = append(ss, strconv.Itoa(root.Val)+"->"+v)
+	}
+	return ss
 }
 
 func swapPairs(head *ListNode) *ListNode {
