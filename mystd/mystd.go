@@ -3,6 +3,7 @@ package mystd
 import (
 	"math"
 	"math/rand"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -383,6 +384,22 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 		return lowestCommonAncestor(root.Right, p, q)
 	}
 	return root
+}
+
+func findContentChildren(g []int, s []int) int {
+	sort.Ints(g)
+	sort.Ints(s)
+	res, si, gi := 0, len(s)-1, len(g)-1
+	for si >= 0 && gi >= 0 {
+		if s[si] >= g[gi] {
+			res++
+			si--
+			gi--
+		} else {
+			gi--
+		}
+	}
+	return res
 }
 
 type DoubleNode struct {

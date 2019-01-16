@@ -50,6 +50,17 @@ func TestInvertTree(t *testing.T) {
 	node := TreeNode{1, nil, nil}
 
 	InvertTree(&node)
+	s := []int{2, 3, 100, 0, 88, 2, 33, 99}
+	sort.Ints(s)
+	fmt.Println("默认从小到大", s)
+	sort.Slice(s, func(i, j int) bool {
+		return s[i] < s[j]
+	})
+	fmt.Println(s)
+	sort.Slice(s, func(i, j int) bool {
+		return s[i] > s[j]
+	})
+	fmt.Println("从大到小", s)
 }
 
 func TestHasPathSum(t *testing.T) {
