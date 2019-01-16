@@ -371,6 +371,20 @@ func swapPairs(head *ListNode) *ListNode {
 	return dummyHead.Next
 }
 
+//树中两个指定节点的最近公共祖先
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+	if root == nil {
+		return nil
+	}
+	if p.Val < root.Val && q.Val < root.Val {
+		return lowestCommonAncestor(root.Left, p, q)
+	}
+	if p.Val > root.Val && q.Val > root.Val {
+		return lowestCommonAncestor(root.Right, p, q)
+	}
+	return root
+}
+
 type DoubleNode struct {
 	Value int
 	// 前一个节点，以下统称为前指针
