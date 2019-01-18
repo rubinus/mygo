@@ -22,11 +22,20 @@ func main() {
 	}
 	defer cli.Close()
 
-	//sr, err := cli.Status(context.TODO(), "localhost:2379")
+	//------------
+
+	//sr, err := cli.Status(context.TODO(), "10.20.80.132:2379")
 	//if err != nil {
 	//	fmt.Println(err)
 	//}
 	//fmt.Printf("%+v\n", sr)
+
+	//------------
+	//cli.KV.Put(context.TODO(), "abc", "abcdef")
+	gr, err := cli.KV.Get(context.TODO(), "abc", clientv3.WithPrevKV())
+	fmt.Println("第一次get abc:", gr.Kvs, err, gr.Count)
+
+	//------------
 
 	le, err := cli.Lease.Grant(context.TODO(), 3)
 	//fmt.Println(le.TTL)
@@ -35,6 +44,8 @@ func main() {
 	//fmt.Println(pr, "test etcdDemo ...")
 	//gr, err := cli.KV.Get(context.TODO(), "test")
 	//fmt.Println(gr.Kvs)
+
+	//------------
 
 	ctx, cancelFunc := context.WithCancel(context.TODO())
 	defer cancelFunc()
@@ -45,9 +56,10 @@ func main() {
 		fmt.Println(err, "--keepalive")
 	}
 
-	kvc := clientv3.NewKV(cli)
+	//------------
 
-	gr, err := kvc.Get(context.TODO(), s, clientv3.WithPrevKV())
+	kvc := clientv3.NewKV(cli)
+	gr, err = kvc.Get(context.TODO(), s, clientv3.WithPrevKV())
 	fmt.Println("第一次get:", gr.Kvs, err, gr.Count)
 
 	Watcher(cli, s, lech, le)
@@ -68,8 +80,12 @@ func main() {
 
 func CreateClient() (*clientv3.Client, error) {
 	cli, err := clientv3.New(clientv3.Config{
-		Endpoints:   []string{"localhost:2379"},
-		DialTimeout: 5 * time.Second,
+		Endpoints: []string{
+			"10.20.80.105:2379",
+			"10.20.80.106:2379",
+			"10.20.80.132:2379",
+		},
+		DialTimeout: 10 * time.Second,
 	})
 	if err != nil {
 		fmt.Println(err)
