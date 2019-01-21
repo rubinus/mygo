@@ -27,11 +27,11 @@ func main() {
 	fmt.Printf("Elasticsearch version %s\n", esversion)
 
 	// Create an index
-	_, err = client.CreateIndex("tweets").Do(context.Background())
-	if err != nil {
-		// Handle error
-		panic(err)
-	}
+	//_, err = client.CreateIndex("tweets").Do(context.Background())
+	//if err != nil {
+	//	// Handle error
+	//	panic(err)
+	//}
 
 	// Add a document to the index
 	tweet := Tweet{User: "olivere", Message: "Take Five"}
