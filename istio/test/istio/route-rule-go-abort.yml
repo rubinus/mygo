@@ -1,0 +1,22 @@
+# 故障注入abort
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: service-go
+spec:
+  hosts:
+    - service-go
+  http:
+    - match:
+      fault:
+        abort:
+          percent: 25
+          httpStatus: 500
+      route:
+        - destination:
+            host: service-go
+            subset: v2
+    - route:
+        - destination:
+            host: service-go
+            subset: v1
