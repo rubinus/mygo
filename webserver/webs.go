@@ -30,6 +30,7 @@ func One(w http.ResponseWriter, r *http.Request) {
 func morequrest(w http.ResponseWriter, r *http.Request) {
 	result := do.DoWork(1)
 	var jsonIterator = jsoniter.ConfigCompatibleWithStandardLibrary
+
 	be, _ := jsonIterator.Marshal(result)
 	io.WriteString(w, string(be))
 }
