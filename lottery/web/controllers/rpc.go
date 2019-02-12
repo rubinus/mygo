@@ -9,12 +9,13 @@ import (
 	"io/ioutil"
 	"regexp"
 
+	"mygo/lottery/rpc"
+	"mygo/lottery/services"
+
 	"git.apache.org/thrift.git/lib/go/thrift"
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/core/errors"
 	"github.com/lunny/log"
-	"mygo/lottery/rpc"
-	"mygo/lottery/services"
 )
 
 type RpcController struct {

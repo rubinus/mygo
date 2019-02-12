@@ -4,13 +4,14 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/mvc"
 	"mygo/lottery/comm"
 	"mygo/lottery/conf"
 	"mygo/lottery/models"
 	"mygo/lottery/services"
 	"mygo/lottery/web/utils"
+
+	"github.com/kataras/iris"
+	"github.com/kataras/iris/mvc"
 )
 
 type AdminCodeController struct {

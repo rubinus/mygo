@@ -6,12 +6,13 @@ import (
 	"log"
 	"time"
 
-	"github.com/gomodule/redigo/redis"
 	"mygo/lottery/comm"
 	"mygo/lottery/conf"
 	"mygo/lottery/datasource"
 	"mygo/lottery/models"
 	"mygo/lottery/services"
+
+	"github.com/gomodule/redigo/redis"
 )
 
 func init() {

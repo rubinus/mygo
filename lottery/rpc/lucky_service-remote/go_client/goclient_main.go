@@ -13,9 +13,10 @@ import (
 	"strings"
 	"time"
 
-	"git.apache.org/thrift.git/lib/go/thrift"
 	"mygo/lottery/comm"
 	"mygo/lottery/rpc"
+
+	"git.apache.org/thrift.git/lib/go/thrift"
 )
 
 func Usage() {

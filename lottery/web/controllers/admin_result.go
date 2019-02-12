@@ -3,10 +3,11 @@ package controllers
 import (
 	"fmt"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/mvc"
 	"mygo/lottery/models"
 	"mygo/lottery/services"
+
+	"github.com/kataras/iris"
+	"github.com/kataras/iris/mvc"
 )
 
 type AdminResultController struct {

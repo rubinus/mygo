@@ -5,9 +5,10 @@ import (
 	"log"
 	"sync"
 
+	"mygo/lottery/conf"
+
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/go-xorm/xorm"
-	"mygo/lottery/conf"
 )
 
 var dbLock sync.Mutex

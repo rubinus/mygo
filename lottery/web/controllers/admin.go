@@ -1,9 +1,10 @@
 package controllers
 
 import (
+	"mygo/lottery/services"
+
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/mvc"
-	"mygo/lottery/services"
 )
 
 type AdminController struct {
