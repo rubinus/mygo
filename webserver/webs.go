@@ -1,17 +1,23 @@
 package main
 
 import (
+	"fmt"
 	"io"
+
+	jsoniter "github.com/json-iterator/go"
+
 	"mygo/morerequest/do"
 	"net/http"
-
-	"github.com/json-iterator/go"
 )
 
 func main() {
 	http.HandleFunc("/", One)
 	//http.HandleFunc("/more", morequrest)
+
 	err := http.ListenAndServe(":8080", nil)
+
+	fmt.Print(222)
+
 	if err != nil {
 		panic(err)
 	}
