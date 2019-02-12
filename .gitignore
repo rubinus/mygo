@@ -1,6 +1,7 @@
 .idea/*
 *.xml
 *.iml
-workspace.xml
+.idea/workspace.xml
 node_modules/**/*
 lua/lib/*.so
+*.in
