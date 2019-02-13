@@ -28,10 +28,11 @@ func main() {
 
 	}
 	defer file.Close()
-	source := pkg.RandomSource(50)
+	source := pkg.RandomSource(5000000)
 	writer := bufio.NewWriter(file)
 	pkg.WriterSink(writer, source)
 	writer.Flush()
+	fmt.Println("write done")
 
 	//读
 	open, e := os.Open(filename)
@@ -39,11 +40,14 @@ func main() {
 		panic(e)
 	}
 	defer open.Close()
-	readerSource := pkg.ReaderSource(bufio.NewReader(open))
+	readerSource := pkg.ReaderSource(bufio.NewReader(open), -1)
 	count := 0
 	for v := range readerSource {
 		count++
 		fmt.Println(v)
+		if count >= 10 {
+			break
+		}
 	}
 	fmt.Println(count)
 
