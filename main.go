@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"io"
+	"math/rand"
 	"mygo/mongo"
 	"mygo/mysql"
 	"mygo/redis"
@@ -13,6 +14,12 @@ import (
 )
 
 func main() {
+
+	//rand.Seed(2)
+	for i := 0; i < 10; i++ {
+		fmt.Println(rand.Intn(3))
+	}
+
 	var sb strings.Builder
 	sb.WriteString("bbbbbb")
 	sb.WriteRune('a')

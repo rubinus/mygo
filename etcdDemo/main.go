@@ -81,9 +81,7 @@ func main() {
 func CreateClient() (*clientv3.Client, error) {
 	cli, err := clientv3.New(clientv3.Config{
 		Endpoints: []string{
-			"10.20.80.105:2379",
-			"10.20.80.106:2379",
-			"10.20.80.132:2379",
+			"0.0.0.0:2381",
 		},
 		DialTimeout: 10 * time.Second,
 	})

@@ -1,179 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="812fed44-87f0-453c-b46f-ed9eb1142175" name="Default" comment="add grpc stream">
-      <change afterPath="$PROJECT_DIR$/lottery/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/alipayFu/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/annualMeeting/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/annualMeeting/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/annualMeeting/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/annualMeeting/safe/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/annualMeeting/safe/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/threadsafe/mainArray.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/threadsafe/mainInt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/threadsafe/mainMap.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/ticket/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/wechatShake/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/wechatShake/safe/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/wechatShake/wechat_shake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/weiboRedPacket/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/weiboRedPacket/safe/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/weiboRedPacket/safe2/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/wheel/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/wheel/safe/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/_demo/wheel/safe2/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/bootstrap/bootstrapper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/comm/func_web.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/comm/functions.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/conf/db.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/conf/project.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/conf/redis.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/cron/run_all.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/cron/run_one.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/dao/blackip_dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/dao/code_dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/dao/gift_dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/dao/result_dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/dao/user_dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/dao/userday_dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/datasource/dbhelper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/datasource/rdshelper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/db_lottery.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/models/lt_blackip.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/models/lt_code.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/models/lt_gift.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/models/lt_result.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/models/lt_user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/models/lt_userday.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/models/obj_gift_prize.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/models/obj_loginuser.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/GoUnusedProtection__.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/LuckyService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/Types.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky-consts.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/go_client/goclient_main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/lucky_service-remote.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Base/TBase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/ClassLoader/ThriftClassLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Exception/TApplicationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Exception/TException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Exception/TProtocolException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Exception/TTransportException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Factory/TBinaryProtocolFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Factory/TCompactProtocolFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Factory/TJSONProtocolFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Factory/TProtocolFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Factory/TStringFuncFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Factory/TTransportFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/JSON/BaseContext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/JSON/ListContext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/JSON/LookaheadReader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/JSON/PairContext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/SimpleJSON/CollectionMapKeyException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/SimpleJSON/Context.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/SimpleJSON/ListContext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/SimpleJSON/MapContext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/SimpleJSON/StructContext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/TBinaryProtocol.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/TBinaryProtocolAccelerated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/TCompactProtocol.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/TJSONProtocol.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/TMultiplexedProtocol.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/TProtocol.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/TProtocolDecorator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Protocol/TSimpleJSONProtocol.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Serializer/TBinarySerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Server/TForkingServer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Server/TSSLServerSocket.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Server/TServer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Server/TServerSocket.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Server/TServerTransport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Server/TSimpleServer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/StringFunc/Core.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/StringFunc/Mbstring.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/StringFunc/TStringFunc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/TMultiplexedProcessor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Transport/TBufferedTransport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Transport/TCurlClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Transport/TFramedTransport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Transport/THttpClient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Transport/TMemoryBuffer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Transport/TNullTransport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Transport/TPhpStream.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Transport/TSSLSocket.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Transport/TSocket.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Transport/TSocketPool.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Transport/TTransport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Type/TConstant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Type/TMessageType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/lib/Thrift/Type/TType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/php_client/php_client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/services/blackip_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/services/code_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/services/gift_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/services/result_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/services/user_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/services/userday_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/thrift/lucky.thrift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/admin.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/admin_blackip.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/admin_code.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/admin_gift.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/admin_result.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/admin_user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/index.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/index_lucky.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/index_lucky_11prizelarge.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/index_lucky_3check_userday.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/index_lucky_4check_blackip.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/index_lucky_4check_blakip.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/index_lucky_5check_blackuser.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/index_lucky_6check_ipday.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/index_lucky_9prize.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/index_lucky_api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/controllers/rpc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/middleware/basicauth.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/middleware/identity/identity.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/dist/bootstrap/3.3.7/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/dist/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/dist/jquery-cookie/1.4.1/jquery.cookie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/dist/jquery/1.12.4/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/dist/js/vendor/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/jquery.wheelOfFortune.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/lucky.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/static/css/docs.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/static/css/github.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/static/img/wheel_1/button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/static/img/wheel_1/pointer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/static/img/wheel_1/wheel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/static/js/dome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/static/js/highlight.pack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/public/static/js/jquery.rotate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/routes/routes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/utils/ip_day_lucky.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/utils/locker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/utils/prizedata.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/utils/user_day_lucky.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/viewmodels/view_gift.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/views/admin/blackip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/views/admin/code.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/views/admin/gift.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/views/admin/giftEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/views/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/views/admin/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/views/admin/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/views/admin/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/views/shared/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/web/views/shared/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+    <list default="true" id="812fed44-87f0-453c-b46f-ed9eb1142175" name="Default" comment="add pipeline">
+      <change afterPath="$PROJECT_DIR$/neo4j/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neo4j/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lottery/2/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etcdDemo/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/etcdDemo/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/morerequest/do/deal.go" beforeDir="false" afterPath="$PROJECT_DIR$/morerequest/do/deal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sjson/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sjson/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tvmq/lib/rdcluster/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/tvmq/lib/rdcluster/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tvmq/redispool/redispool.go" beforeDir="false" afterPath="$PROJECT_DIR$/tvmq/redispool/redispool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserver/webs.go" beforeDir="false" afterPath="$PROJECT_DIR$/webserver/webs.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -186,9 +26,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/mygo$go_test_mystd.coverage" NAME="go test mystd Coverage Results" MODIFIED="1523874561442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mygo$TestTwoSum_in_mystd_test_go.coverage" NAME="TestTwoSum in mystd_test.go Coverage Results" MODIFIED="1523874249829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mygo$BenchmarkQuickSort3_in_mystd_test_go.coverage" NAME="BenchmarkQuickSort3 in mystd_test.go Coverage Results" MODIFIED="1523869077192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mygo$TestTwoSum_in_mystd_test_go.coverage" NAME="TestTwoSum in mystd_test.go Coverage Results" MODIFIED="1523874249829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mygo$go_test_mystd.coverage" NAME="go test mystd Coverage Results" MODIFIED="1523874561442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mygo$mystd_test_go.coverage" NAME="mystd_test.go Coverage Results" MODIFIED="1523874583000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
@@ -205,7 +45,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FavoritesManager">
@@ -214,75 +59,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lottery/dao/blackip_dao.go">
+        <entry file="file://$PROJECT_DIR$/neo4j/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="119">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lottery/comm/functions.go">
+        <entry file="file://$PROJECT_DIR$/neo4j/main_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4477">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="189">
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lottery/_demo/ticket/main.go">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lottery/web/routes/routes.go">
+        <entry file="file://$PROJECT_DIR$/webserver/webs.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lottery/web/utils/locker.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-273" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lottery/web/main.go">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lottery/services/gift_service.go">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lottery/services/user_service.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-694">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lottery/rpc/lucky.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1995" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lottery/rpc/lucky_service-remote/go_client/goclient_main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="284">
+              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -292,36 +90,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="Go Application" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>clusterName</find>
-      <find>intggnet</find>
-      <find>Select</find>
-      <find>Post</find>
-      <find>post</find>
-      <find>CreateWorker</find>
-      <find>ReadyNotify</find>
-      <find>delMsg</find>
-      <find>Schduler</find>
-      <find>WorkReady</find>
-      <find>*mongopool.Coll</find>
-      <find>CloserColl</find>
-      <find>(userCollName</find>
-      <find>'</find>
-      <find>hgetall</find>
-      <find>DecryptData</find>
-      <find>todo</find>
-      <find>5</find>
-      <find>2379</find>
-      <find>/Play-with-Data-Structures</find>
-      <find>this.sz[pRoot] &lt; this.sz[qRoot] {</find>
-      <find>data-str</find>
-      <find>compareTo</find>
       <find>Play-with-Data-Structures</find>
       <find>Binar</find>
       <find>ints</find>
@@ -329,6 +104,29 @@
       <find>printFeature</find>
       <find>RouteGuide_ListFeaturesServer</find>
       <find>ListFeatures</find>
+      <find>imooc.com/</find>
+      <find>rand</find>
+      <find>quick</find>
+      <find>GetContentTypeRequested</find>
+      <find>istio-test.will</find>
+      <find>service-python</find>
+      <find>UsePreAbsPath</find>
+      <find>rpcSendQueue</find>
+      <find>DecryptData</find>
+      <find>ab</find>
+      <find>AesCBCDncrypt</find>
+      <find>&quot;</find>
+      <find>os.env</find>
+      <find>Start</find>
+      <find>DoWorker</find>
+      <find>WokeChan</find>
+      <find>gotio</find>
+      <find>goto</find>
+      <find>select</find>
+      <find>non-pointer string</find>
+      <find>pg: Model</find>
+      <find>.Select</find>
+      <find>Session</find>
     </findStrings>
     <replaceStrings>
       <replace>mystd</replace>
@@ -342,18 +140,25 @@
       <replace>/data-str</replace>
       <replace>data-str</replace>
       <replace>mygo/data-str</replace>
+      <replace>mygo/</replace>
+      <replace>\&quot;</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$/crawler</dir>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/Play-with-Data-Structures</dir>
       <dir>$PROJECT_DIR$/data-str</dir>
       <dir>$PROJECT_DIR$/data-str/12-AVL-Tree/08-Map-and-Set-in-AVL-Tree</dir>
       <dir>$PROJECT_DIR$/data-str/13-Red-Black-Tree</dir>
       <dir>$PROJECT_DIR$/data-str/14-Hash-Table</dir>
+      <dir>$PROJECT_DIR$/lottery</dir>
+      <dir>$PROJECT_DIR$/istio/test</dir>
+      <dir>$PROJECT_DIR$/tvmq</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/crawler</dir>
+      <dir>$PROJECT_DIR$/tvmq/handler</dir>
+      <dir>$PROJECT_DIR$/../github.com/go-pg</dir>
     </dirStrings>
   </component>
-  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.11.1/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -367,22 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data-str/11-Union-Find/04-Optimized-by-Size/src/main.go" />
-        <option value="$PROJECT_DIR$/data-str/11-Union-Find/05-Optimized-by-Rank/src/main.go" />
-        <option value="$PROJECT_DIR$/data-str/11-Union-Find/06-Path-Compression/src/main.go" />
-        <option value="$PROJECT_DIR$/data-str/11-Union-Find/06-Path-Compression/src/UnionFind5/UnionFind5.go" />
-        <option value="$PROJECT_DIR$/data-str/12-AVL-Tree/03-Checking-Balancing-and-Binary-Search-Property/src/AVLTree/AVLTree.go" />
-        <option value="$PROJECT_DIR$/data-str/12-AVL-Tree/05-The-Implementation-of-Left-Rotation-and-Right-Rotation/src/AVLTree/AVLTree.go" />
-        <option value="$PROJECT_DIR$/data-str/12-AVL-Tree/06-LR-and-RL/src/AVLTree/AVLTree.go" />
-        <option value="$PROJECT_DIR$/data-str/12-AVL-Tree/06-LR-and-RL/src/main.go" />
-        <option value="$PROJECT_DIR$/data-str/12-AVL-Tree/07-Remove-Elements-in-AVL-Tree/src/main.go" />
-        <option value="$PROJECT_DIR$/data-str/12-AVL-Tree/07-Remove-Elements-in-AVL-Tree/src/AVLTree/AVLTree.go" />
-        <option value="$PROJECT_DIR$/data-str/12-AVL-Tree/08-Map-and-Set-in-AVL-Tree/src/AVLMap/AVLMap.go" />
-        <option value="$PROJECT_DIR$/data-str/12-AVL-Tree/08-Map-and-Set-in-AVL-Tree/src/AVLTree/AVLTree.go" />
-        <option value="$PROJECT_DIR$/data-str/12-AVL-Tree/08-Map-and-Set-in-AVL-Tree/src/TestMapMain/TestMapMain.go" />
-        <option value="$PROJECT_DIR$/treeSort/main.go" />
-        <option value="$PROJECT_DIR$/sort/main.go" />
-        <option value="$APPLICATION_CONFIG_DIR$/iedis/Preview.json" />
         <option value="$APPLICATION_CONFIG_DIR$/iedis/Terminal.iedis" />
         <option value="$PROJECT_DIR$/data-str/13-Red-Black-Tree/03-The-Equivalence-of-RBTree-and-2-3-Tree/src/main.go" />
         <option value="$PROJECT_DIR$/data-str/13-Red-Black-Tree/08-The-Performance-of-Red-Black-Tree/src/main.go" />
@@ -401,23 +190,39 @@
         <option value="$PROJECT_DIR$/grpc/client.go" />
         <option value="$PROJECT_DIR$/grpc/Im.helloworld.proto" />
         <option value="$PROJECT_DIR$/grpc/example/Im.helloworld.proto" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/grpc/main.go" />
         <option value="$PROJECT_DIR$/mystd/mystd.go" />
         <option value="$PROJECT_DIR$/mystd/mystd_test.go" />
         <option value="$PROJECT_DIR$/grpc/client/client.go" />
-        <option value="$PROJECT_DIR$/grpc/server/server.go" />
         <option value="$PROJECT_DIR$/grpc/route_guide/routeguide/route_guide.proto" />
         <option value="$PROJECT_DIR$/grpc/route_guide/testdata/route_guide_db.json" />
         <option value="$PROJECT_DIR$/grpc/route_guide/server/server.go" />
         <option value="$PROJECT_DIR$/grpc/route_guide/client/client.go" />
         <option value="$PROJECT_DIR$/etcdDemo/etcd.config" />
-        <option value="$PROJECT_DIR$/etcdDemo/main.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/web/main.go" />
-        <option value="$PROJECT_DIR$/webserver/webs.go" />
         <option value="$PROJECT_DIR$/lottery/2/main.go" />
         <option value="$PROJECT_DIR$/lottery/rpc/lucky_service-remote/go_client/goclient_main.go" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pipeline/pkg/pipe.go" />
+        <option value="$PROJECT_DIR$/pipeline/main.go" />
+        <option value="$PROJECT_DIR$/pipeline/externalSort/main.go" />
+        <option value="$PROJECT_DIR$/sjson/main.go" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/grpc/server/server.go" />
+        <option value="$PROJECT_DIR$/tvmq/config/defs.go" />
+        <option value="$PROJECT_DIR$/etcdDemo/main.go" />
+        <option value="$PROJECT_DIR$/morerequest/do/deal.go" />
+        <option value="$PROJECT_DIR$/tvmq/routes/index.go" />
+        <option value="$PROJECT_DIR$/tvmq/redispool/redispool.go" />
+        <option value="$PROJECT_DIR$/tvmq/main.go" />
+        <option value="$PROJECT_DIR$/tvmq/lib/rdcluster/redis.go" />
+        <option value="$PROJECT_DIR$/Oct 26 2018.txt" />
+        <option value="$PROJECT_DIR$/webserver/webs.go" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ce795c6b-f948-44a4-a526-485af5d4b33a/console.sql" />
+        <option value="$PROJECT_DIR$/postgres/main.go" />
+        <option value="$PROJECT_DIR$/../github.com/neo4j-drivers/gobolt/config.go" />
+        <option value="$PROJECT_DIR$/neo4j/main_test.go" />
+        <option value="$PROJECT_DIR$/neo4j/main.go" />
       </list>
     </option>
   </component>
@@ -428,9 +233,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="802" />
-    <option name="width" value="798" />
-    <option name="height" value="900" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -457,7 +262,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -468,17 +272,98 @@
             <path>
               <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
               <item name="mygo" type="462c0819:PsiDirectoryNode" />
-              <item name="lottery" type="462c0819:PsiDirectoryNode" />
+              <item name="mystd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="neo4j" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="postgres" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="sjson" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="trace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="tvmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="tvmq" type="462c0819:PsiDirectoryNode" />
+              <item name="dealconn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="tvmq" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="tvmq" type="462c0819:PsiDirectoryNode" />
+              <item name="middler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="tvmq" type="462c0819:PsiDirectoryNode" />
+              <item name="midpackage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="tvmq" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="tvmq" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygo" type="462c0819:PsiDirectoryNode" />
+              <item name="webserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mygo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;postgresql" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="false" />
     <property name="GenProtobuf.javaScriptLoc" value="./js" />
     <property name="GenProtobuf.quickGen" value="JavaScript" />
@@ -486,16 +371,18 @@
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="preferences.sourceCode" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="go.dep" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -650,30 +537,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (3)">
+  <component name="RunManager" selected="Go Test.TestGetPeople in mygo/neo4j">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="mygo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gopath" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/web/main.go" />
-      <package value="mygo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gopath" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/lottery/2/main.go" />
+      <filePath value="$PROJECT_DIR$/postgres/main.go" />
       <package value="mygo" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -682,7 +551,16 @@
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/etcdDemo/main.go" />
+      <filePath value="$PROJECT_DIR$/neo4j/main.go" />
+      <package value="mygo" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build redispool.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gopath" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/tvmq/redispool/redispool.go" />
       <package value="mygo" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -696,20 +574,31 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="TestGetPeople in mygo/neo4j" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gopath" />
+      <working_directory value="$PROJECT_DIR$/neo4j" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="mygo/neo4j" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestGetPeople$" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go" />
-      <item itemvalue="Go Build.go build main.go (1)" />
-      <item itemvalue="Go Build.go build main.go (2)" />
       <item itemvalue="Go Build.go build webs.go" />
-      <item itemvalue="Go Build.go build main.go (3)" />
+      <item itemvalue="Go Build.go build redispool.go" />
+      <item itemvalue="Go Build.go build main.go (1)" />
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Test.TestGetPeople in mygo/neo4j" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go (3)" />
-        <item itemvalue="Go Build.go build webs.go" />
+        <item itemvalue="Go Test.TestGetPeople in mygo/neo4j" />
         <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build webs.go" />
+        <item itemvalue="Go Build.go build redispool.go" />
       </list>
     </recent_temporary>
   </component>
@@ -729,27 +618,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAT_in_mygo_snowflake - 2019.01.11 at 10h 01m 23s.xml">
-      <configuration name="TestAT in mygo/snowflake" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestAT_in_mygo_snowflake - 2019.01.11 at 10h 01m 35s.xml">
-      <configuration name="TestAT in mygo/snowflake" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestAT_in_mygo_snowflake - 2019.01.11 at 10h 01m 41s.xml">
-      <configuration name="TestAT in mygo/snowflake" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="BenchmarkFib_in_mygo_mystd - 2019.01.16 at 17h 53m 46s.xml">
-      <configuration name="BenchmarkFib in mygo/mystd" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestInvertTree_in_mygo_mystd - 2019.01.16 at 17h 53m 56s.xml">
-      <configuration name="TestInvertTree in mygo/mystd" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestInvertTree_in_mygo_mystd - 2019.01.16 at 17h 55m 05s.xml">
-      <configuration name="TestInvertTree in mygo/mystd" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestInvertTree_in_mygo_mystd - 2019.01.16 at 17h 55m 20s.xml">
-      <configuration name="TestInvertTree in mygo/mystd" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestInvertTree_in_mygo_mystd - 2019.01.16 at 17h 56m 02s.xml">
       <configuration name="TestInvertTree in mygo/mystd" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -758,6 +626,27 @@
     </history-entry>
     <history-entry file="TestInvertTree_in_mygo_mystd - 2019.01.16 at 17h 59m 29s.xml">
       <configuration name="TestInvertTree in mygo/mystd" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGetPeople_in_mygo_neo4j - 2019.06.03 at 15h 55m 37s.xml">
+      <configuration name="TestGetPeople in mygo/neo4j" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGetPeople_in_mygo_neo4j - 2019.06.03 at 15h 59m 38s.xml">
+      <configuration name="TestGetPeople in mygo/neo4j" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGetPeople_in_mygo_neo4j - 2019.06.03 at 16h 04m 59s.xml">
+      <configuration name="TestGetPeople in mygo/neo4j" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGetPeople_in_mygo_neo4j - 2019.06.03 at 16h 19m 16s.xml">
+      <configuration name="TestGetPeople in mygo/neo4j" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGetPeople_in_mygo_neo4j - 2019.06.03 at 16h 20m 08s.xml">
+      <configuration name="TestGetPeople in mygo/neo4j" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGetPeople_in_mygo_neo4j - 2019.06.03 at 16h 22m 46s.xml">
+      <configuration name="TestGetPeople in mygo/neo4j" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGetPeople_in_mygo_neo4j - 2019.06.03 at 16h 23m 27s.xml">
+      <configuration name="TestGetPeople in mygo/neo4j" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -773,31 +662,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1596" height="785" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="804" extended-state="6" />
     <layout>
-      <window_info id="Project" order="0" sideWeight="0.49140048" visible="true" weight="0.25546977" />
+      <window_info id="Project" order="0" sideWeight="0.49140048" visible="true" weight="0.22961374" />
       <window_info id="Structure" order="1" weight="0.24959612" />
       <window_info id="Favorites" order="2" sideWeight="0.5085995" side_tool="true" weight="0.24394184" />
+      <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32459018" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49353796" weight="0.26984128" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32323232" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49353796" weight="0.4213483" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39508197" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3262295" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3248227" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.4940978" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49596122" visible="true" weight="0.3116883" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.493565" weight="0.27994227" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.506435" side_tool="true" weight="0.23376623" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49420848" visible="true" weight="0.502809" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49213162" weight="0.43117976" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5078684" side_tool="true" weight="0.27801418" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32756132" />
       <window_info anchor="bottom" id="REST Client" order="12" weight="0.6475548" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Iedis Console" order="14" weight="0.2885246" />
       <window_info anchor="bottom" id="GenProtobuf-Output" order="15" weight="0.3295082" />
+      <window_info anchor="bottom" id="DB Execution Console" order="16" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32956383" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32904148" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32956383" />
       <window_info anchor="right" id="Redis Servers" order="5" weight="0.32956383" />
       <window_info anchor="right" id="Mongo Explorer" order="6" weight="0.30210015" />
@@ -807,8 +699,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="run from docker by mongo" />
-    <MESSAGE value="run docker by local dev" />
     <MESSAGE value="run in docker by docker-compose" />
     <MESSAGE value="run docker-compose scale" />
     <MESSAGE value="add more request by channel" />
@@ -832,7 +722,9 @@
     <MESSAGE value="sort slice" />
     <MESSAGE value="add go fmt" />
     <MESSAGE value="add grpc stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="add grpc stream" />
+    <MESSAGE value="add lottery" />
+    <MESSAGE value="add pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pipeline" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -913,321 +805,292 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/go/src/sort/slice.go">
+    <entry file="file://$PROJECT_DIR$/../github.com/go-pg/pg/listener_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="-1808">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mystd/mystd_test.go">
+    <entry file="file://$PROJECT_DIR$/../github.com/go-pg/pg/listener.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="57" column="6" lean-forward="true" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+        <state relative-caret-position="199">
+          <caret line="340" lean-forward="true" selection-start-line="340" selection-end-line="340" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interview/main.go">
+    <entry file="file://$PROJECT_DIR$/../github.com/go-pg/pg/hook_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="224">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/go-pg/pg/hook.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-815">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/go-pg/pg/export_test.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/go-pg/pg/example_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="296" column="26" selection-start-line="296" selection-start-column="26" selection-end-line="296" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/go-pg/pg/example_placeholders_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/go-pg/pg/exampledb_query_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1356">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/go-pg/pg/exampledb_model_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1902" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/go-pg/pg/example_soft_delete_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sjson/main.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort/main.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mystd/mystd.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="13230">
+          <caret line="636" column="37" selection-start-line="636" selection-start-column="37" selection-end-line="636" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data-str/08-Heap-and-Priority-Queue/05-Heapify-and-Replace-in-Heap/src/MaxHeap/MaxHeap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data-str/08-Heap-and-Priority-Queue/06-Priority-Queue/src/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data-str/08-Heap-and-Priority-Queue/06-Priority-Queue/src/Array/Array.go">
+    <entry file="file://$PROJECT_DIR$/video_server/api/defs/apidef.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data-str/08-Heap-and-Priority-Queue/07-Priority-Queue-Problems-in-Leetcode/src/Solution/Solution.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data-str/08-Heap-and-Priority-Queue/06-Priority-Queue/src/MaxHeap/MaxHeap.go">
+    <entry file="file://$PROJECT_DIR$/video_server/api/dbops/internal.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file:///usr/local/go/src/os/proc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/log/log.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="293" column="5" selection-start-line="293" selection-start-column="5" selection-end-line="293" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc/helloworld/helloworld.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="163" column="1" lean-forward="true" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../google.golang.org/grpc/reflection/serverreflection.go" />
-    <entry file="file://$PROJECT_DIR$/../github.com/hooto/hlog4g/hlog/log.go" />
-    <entry file="file://$PROJECT_DIR$/grpc/client/client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-400">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc/example/Im.helloworld.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc/route_guide/testdata/route_guide_db.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15626">
-          <caret line="601" selection-start-line="601" selection-end-line="601" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc/helloworld/helloworld.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc/route_guide/routeguide/route_guide.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#101#186#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../google.golang.org/grpc/examples/route_guide/routeguide/route_guide.pb.go" />
-    <entry file="file://$PROJECT_DIR$/grpc/route_guide/routeguide/route_guide.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc/route_guide/server/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3406">
-          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc/server/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../google.golang.org/grpc/stream.go" />
-    <entry file="file://$PROJECT_DIR$/tvmq/config/qa.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc/route_guide/client/client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="144" column="1" lean-forward="true" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="1" />
-          <folding>
-            <element signature="e#902#1126#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler_dis/rpcconn/rpc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../go.etcd.io/etcd/clientv3/maintenance.go" />
-    <entry file="file://$PROJECT_DIR$/tvmq/fnsq/run.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#14#253#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etcdDemo/etcd.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-358" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apidoc.html.json">
+    <entry file="file://$PROJECT_DIR$/video_server/api/dbops/conn.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/video_server/api/session/ops.go">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video_server/streamserver/limiter.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="e#14#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/kataras/iris/websocket/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/handler/intervalHandler.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/middler/websocket.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/middler/deal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="673" column="7" lean-forward="true" selection-start-line="673" selection-start-column="7" selection-end-line="673" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/routes/traceinfo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/routes/wxauth_test.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/routes/wxauth.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="557" column="29" selection-start-line="557" selection-start-column="29" selection-end-line="557" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/routes/message.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/handler/recentMsgHandler.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/handler/rpcsendHandler.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/templates/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/handler/service.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/handler/testHandler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/handler/connHandler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/dealconn/dealconn.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/handler/onlineHandler.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/routes/index.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tvmq/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="199" column="17" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tvmq/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etcdDemo/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="613">
+          <caret line="67" selection-start-line="63" selection-start-column="5" selection-end-line="67" />
           <folding>
-            <element signature="e#14#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webserver/webs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#14#114#0" expanded="true" />
+            <element signature="e#14#478#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ce795c6b-f948-44a4-a526-485af5d4b33a/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postgres/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/neo4j/neo4j-go-driver/neo4j/session.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/neo4j/neo4j-go-driver/neo4j/driver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/ali-ince/neo4j-go-driver/neo4j/config_resolver.go" />
+    <entry file="file://$PROJECT_DIR$/../github.com/neo4j-drivers/gobolt/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding>
-            <element signature="e#14#117#0" expanded="true" />
+            <element signature="e#740#830#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/2/main.go">
+    <entry file="file://$PROJECT_DIR$/neo4j/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        <state relative-caret-position="119">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.go">
+    <entry file="file://$PROJECT_DIR$/neo4j/main_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#14#289#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="189">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/dao/code_dao.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/dao/blackip_dao.go">
+    <entry file="file://$PROJECT_DIR$/webserver/webs.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="284">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/web/routes/routes.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/web/utils/locker.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-273" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/web/main.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/services/gift_service.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/services/user_service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-694">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/rpc/lucky.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1995" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/rpc/lucky_service-remote/go_client/goclient_main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/comm/functions.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4477">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lottery/_demo/ticket/main.go">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

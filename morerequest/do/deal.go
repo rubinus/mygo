@@ -10,8 +10,7 @@ import (
 
 	"time"
 
-	"github.com/gpmgo/gopm/modules/log"
-	"github.com/json-iterator/go"
+	jsoniter "github.com/json-iterator/go"
 )
 
 var tvmid = "sjh594b31593e800741dde24eae"
@@ -98,7 +97,7 @@ func DoWork(j int) AllResult {
 			result := parser.parseJson()
 			//fmt.Println(out, "------")
 			if err := jsonIterator.Unmarshal(out, &result); err != nil {
-				log.Error("%v", err)
+				fmt.Printf("%v", err)
 			}
 			switch result.(type) {
 			case *Cash:

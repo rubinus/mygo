@@ -31,7 +31,6 @@ func Hgetall(c *radix.Cluster, key string, input map[string]string) (map[string]
 	}
 	return input, err
 }
-
 func Setex(c *radix.Cluster, key string, time int, value string) (string, error) {
 	var reply string
 	err := c.Do(radix.FlatCmd(&reply, "SETEX", key, time, value))
@@ -40,7 +39,6 @@ func Setex(c *radix.Cluster, key string, time int, value string) (string, error)
 	}
 	return reply, err //OK,nil
 }
-
 func Get(c *radix.Cluster, key string) (string, error) {
 	var reply string
 	err := c.Do(radix.Cmd(&reply, "GET", key))
@@ -49,7 +47,6 @@ func Get(c *radix.Cluster, key string) (string, error) {
 	}
 	return reply, err
 }
-
 func Sadd(c *radix.Cluster, key, member string) (int64, error) {
 	var reply int64
 	err := c.Do(radix.Cmd(&reply, "SADD", key, member))
