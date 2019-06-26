@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"code.tvmining.com/tvplay/tvmq/config"
-	"github.com/mediocregopher/radix.v3"
+	"github.com/mediocregopher/radix"
 )
 
 var client *radix.Cluster

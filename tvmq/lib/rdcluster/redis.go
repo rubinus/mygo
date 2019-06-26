@@ -3,7 +3,7 @@ package rdcluster
 import (
 	"fmt"
 
-	"github.com/mediocregopher/radix.v3"
+	"github.com/mediocregopher/radix"
 )
 
 func DelKey(c *radix.Cluster, key string) (int64, error) {

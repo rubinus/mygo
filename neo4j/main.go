@@ -21,7 +21,9 @@ func main() {
 }
 
 func TestNeo4j() error {
-	if driver, err = neo4j.NewDriver("bolt://localhost:7687", neo4j.BasicAuth("neo4j", "12345678", "")); err != nil {
+	if driver, err = neo4j.NewDriver("bolt://localhost:7687", neo4j.BasicAuth("neo4j", "12345678", ""), func(config *neo4j.Config) {
+		config.MaxConnectionPoolSize = 10
+	}); err != nil {
 		return err // handle error
 	}
 	// handle driver lifetime based on your application lifetime requirements
@@ -35,7 +37,7 @@ func TestNeo4j() error {
 
 	result, err = session.Run("CREATE (n:Person { id: $id, name: $name }) RETURN n.id, n.name", map[string]interface{}{
 		"id":   "1",
-		"name": "朱大仙儿②",
+		"name": "朱大仙儿③",
 	})
 	if err != nil {
 		return err // handle error

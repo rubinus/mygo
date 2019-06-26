@@ -73,3 +73,7 @@ func TestGetPeople(t *testing.T) {
 
 	fmt.Println(result)
 }
+
+func TestTestNeo4j(t *testing.T) {
+	TestNeo4j()
+}

@@ -20,7 +20,7 @@ func main() {
 
 	// Print out the ID in a few different ways.
 	fmt.Printf("Int64  ID: %d\n", id)
-	fmt.Printf("String ID: %s\n", id)
+	fmt.Println(id.String())
 	fmt.Printf("Base2  ID: %s\n", id.Base2())
 	fmt.Printf("Base64 ID: %s\n", id.Base64())
 

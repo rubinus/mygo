@@ -3,7 +3,7 @@ package rdone
 import (
 	"fmt"
 
-	"github.com/mediocregopher/radix.v3"
+	"github.com/mediocregopher/radix"
 )
 
 func DelKey(c *radix.Pool, key string) (int64, error) {
