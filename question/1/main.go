@@ -7,23 +7,15 @@ import (
 )
 
 func main() {
-	defer_call()
+	F102()
 }
 
-func defer_call() {
-	defer func() { fmt.Println("打印前") }()
-	defer func() { fmt.Println("打印中") }()
-	defer func() { fmt.Println("打印后") }()
+func F102() {
+	defer func() { fmt.Println(1) }()
 
-	//panic("触发异常")
+	defer func() { fmt.Println(2) }()
 
-	pase_student()
-	//test()
-
-	t := Teacher{}
-	t.ShowA()
-
-	test2()
+	defer func() { fmt.Println(3) }()
 }
 
 // -----

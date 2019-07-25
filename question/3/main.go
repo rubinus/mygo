@@ -28,7 +28,7 @@ func reverse(x int) int {
 const (
 	x = iota
 	y
-	z = "zz"
+	z = "z"
 	k
 	p = iota
 )

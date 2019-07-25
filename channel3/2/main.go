@@ -3,29 +3,29 @@ package main
 import "fmt"
 
 var (
-	g    = make(chan int)
-	quit = make(chan chan bool)
+	numCh  = make(chan int)
+	quitCh = make(chan chan bool)
 )
 
 func main() {
-	go B()
-	for i := 0; i < 5; i++ {
-		g <- i
+	go handler()
+
+	for i := 0; i < 3; i++ {
+		numCh <- i
 	}
 	wait := make(chan bool)
-	quit <- wait
-	<-wait //这样就可以等待B的退出了
-	fmt.Println("Main Quit")
+	quitCh <- wait
+
+	fmt.Println("done!")
 }
 
-func B() {
+func handler() {
 	for {
 		select {
-		case i := <-g:
-			fmt.Println(i + 1)
-		case c := <-quit:
-			c <- true
-			fmt.Println("B Quit")
+		case res := <-numCh:
+			fmt.Println(res)
+		case <-quitCh:
+			fmt.Println("done-123")
 			return
 		}
 	}

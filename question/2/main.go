@@ -25,12 +25,19 @@ func main() {
 	think := "bitch"
 	fmt.Println(peo.Speak(think))
 
+	F101()
+
+	time.Sleep(time.Second)
+
+}
+
+func F101() {
 	sl := []string{"one", "two", "three"}
 	for _, v := range sl {
+		//v := v
 		go func() {
 			fmt.Println(v)
 		}()
 	}
 	time.Sleep(time.Second)
-
 }
