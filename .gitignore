@@ -6,3 +6,4 @@ node_modules/**/*
 lua/lib/*.so
 *.in
 .out
+cmake-build-debug
